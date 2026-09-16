@@ -111,7 +111,8 @@
 
       <nav class="nav-group switch-group">
         <div class="cap">Dashboards</div>
-        <a class="switch-item active" href="index.html">◧ 投稿マップ</a>
+        <a class="switch-item active" href="details_drop.html">◧ 投稿マップ</a>
+        <a class="switch-item" href="details_stamp.html">◨ スタンプ</a>
       </nav>
 
       <nav class="nav-group">
@@ -136,6 +137,12 @@
           <p id="subtitle">イケフェス大阪 2025 — 参加者の投稿を地図とタイムラインで振り返る</p>
         </div>
         <div class="status"><span class="pulse"></span> Live datamart · updated <b>&nbsp;<span id="metaUpdated2">–</span></b></div>
+      </div>
+
+      <!-- モバイル用ダッシュボード切替 -->
+      <div class="switch-mobile">
+        <a class="chip chip-active" href="details_drop.html">◧ 投稿マップ</a>
+        <a class="chip" href="details_stamp.html">◨ スタンプ</a>
       </div>
 
       <!-- KPI -->
@@ -226,7 +233,7 @@
    *   --gray（灰） ＝ 無回答 / その他
    */
   const CONFIG = {
-    dataSource: "mart_action_drop.json",
+    dataSource: "json/mart_action_drop.json",
     map: {
       center: [34.6905, 135.5023], zoom: 13, minZoom: 10, maxZoom: 18,
       tile: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
