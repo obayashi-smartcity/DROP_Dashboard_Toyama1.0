@@ -94,6 +94,18 @@
     @media (max-width: 1080px) { .filter-bar { grid-template-columns: 1fr; } .map-box { height: 440px; } }
     @media (max-width: 760px)  { .map-box { height: 360px; } }
     @media (max-width: 430px)  { .map-box { height: 320px; } .rank-row { grid-template-columns: 32px 1fr auto; gap: 10px; } }
+    /* ---- サイドバー内フィルタ ---- */
+    .sidebar-filter { display:flex; flex-direction:column; gap:14px; }
+    .sidebar-filter .cap { font-size:10.5px; letter-spacing:1.4px; text-transform:uppercase; color:var(--dim); margin:0 2px 2px; }
+    .sidebar-filter .filter-bar { display:flex; flex-direction:column; gap:14px; margin:0; }
+    .sidebar-filter .filter-group .f-title { margin:0 0 7px; }
+    .sidebar-filter .chips { gap:6px; }
+    .sidebar-filter .chip-btn { font-size:11px; padding:5px 9px; }
+    .sidebar-filter .slider-wrap { min-width:0; padding:8px 4px 2px; }
+    .sidebar-filter .time-readout { font-size:11px; margin-bottom:6px; }
+    .sidebar-filter .filter-foot { flex-direction:column; align-items:stretch; gap:8px; margin-top:2px; }
+    .sidebar-filter .reset-btn { width:100%; }
+    .sidebar-filter .f-count { font-size:11.5px; }
   </style>
 </head>
 <body class="page-fade">
@@ -115,11 +127,37 @@
       <a class="switch-item" href="details_drop.html">◧ 投稿マップ</a>
     </nav>
 
-      <nav class="nav-group">
-        <div class="cap">Analytics</div>
-        <a class="nav-item active" href="#map-section"><span class="ic acq">◉</span> 獲得マップ</a>
-        <a class="nav-item" href="#rank-section"><span class="ic acq">▤</span> 獲得ランキング</a>
-      </nav>
+      <div class="nav-group sidebar-filter">
+        <div class="panel-head">
+          <h3>🔎 フィルタ</h3>
+          <span class="sub">性別・年齢・獲得日で絞り込み</span>
+        </div>
+
+        <div class="filter-bar">
+          <div class="filter-group">
+            <div class="f-title">性別</div>
+            <div class="chips" id="genderChips"></div>
+          </div>
+
+          <div class="filter-group">
+            <div class="f-title">年齢層</div>
+            <div class="chips" id="ageChips"></div>
+          </div>
+
+          <div class="filter-group f-full">
+            <div class="f-title">獲得日（日時）</div>
+            <div class="time-readout" id="timeReadout">–</div>
+            <div class="slider-wrap" style="padding-left:0;padding-right:6px;">
+              <div id="timeSlider"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-foot">
+          <div class="f-count" id="filterCount">–</div>
+          <button class="reset-btn" id="resetBtn">条件をリセット</button>
+        </div>
+      </div>
 
       <div class="side-foot">
         <span class="dot">●</span> Live datamart<br />
@@ -153,41 +191,7 @@
         <div class="kpi attr"><div class="k-label">獲得スポット数</div><div class="k-val" id="kSpots">–</div><div class="k-cap">ユニーク会場</div></div>
         <div class="kpi rich"><div class="k-label">参加者数</div><div class="k-val" id="kUsers">–</div><div class="k-cap">ユニークアカウント</div></div>
       </div>
-
-      <!-- ============ フィルタバー ============ -->
-      <div class="panel dom-acq" style="border-top:2px solid rgba(47,143,102,.55);margin-bottom:var(--gap);">
-        <div class="panel-head">
-          <h3>🔎 フィルタ</h3>
-          <span class="sub">性別・年齢・獲得日で絞り込み</span>
-        </div>
-
-        <div class="filter-bar">
-          <div class="filter-group">
-            <div class="f-title">性別</div>
-            <div class="chips" id="genderChips"></div>
-          </div>
-
-          <div class="filter-group">
-            <div class="f-title">年齢層</div>
-            <div class="chips" id="ageChips"></div>
-          </div>
-
-          <div class="filter-group f-full">
-            <div class="f-title">獲得日（日時）</div>
-            <div class="time-readout" id="timeReadout">–</div>
-            <div class="slider-wrap" style="padding-left:0;padding-right:6px;">
-              <div id="timeSlider"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="filter-foot">
-          <div class="f-count" id="filterCount">–</div>
-          <button class="reset-btn" id="resetBtn">条件をリセット</button>
-        </div>
-      </div>
-
-      <!-- ============ 上段：地図 ============ -->
+<!-- ============ 上段：地図 ============ -->
       <div class="section-label" id="map-section">
         <h2>Stamp Map <span class="note">マーカーの数字＝獲得数</span></h2>
         <div class="meta">円をタップすると会場と獲得数を表示</div>
