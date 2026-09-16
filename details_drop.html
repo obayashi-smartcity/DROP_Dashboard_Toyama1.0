@@ -236,6 +236,8 @@
     dataSource: "json/mart_action_drop.json",
     map: {
       center: [34.6905, 135.5023], zoom: 13, minZoom: 10, maxZoom: 18,
+      // CARTO ベースマップ用 API キー（ここを差し替えれば両ページに反映）
+      cartoApiKey: "cb1_3mnu_1_9357092faaed80e557d7e696",
       tile: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
     },
@@ -424,7 +426,11 @@
 
   // 地図はデータ取得前に初期化しておく
   map = L.map("map", { center: CONFIG.map.center, zoom: CONFIG.map.zoom, minZoom: CONFIG.map.minZoom, maxZoom: CONFIG.map.maxZoom, scrollWheelZoom: true });
-  L.tileLayer(CONFIG.map.tile, { attribution: CONFIG.map.attribution, maxZoom: CONFIG.map.maxZoom }).addTo(map);
+  // API キーがあればタイルURLに api_key クエリを付与
+  const tileUrl = CONFIG.map.cartoApiKey
+    ? CONFIG.map.tile + (CONFIG.map.tile.includes("?") ? "&" : "?") + "api_key=" + encodeURIComponent(CONFIG.map.cartoApiKey)
+    : CONFIG.map.tile;
+  L.tileLayer(tileUrl, { attribution: CONFIG.map.attribution, maxZoom: CONFIG.map.maxZoom }).addTo(map);
   markerLayer = L.layerGroup().addTo(map);
 
   // ---- JSON を直接参照して起動 ----
