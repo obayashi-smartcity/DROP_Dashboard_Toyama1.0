@@ -16,7 +16,7 @@ const DASHBOARD_CONFIG = {
   targets: {
     access: 3400,   // 全アクセス数（ユニークユーザー数）
     signup: 500,    // アカウント登録数（データ未連携）
-    stamp:  300,     // スタンプ取得数
+    stamp:  300,     // スタンプ獲得者数（ユニーク）
     poster: 100,     // 投稿者数
     survey: 100      // アンケート回答者数（データ未連携）
   },
@@ -33,5 +33,16 @@ const DASHBOARD_CONFIG = {
     stamp:  "#2f8f66",   // 緑（スタンプ）
     poster: "#7a58b0",   // 紫（投稿）
     survey: "#64748b"    // グレー（中立・未連携）
+  },
+
+  /* ---- 地図（CARTO ベースマップ）設定 ----
+   *   スタンプマップ / 投稿マップ（details_stamp.html・details_drop.html）で共通利用。
+   *   API キーを差し替える場合は、この cartoApiKey のみを編集してください
+   *   （各 HTML 本体の編集は不要です）。
+   */
+  map: {
+    cartoApiKey: "cb1_3mnu_1_9357092faaed80e557d7e696",
+    tile: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
   }
 };

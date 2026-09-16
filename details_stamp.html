@@ -241,6 +241,8 @@
   </div>
 
   <!-- Scripts -->
+  <!-- 共通設定（CARTO APIキー等を一元管理）。地図設定は config.js の map で差し替え -->
+  <script src="config.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/nouislider@15.7.1/dist/nouislider.min.js"></script>
 
@@ -251,14 +253,21 @@
    *   中立・補助指標は グレー（--gray）
    *   ※ 性別・年齢は「フィルタの絞り込み軸」。色分けはせずラベルで区別する。
    */
+  /* CARTO 地図設定は config.js（DASHBOARD_CONFIG.map）で一元管理。
+     未読込時に備えたフォールバックを用意（APIキー等の差し替えは config.js のみでOK）。 */
+  const MAP_CFG = (typeof DASHBOARD_CONFIG !== "undefined" && DASHBOARD_CONFIG.map) ? DASHBOARD_CONFIG.map : {
+    cartoApiKey: "",
+    tile: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+  };
   const CONFIG = {
     dataSource: "json/mart_action_stamp.json",
     map: {
       center: [34.6905, 135.5023], zoom: 13, minZoom: 10, maxZoom: 18,
-      // CARTO ベースマップ用 API キー（ここを差し替えれば両ページに反映）
-      cartoApiKey: "cb1_3mnu_1_9357092faaed80e557d7e696",
-      tile: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+      // CARTO ベースマップ設定は config.js から取得（APIキーの差し替えは config.js のみ）
+      cartoApiKey: MAP_CFG.cartoApiKey,
+      tile: MAP_CFG.tile,
+      attribution: MAP_CFG.attribution
     },
     genderLabel: (g) => (g && g.trim() !== "" ? g : "無回答"),
     ageOrder: ["20代", "30代", "40代", "50代"],
