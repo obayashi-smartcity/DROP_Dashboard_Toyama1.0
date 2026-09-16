@@ -10,9 +10,12 @@
   <link rel="stylesheet" href="dashboard-common.css" />
   <style>
     .kpi-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:var(--gap); margin-bottom:6px; }
-    /* ドーナツKPIは背景タイル無し（白パネルを外し、ページ地のグレーに直接配置） */
-    .kpi-card { background:transparent; border:none; padding:14px 12px 12px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:12px; }
-    .kpi-card.acq, .kpi-card.attr, .kpi-card.rich, .kpi-card.gray { border-top:none; }
+    /* ドーナツKPIは白背景タイル */
+    .kpi-card { background:var(--panel); border:none; padding:20px 16px 18px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:12px; }
+    .kpi-card.acq  { border-top:3px solid var(--acq); }
+    .kpi-card.attr { border-top:3px solid var(--attr); }
+    .kpi-card.rich { border-top:3px solid var(--rich); }
+    .kpi-card.gray { border-top:3px solid var(--gray); }
     .kpi-label { font-size:12px; font-weight:700; letter-spacing:.3px; color:var(--muted); }
     .donut-wrap { position:relative; width:130px; height:130px; }
     .donut-center { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; pointer-events:none; }
@@ -69,7 +72,7 @@
     <div class="kpi-grid">
       <div class="kpi-card gray"><div class="kpi-label">全アクセス数</div><div class="donut-wrap"><canvas id="d_access"></canvas><div class="donut-center" id="c_access"></div></div><div class="kpi-rate" id="r_access">–</div><div class="kpi-foot">ユニークユーザー<br>目標 <b id="t_access">–</b></div></div>
       <div class="kpi-card attr"><div class="kpi-label">アカウント登録数</div><div class="donut-wrap"><canvas id="d_signup"></canvas><div class="donut-center" id="c_signup"></div></div><div class="kpi-rate" id="r_signup">–</div><div class="kpi-foot">登録アカウント<br>目標 <b id="t_signup">–</b></div></div>
-      <div class="kpi-card acq"><div class="kpi-label">スタンプ取得数</div><div class="donut-wrap"><canvas id="d_stamp"></canvas><div class="donut-center" id="c_stamp"></div></div><div class="kpi-rate" id="r_stamp">–</div><div class="kpi-foot">スタンプ獲得ログ<br>目標 <b id="t_stamp">–</b></div></div>
+      <div class="kpi-card acq"><div class="kpi-label">スタンプ獲得者数</div><div class="donut-wrap"><canvas id="d_stamp"></canvas><div class="donut-center" id="c_stamp"></div></div><div class="kpi-rate" id="r_stamp">–</div><div class="kpi-foot">ユニーク獲得者<br>目標 <b id="t_stamp">–</b></div></div>
       <div class="kpi-card rich"><div class="kpi-label">投稿者数</div><div class="donut-wrap"><canvas id="d_poster"></canvas><div class="donut-center" id="c_poster"></div></div><div class="kpi-rate" id="r_poster">–</div><div class="kpi-foot">ユニーク投稿者<br>目標 <b id="t_poster">–</b></div></div>
       <div class="kpi-card gray"><div class="kpi-label">アンケート回答者数</div><div class="donut-wrap"><canvas id="d_survey"></canvas><div class="donut-center" id="c_survey"></div></div><div class="kpi-rate" id="r_survey">–</div><div class="kpi-foot">回答ユーザー<br>目標 <b id="t_survey">–</b></div></div>
     </div>
@@ -92,9 +95,8 @@ const el=id=>document.getElementById(id);
 const setText=(id,v)=>{const e=el(id); if(e) e.textContent=v;};
 const fmt=n=>Number(n).toLocaleString("ja-JP");
 const validDate=s=>/^\d{4}-\d{2}-\d{2}$/.test(s||"");
-/* 背景タイルを外したため、ドーナツの未達リング(トラック)はページ地のグレー上でも
-   視認できるよう、やや濃いめのニュートラルグレーに調整 */
-const TRACK="#c9d1da";
+/* ドーナツの未達リング(トラック)。白タイル上で自然に見える淡いグレー */
+const TRACK="#e2e6ea";
 async function loadOne(list){let last;for(const s of list){try{const r=await fetch(s);if(!r.ok)throw new Error(r.status);return await r.json()}catch(e){last=e}}throw last}
 
 function donut(canvasId,centerId,rateId,key,value,hasData){
@@ -124,7 +126,7 @@ function donut(canvasId,centerId,rateId,key,value,hasData){
 
   // --- 実数 ---
   const access = new Set(gaR.map(r=>r.user_pseudo_id).filter(Boolean)).size;   // 全アクセス数(UU)
-  const stampCnt = stR.length;                                                  // スタンプ取得数
+  const stampUsers = new Set(stR.map(r=>r.action_account_id).filter(Boolean)).size; // スタンプ獲得者数(ユニーク)
   const poster = new Set(drR.map(r=>r.account_id).filter(Boolean)).size;        // 投稿者数(ユニーク)
   // signup / survey はデータ未連携 → ブランク
 
@@ -138,7 +140,7 @@ function donut(canvasId,centerId,rateId,key,value,hasData){
   // --- ドーナツ（流入=灰 / 会員登録=青 / スタンプ=緑 / 投稿=紫 / アンケート=灰）---
   donut("d_access","c_access","r_access","access",access,true);
   donut("d_signup","c_signup","r_signup","signup",0,false);   // ブランク
-  donut("d_stamp","c_stamp","r_stamp","stamp",stampCnt,true);
+  donut("d_stamp","c_stamp","r_stamp","stamp",stampUsers,true);
   donut("d_poster","c_poster","r_poster","poster",poster,true);
   donut("d_survey","c_survey","r_survey","survey",0,false);    // ブランク
 
