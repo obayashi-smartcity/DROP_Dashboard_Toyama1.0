@@ -104,6 +104,25 @@
     /* noUiSlider をテーマ色（紫）に */
     .sidebar-filter .noUi-connect { background: linear-gradient(90deg, #a98cd0, var(--rich)); }
     .sidebar-filter .noUi-horizontal .noUi-handle { border-color: var(--rich); }
+
+    /* ---- シックな文字ベース ナビ（SVGアイコン付き・紫アクセント） ---- */
+    .sidebar { --accent: var(--rich); }
+    .switch-group { gap: 1px; }
+    .switch-group .cap { margin: 10px 8px 10px; }
+    a.switch-item {
+      display: flex; align-items: center; gap: 12px;
+      padding: 9px 10px 9px 12px;
+      border: none; background: transparent; border-radius: 0;
+      border-left: 2px solid transparent;
+      color: var(--muted); font-size: 13px; font-weight: 500; letter-spacing: .2px;
+      transition: color .15s, border-color .15s;
+    }
+    a.switch-item:hover { background: transparent; color: var(--text); border-left-color: var(--stroke); }
+    a.switch-item.active { background: transparent; color: var(--text); font-weight: 700; border-left-color: var(--accent); }
+    a.switch-item .mi { width: 17px; height: 17px; flex: none; color: var(--dim); display: inline-flex; align-items: center; justify-content: center; transition: color .15s; }
+    a.switch-item:hover .mi { color: var(--muted); }
+    a.switch-item.active .mi { color: var(--accent); }
+    .switch-item .mi svg { width: 100%; height: 100%; display: block; }
   </style>
 </head>
 <body class="page-fade">
@@ -119,10 +138,10 @@
 
       <nav class="nav-group switch-group">
         <div class="cap">Dashboards</div>
-        <a class="switch-item" href="index.html">⌂ TOP</a>
-        <a class="switch-item" href="details_inflow.html">↗ 流入分析</a>
-        <a class="switch-item" href="details_stamp.html">◨ スタンプ</a>
-        <a class="switch-item active" href="details_drop.html">◧ 投稿マップ</a>
+        <a class="switch-item" href="index.html"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13v6M10 8v11M15 4v15M20 11v8"/></svg></span>Summary</a>
+        <a class="switch-item" href="details_inflow.html"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v9"/><path d="M8.5 8.5L12 12l3.5-3.5"/><path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg></span>流入分析</a>
+        <a class="switch-item" href="details_stamp.html"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5.5"/><path d="M9.7 9.2l1.7 1.7 3-3.4"/><path d="M8.3 14.2L7 21l5-2.2 5 2.2-1.3-6.8"/></svg></span>スタンプ</a>
+        <a class="switch-item active" href="details_drop.html"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5L3.5 6.5v13L9 17.5l6 2 5.5-2v-13L15 6.5l-6-2z"/><path d="M9 4.5v13M15 6.5v13"/></svg></span>投稿マップ</a>
       </nav>
 
       <div class="nav-group sidebar-filter">
@@ -169,10 +188,10 @@
 
       <!-- モバイル用ダッシュボード切替 -->
       <div class="switch-mobile">
-        <a class="chip" href="index.html">⌂ TOP</a>
-        <a class="chip" href="details_inflow.html">↗ 流入分析</a>
-        <a class="chip" href="details_stamp.html">◨ スタンプ</a>
-        <a class="chip chip-active" href="details_drop.html">◧ 投稿マップ</a>
+        <a class="chip" href="index.html">Summary</a>
+        <a class="chip" href="details_inflow.html">流入分析</a>
+        <a class="chip" href="details_stamp.html">スタンプ</a>
+        <a class="chip chip-active" href="details_drop.html">投稿マップ</a>
       </div>
 
       <!-- KPI（紫＝主要指標 / グレー＝中立） -->
@@ -368,16 +387,19 @@
   }
 
   function buildChips() {
+    // デフォルトは全選択（存在する値をすべて state に追加し .on 表示）
     el("genderChips").innerHTML = CONFIG.genderOrder.map(g => {
       const n = POSTS.filter(p => p.g === g).length;
       if (!n) return "";
-      return `<button class="chip-btn" data-type="g" data-val="${esc(g)}">${esc(CONFIG.genderLabel(g))} <span style="opacity:.6">${n}</span></button>`;
+      state.genders.add(g);
+      return `<button class="chip-btn on" data-type="g" data-val="${esc(g)}">${esc(CONFIG.genderLabel(g))} <span style="opacity:.6">${n}</span></button>`;
     }).join("");
 
     el("ageChips").innerHTML = CONFIG.ageOrder.map(a => {
       const n = POSTS.filter(p => p.a === a).length;
       if (!n) return "";
-      return `<button class="chip-btn" data-type="a" data-val="${esc(a)}">${esc(CONFIG.ageLabel(a))} <span style="opacity:.6">${n}</span></button>`;
+      state.ages.add(a);
+      return `<button class="chip-btn on" data-type="a" data-val="${esc(a)}">${esc(CONFIG.ageLabel(a))} <span style="opacity:.6">${n}</span></button>`;
     }).join("");
 
     document.querySelectorAll(".chip-btn[data-type]").forEach(btn => {
@@ -408,9 +430,14 @@
   }
 
   el("resetBtn").addEventListener("click", () => {
+    // リセット＝全選択に戻す
     state.genders.clear(); state.ages.clear();
+    document.querySelectorAll(".chip-btn[data-type]").forEach(b => {
+      b.classList.add("on");
+      const set = b.getAttribute("data-type") === "g" ? state.genders : state.ages;
+      set.add(b.getAttribute("data-val"));
+    });
     state.dmin = 0; state.dmax = Math.max(DATES.length - 1, 0); state.limit = CONFIG.pageSize;
-    document.querySelectorAll(".chip-btn.on").forEach(b => b.classList.remove("on"));
     if (sliderBuilt) el("timeSlider").noUiSlider.set([0, Math.max(DATES.length - 1, 0)]);
     render();
   });
