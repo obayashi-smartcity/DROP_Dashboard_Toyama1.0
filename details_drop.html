@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DROP Post Map — Dashboard</title>
+  <title>DROP 投稿マップ — Dashboard</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -111,14 +111,14 @@
 
       <nav class="nav-group switch-group">
         <div class="cap">Dashboards</div>
-        <a class="switch-item active" href="details_drop.html">◧ Post Map</a>
-        <a class="switch-item" href="details_stamp.html">◨ Stamps</a>
+        <a class="switch-item active" href="details_drop.html">◧ 投稿マップ</a>
+        <a class="switch-item" href="details_stamp.html">◨ スタンプ</a>
       </nav>
 
       <nav class="nav-group">
         <div class="cap">Analytics</div>
-        <a class="nav-item active" href="#map-section"><span class="ic attr">◉</span> Post Map</a>
-        <a class="nav-item" href="#list-section"><span class="ic rich">▤</span> Post List</a>
+        <a class="nav-item active" href="#map-section"><span class="ic attr">◉</span> 投稿マップ</a>
+        <a class="nav-item" href="#list-section"><span class="ic rich">▤</span> 投稿一覧</a>
       </nav>
 
       <div class="side-foot">
@@ -134,45 +134,44 @@
       <div class="topbar">
         <div>
           <h1>DROP Post Map</h1>
-          <p id="subtitle">Ikefes Osaka 2025 — Explore participants' posts on the map and timeline</p>
         </div>
         <div class="status"><span class="pulse"></span> Live datamart · updated <b>&nbsp;<span id="metaUpdated2">–</span></b></div>
       </div>
 
       <!-- モバイル用ダッシュボード切替 -->
       <div class="switch-mobile">
-        <a class="chip chip-active" href="details_drop.html">◧ Post Map</a>
-        <a class="chip" href="details_stamp.html">◨ Stamps</a>
+        <a class="chip chip-active" href="details_drop.html">◧ 投稿マップ</a>
+        <a class="chip" href="details_stamp.html">◨ スタンプ</a>
       </div>
 
       <!-- KPI -->
       <div class="kpis">
-        <div class="kpi attr"><div class="k-label">Total Posts</div><div class="k-val" id="kTotal">–</div><div class="k-cap">All records</div></div>
-        <div class="kpi acq"><div class="k-label">Shown</div><div class="k-val" id="kShown">–</div><div class="k-cap">After filters</div></div>
-        <div class="kpi rich"><div class="k-label">Contributors</div><div class="k-val" id="kUsers">–</div><div class="k-cap">Unique accounts</div></div>
-        <div class="kpi gray"><div class="k-label">Spots</div><div class="k-val" id="kSpots">–</div><div class="k-cap">Approx. locations</div></div>
+        <div class="kpi attr"><div class="k-label">総投稿数</div><div class="k-val" id="kTotal">–</div><div class="k-cap">全レコード</div></div>
+        <div class="kpi acq"><div class="k-label">表示中</div><div class="k-val" id="kShown">–</div><div class="k-cap">フィルタ適用後</div></div>
+        <div class="kpi rich"><div class="k-label">投稿者数</div><div class="k-val" id="kUsers">–</div><div class="k-cap">ユニークアカウント</div></div>
+        <div class="kpi gray"><div class="k-label">スポット数</div><div class="k-val" id="kSpots">–</div><div class="k-cap">おおよその地点数</div></div>
       </div>
 
       <!-- ============ フィルタバー ============ -->
       <div class="panel dom-attr" style="border-top:2px solid rgba(63,102,179,.55);margin-bottom:var(--gap);">
         <div class="panel-head">
-          <h3>🔎 Filters</h3>
-          <span class="sub">Filter by gender, age and post time</span>
+          <h3>🔎 フィルタ</h3>
+          <span class="sub">性別・年齢・投稿時刻で絞り込み</span>
         </div>
 
         <div class="filter-bar">
           <div class="filter-group">
-            <div class="f-title">Gender</div>
+            <div class="f-title">性別</div>
             <div class="chips" id="genderChips"></div>
           </div>
 
           <div class="filter-group">
-            <div class="f-title">Age group</div>
+            <div class="f-title">年齢層</div>
             <div class="chips" id="ageChips"></div>
           </div>
 
           <div class="filter-group f-full">
-            <div class="f-title">Post time (datetime)</div>
+            <div class="f-title">投稿時刻（日時）</div>
             <div class="time-readout" id="timeReadout">–</div>
             <div class="slider-wrap" style="padding-left:0;padding-right:6px;">
               <div id="timeSlider"></div>
@@ -182,22 +181,22 @@
 
         <div class="filter-foot">
           <div class="f-count" id="filterCount">–</div>
-          <button class="reset-btn" id="resetBtn">Reset filters</button>
+          <button class="reset-btn" id="resetBtn">条件をリセット</button>
         </div>
       </div>
 
       <!-- ============ 上段：地図 ============ -->
       <div class="section-label" id="map-section">
-        <h2>Post Map <span class="note">Tap a pin to view the post</span></h2>
-        <div class="meta">Tap a pin to see its details</div>
+        <h2>Post Map <span class="note">タップで投稿を表示</span></h2>
+        <div class="meta">ピンをタップすると内容が表示されます</div>
       </div>
       <div class="panel map-panel dom-attr" style="border-top:2px solid rgba(63,102,179,.55);">
         <div class="map-box"><div id="map"></div></div>
         <div class="map-legend">
-          <span><i class="l-attr"></i> Male</span>
-          <span><i class="l-rich"></i> Female</span>
-          <span><i class="l-acq"></i> Facility / Staff</span>
-          <span><i class="l-gray"></i> No answer</span>
+          <span><i class="l-attr"></i> 男性</span>
+          <span><i class="l-rich"></i> 女性</span>
+          <span><i class="l-acq"></i> 施設・運営</span>
+          <span><i class="l-gray"></i> 無回答</span>
         </div>
       </div>
 
@@ -208,14 +207,14 @@
       </div>
       <div class="panel dom-rich" style="border-top:2px solid rgba(122,88,176,.55);">
         <div class="post-grid" id="postGrid">
-          <div class="empty-state" style="grid-column:1/-1"><b>Loading…</b>Fetching json/mart_action_drop.json</div>
+          <div class="empty-state" style="grid-column:1/-1"><b>読み込み中…</b>json/mart_action_drop.json を取得しています</div>
         </div>
         <div class="more-wrap" id="moreWrap"></div>
       </div>
 
       <div class="footer-note">
-        Data source: <code>json/mart_action_drop.json</code> · Event <code>ikefes-2025</code> ·
-        Built on the shared design system (dashboard-common.css).
+        データソース: <code>json/mart_action_drop.json</code> ・ イベント <code>ikefes-2025</code> ・
+        本ダッシュボードは社内デザインシステム（dashboard-common.css）に準拠しています。
       </div>
     </main>
   </div>
@@ -242,9 +241,9 @@
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
     },
     genderSlot: (g) => g === "男性" ? "attr" : g === "女性" ? "rich" : g === "無回答" ? "gray" : "acq",
-    genderLabel: (g) => ({ "男性": "Male", "女性": "Female", "無回答": "No answer" }[g] || "Facility / Staff"),
+    genderLabel: (g) => (g && g.trim() !== "" ? g : "施設・運営"),
     ageOrder: ["20代", "30代", "40代", "50代", "60代", "70代", ""],
-    ageLabel: (a) => ({ "20代": "20s", "30代": "30s", "40代": "40s", "50代": "50s", "60代": "60s", "70代": "70s" }[a] || "N/A"),
+    ageLabel: (a) => (a && a.trim() !== "" ? a : "未設定"),
     genderOrder: ["男性", "女性", "無回答", ""],
     pageSize: 24
   };
@@ -320,17 +319,17 @@
     el("kShown").textContent = filtered.length;
     el("kUsers").textContent = new Set(filtered.map(p => p.n)).size;
     el("kSpots").textContent = new Set(filtered.map(p => p.lat.toFixed(4) + "," + p.lng.toFixed(4))).size;
-    el("filterCount").innerHTML = `Filtered: <b>${filtered.length}</b> of ${POSTS.length}`;
+    el("filterCount").innerHTML = `絞り込み結果 <b>${filtered.length}</b> 件 / 全 ${POSTS.length} 件`;
 
     renderList(filtered);
   }
 
   function renderList(filtered) {
     const shown = filtered.slice(0, state.limit);
-    el("listMeta").textContent = `Showing ${shown.length} of ${filtered.length}`;
+    el("listMeta").textContent = `${filtered.length} 件中 ${shown.length} 件を表示`;
 
     if (!filtered.length) {
-      el("postGrid").innerHTML = `<div class="empty-state" style="grid-column:1/-1"><b>No matching posts</b>Try changing the filters</div>`;
+      el("postGrid").innerHTML = `<div class="empty-state" style="grid-column:1/-1"><b>該当する投稿がありません</b>フィルタ条件を変更してください</div>`;
       el("moreWrap").innerHTML = "";
       return;
     }
@@ -367,7 +366,7 @@
     });
 
     el("moreWrap").innerHTML = (shown.length < filtered.length)
-      ? `<button class="more-btn" id="moreBtn">Show more (${filtered.length - shown.length} remaining)</button>`
+      ? `<button class="more-btn" id="moreBtn">さらに表示（残り ${filtered.length - shown.length} 件）</button>`
       : "";
     const mb = el("moreBtn");
     if (mb) mb.addEventListener("click", () => { state.limit += CONFIG.pageSize; renderList(filtered); });
@@ -410,7 +409,7 @@
     noUiSlider.create(slider, { start: [TV_MIN, TV_MAX], connect: true, range: { min: TV_MIN, max: TV_MAX }, step: 1 });
     slider.noUiSlider.on("update", (vals) => {
       state.tmin = +vals[0]; state.tmax = +vals[1];
-      readout.innerHTML = `Post time <b>${fmtTv(state.tmin)}</b> – <b>${fmtTv(state.tmax)}</b>`;
+      readout.innerHTML = `投稿時刻 <b>${fmtTv(state.tmin)}</b> 〜 <b>${fmtTv(state.tmax)}</b>`;
     });
     slider.noUiSlider.on("change", () => { state.limit = CONFIG.pageSize; render(); });
     sliderBuilt = true;
@@ -455,7 +454,7 @@
       setTimeout(() => map.invalidateSize(), 200);
     })
     .catch(err => {
-      el("postGrid").innerHTML = `<div class="empty-state" style="grid-column:1/-1"><b>Failed to load data</b>${esc(String(err.message))}<br>When opening locally, serve via a simple HTTP server (fetch does not work over file://).</div>`;
+      el("postGrid").innerHTML = `<div class="empty-state" style="grid-column:1/-1"><b>データを読み込めませんでした</b>${esc(String(err.message))}<br>ローカルで開く場合は簡易サーバー経由で表示してください（file:// では fetch できません）</div>`;
       console.error(err);
     });
   </script>
