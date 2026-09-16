@@ -250,7 +250,7 @@
      未読込時に備えたフォールバックを用意（APIキー等の差し替えは config.js のみでOK）。 */
   const MAP_CFG = (typeof DASHBOARD_CONFIG !== "undefined" && DASHBOARD_CONFIG.map) ? DASHBOARD_CONFIG.map : {
     cartoApiKey: "",
-    tile: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+    tile: "https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png",
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
   };
   const CONFIG = {
@@ -453,9 +453,9 @@
 
   // 地図はデータ取得前に初期化しておく
   map = L.map("map", { center: CONFIG.map.center, zoom: CONFIG.map.zoom, minZoom: CONFIG.map.minZoom, maxZoom: CONFIG.map.maxZoom, scrollWheelZoom: true });
-  // API キーがあればタイルURLに api_key クエリを付与
+  // API キーがあればタイルURLに key クエリを付与
   const tileUrl = CONFIG.map.cartoApiKey
-    ? CONFIG.map.tile + (CONFIG.map.tile.includes("?") ? "&" : "?") + "api_key=" + encodeURIComponent(CONFIG.map.cartoApiKey)
+    ? CONFIG.map.tile + (CONFIG.map.tile.includes("?") ? "&" : "?") + "key=" + encodeURIComponent(CONFIG.map.cartoApiKey)
     : CONFIG.map.tile;
   L.tileLayer(tileUrl, { attribution: CONFIG.map.attribution, maxZoom: CONFIG.map.maxZoom }).addTo(map);
   markerLayer = L.layerGroup().addTo(map);
