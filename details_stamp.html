@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>スタンプ獲得マップ — Dashboard</title>
+  <title>Stamp Map — Dashboard</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -109,14 +109,14 @@
 
       <nav class="nav-group switch-group">
         <div class="cap">Dashboards</div>
-        <a class="switch-item" href="details_drop.html">◧ 投稿マップ</a>
-        <a class="switch-item active" href="details_stamp.html">◨ スタンプ</a>
+        <a class="switch-item" href="details_drop.html">◧ Post Map</a>
+        <a class="switch-item active" href="details_stamp.html">◨ Stamps</a>
       </nav>
 
       <nav class="nav-group">
         <div class="cap">Analytics</div>
-        <a class="nav-item active" href="#map-section"><span class="ic acq">◉</span> 獲得マップ</a>
-        <a class="nav-item" href="#rank-section"><span class="ic acq">▤</span> 獲得ランキング</a>
+        <a class="nav-item active" href="#map-section"><span class="ic acq">◉</span> Stamp Map</a>
+        <a class="nav-item" href="#rank-section"><span class="ic acq">▤</span> Ranking</a>
       </nav>
 
       <div class="side-foot">
@@ -131,46 +131,46 @@
     <main class="main">
       <div class="topbar">
         <div>
-          <h1>スタンプ獲得マップ</h1>
-          <p id="subtitle">イケフェス大阪 2025 — スタンプラリーの獲得場所を地図とランキングで振り返る</p>
+          <h1>Stamp Map</h1>
+          <p id="subtitle">Ikefes Osaka 2025 — Review stamp rally locations on the map and ranking</p>
         </div>
         <div class="status"><span class="pulse"></span> Live datamart · updated <b>&nbsp;<span id="metaUpdated2">–</span></b></div>
       </div>
 
       <!-- モバイル用ダッシュボード切替 -->
       <div class="switch-mobile">
-        <a class="chip" href="details_drop.html">◧ 投稿マップ</a>
-        <a class="chip chip-active" href="details_stamp.html">◨ スタンプ</a>
+        <a class="chip" href="details_drop.html">◧ Post Map</a>
+        <a class="chip chip-active" href="details_stamp.html">◨ Stamps</a>
       </div>
 
       <!-- KPI -->
       <div class="kpis">
-        <div class="kpi acq"><div class="k-label">総スタンプ数</div><div class="k-val" id="kTotal">–</div><div class="k-cap">全獲得ログ</div></div>
-        <div class="kpi gray"><div class="k-label">表示中</div><div class="k-val" id="kShown">–</div><div class="k-cap">フィルタ適用後</div></div>
-        <div class="kpi attr"><div class="k-label">獲得スポット数</div><div class="k-val" id="kSpots">–</div><div class="k-cap">ユニーク会場</div></div>
-        <div class="kpi rich"><div class="k-label">参加者数</div><div class="k-val" id="kUsers">–</div><div class="k-cap">ユニークアカウント</div></div>
+        <div class="kpi acq"><div class="k-label">Total Stamps</div><div class="k-val" id="kTotal">–</div><div class="k-cap">All logs</div></div>
+        <div class="kpi gray"><div class="k-label">Shown</div><div class="k-val" id="kShown">–</div><div class="k-cap">After filters</div></div>
+        <div class="kpi attr"><div class="k-label">Spots</div><div class="k-val" id="kSpots">–</div><div class="k-cap">Unique venues</div></div>
+        <div class="kpi rich"><div class="k-label">Participants</div><div class="k-val" id="kUsers">–</div><div class="k-cap">Unique accounts</div></div>
       </div>
 
       <!-- ============ フィルタバー ============ -->
       <div class="panel dom-acq" style="border-top:2px solid rgba(47,143,102,.55);margin-bottom:var(--gap);">
         <div class="panel-head">
-          <h3>🔎 フィルタ</h3>
-          <span class="sub">性別・年齢・獲得日で絞り込み</span>
+          <h3>🔎 Filters</h3>
+          <span class="sub">Filter by gender, age and date</span>
         </div>
 
         <div class="filter-bar">
           <div class="filter-group">
-            <div class="f-title">性別</div>
+            <div class="f-title">Gender</div>
             <div class="chips" id="genderChips"></div>
           </div>
 
           <div class="filter-group">
-            <div class="f-title">年齢層</div>
+            <div class="f-title">Age group</div>
             <div class="chips" id="ageChips"></div>
           </div>
 
           <div class="filter-group f-full">
-            <div class="f-title">獲得日（日時）</div>
+            <div class="f-title">Date acquired</div>
             <div class="time-readout" id="timeReadout">–</div>
             <div class="slider-wrap" style="padding-left:0;padding-right:6px;">
               <div id="timeSlider"></div>
@@ -180,39 +180,39 @@
 
         <div class="filter-foot">
           <div class="f-count" id="filterCount">–</div>
-          <button class="reset-btn" id="resetBtn">条件をリセット</button>
+          <button class="reset-btn" id="resetBtn">Reset filters</button>
         </div>
       </div>
 
       <!-- ============ 上段：地図 ============ -->
       <div class="section-label" id="map-section">
-        <h2>獲得マップ <span class="note">マーカーの数字＝獲得数</span></h2>
-        <div class="meta">円をタップすると会場と獲得数を表示</div>
+        <h2>Stamp Map <span class="note">Number on marker = stamp count</span></h2>
+        <div class="meta">Tap a circle to see its venue and count</div>
       </div>
       <div class="panel map-panel dom-acq" style="border-top:2px solid rgba(47,143,102,.55);">
         <div class="map-box"><div id="map"></div></div>
         <div class="map-legend">
-          <span class="lg-item"><i class="dotc" style="width:10px;height:10px;"></i> 少</span>
-          <span class="lg-item"><i class="dotc" style="width:18px;height:18px;"></i> 多</span>
-          <span style="color:var(--dim);">円の大きさ・数字は会場ごとのスタンプ獲得数を表します</span>
+          <span class="lg-item"><i class="dotc" style="width:10px;height:10px;"></i> Few</span>
+          <span class="lg-item"><i class="dotc" style="width:18px;height:18px;"></i> Many</span>
+          <span style="color:var(--dim);">Circle size and number show stamps acquired per venue</span>
         </div>
       </div>
 
       <!-- ============ 下段：ランキング ============ -->
       <div class="section-label" id="rank-section">
-        <h2>スタンプ獲得場所ランキング</h2>
+        <h2>Stamp Location Ranking</h2>
         <div class="meta list-head-meta" id="listMeta">–</div>
       </div>
       <div class="panel dom-acq" style="border-top:2px solid rgba(47,143,102,.55);">
         <div class="rank-list" id="rankList">
-          <div class="empty-state"><b>読み込み中…</b>mart_action_stamp.json を取得しています</div>
+          <div class="empty-state"><b>Loading…</b>Fetching json/mart_action_stamp.json</div>
         </div>
         <div class="more-wrap" id="moreWrap"></div>
       </div>
 
       <div class="footer-note">
-        データソース: <code>mart_action_stamp.json</code> ・ イベント <code>ikefes-2025</code> ・
-        本ダッシュボードは社内デザインシステム（dashboard-common.css）に準拠しています。
+        Data source: <code>json/mart_action_stamp.json</code> · Event <code>ikefes-2025</code> ·
+        Built on the shared design system (dashboard-common.css).
       </div>
     </main>
   </div>
@@ -239,9 +239,9 @@
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
     },
     genderSlot: (g) => g === "男性" ? "attr" : g === "女性" ? "rich" : "gray",
-    genderLabel: (g) => (g && g.trim() !== "" ? g : "無回答"),
+    genderLabel: (g) => ({ "男性": "Male", "女性": "Female", "無回答": "No answer" }[g] || "No answer"),
     ageOrder: ["20代", "30代", "40代", "50代"],
-    ageLabel: (a) => (a && a.trim() !== "" ? a : "未設定"),
+    ageLabel: (a) => ({ "20代": "20s", "30代": "30s", "40代": "40s", "50代": "50s" }[a] || "N/A"),
     genderOrder: ["男性", "女性", "無回答"],
     pageSize: 20
   };
@@ -254,7 +254,7 @@
 
   function normalize(records) {
     return records.map(r => ({
-      id: r.action_id, spot: r.event_name || "(不明な会場)", eid: r.event_id,
+      id: r.action_id, spot: r.event_name || "(Unknown venue)", eid: r.event_id,
       lat: r.spot_latitude, lng: r.spot_longitude,
       g: r.gender || "", a: r.action_account_age_group || "",
       acc: r.action_account_id, date: r.event_date || ""
@@ -302,7 +302,7 @@
       mk.bindPopup(`<div class="stamp-pop"><div class="sp-body">
         <div class="sp-rank">RANK #${idx + 1}</div>
         <div class="sp-name">${esc(r.spot)}</div>
-        <div class="sp-cnt">${r.count}<small>スタンプ</small></div>
+        <div class="sp-cnt">${r.count}<small>stamps</small></div>
       </div></div>`);
       mk.on("click", () => highlightRow(r.spot));
       mk.addTo(markerLayer);
@@ -314,17 +314,17 @@
     el("kShown").textContent = filtered.length;
     el("kSpots").textContent = ranking.length;
     el("kUsers").textContent = new Set(filtered.map(p => p.acc)).size;
-    el("filterCount").innerHTML = `絞り込み結果 <b>${filtered.length}</b> 件 / 全 ${ROWS.length} 件`;
+    el("filterCount").innerHTML = `Filtered: <b>${filtered.length}</b> of ${ROWS.length}`;
 
     renderRanking(ranking);
   }
 
   function renderRanking(ranking) {
     const shown = ranking.slice(0, state.limit);
-    el("listMeta").textContent = `${ranking.length} 会場中 上位 ${shown.length} 会場を表示`;
+    el("listMeta").textContent = `Top ${shown.length} of ${ranking.length} venues`;
 
     if (!ranking.length) {
-      el("rankList").innerHTML = `<div class="empty-state"><b>該当するスタンプがありません</b>フィルタ条件を変更してください</div>`;
+      el("rankList").innerHTML = `<div class="empty-state"><b>No matching stamps</b>Try changing the filters</div>`;
       el("moreWrap").innerHTML = "";
       return;
     }
@@ -340,7 +340,7 @@
           <div class="rank-name" title="${esc(r.spot)}">${esc(r.spot)}</div>
           <div class="rank-bar-track"><div class="rank-bar" style="width:${w}%"></div></div>
         </div>
-        <div class="rank-val"><b>${r.count}</b><span>件</span></div>
+        <div class="rank-val"><b>${r.count}</b><span>stamps</span></div>
       </div>`;
     }).join("");
 
@@ -359,7 +359,7 @@
     });
 
     el("moreWrap").innerHTML = (shown.length < ranking.length)
-      ? `<button class="more-btn" id="moreBtn">さらに表示（残り ${ranking.length - shown.length} 会場）</button>`
+      ? `<button class="more-btn" id="moreBtn">Show more (${ranking.length - shown.length} remaining)</button>`
       : "";
     const mb = el("moreBtn");
     if (mb) mb.addEventListener("click", () => { state.limit += CONFIG.pageSize; renderRanking(ranking); });
@@ -406,7 +406,7 @@
     });
     slider.noUiSlider.on("update", (vals) => {
       state.dmin = +vals[0]; state.dmax = +vals[1];
-      readout.innerHTML = `獲得日 <b>${esc(DATES[state.dmin])}</b> 〜 <b>${esc(DATES[state.dmax])}</b>`;
+      readout.innerHTML = `Date <b>${esc(DATES[state.dmin])}</b> – <b>${esc(DATES[state.dmax])}</b>`;
     });
     slider.noUiSlider.on("change", () => { state.limit = CONFIG.pageSize; render(); });
     sliderBuilt = true;
@@ -447,7 +447,7 @@
       setTimeout(() => map.invalidateSize(), 200);
     })
     .catch(err => {
-      el("rankList").innerHTML = `<div class="empty-state"><b>データを読み込めませんでした</b>${esc(String(err.message))}<br>ローカルで開く場合は簡易サーバー経由で表示してください（file:// では fetch できません）</div>`;
+      el("rankList").innerHTML = `<div class="empty-state"><b>Failed to load data</b>${esc(String(err.message))}<br>When opening locally, serve via a simple HTTP server (fetch does not work over file://).</div>`;
       console.error(err);
     });
   </script>
