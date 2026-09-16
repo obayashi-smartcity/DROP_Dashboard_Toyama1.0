@@ -18,7 +18,10 @@
   <!-- 共通デザインシステム（唯一の外部ファイル・編集禁止） -->
   <link rel="stylesheet" href="dashboard-common.css" />
 
-  <!-- ===================== ページ固有スタイル（内包） ===================== -->
+  <!-- ===================== ページ固有スタイル（内包） =====================
+       スタンプ＝緑（--acq）テーマ。フィルタチップ・マーカー・ランキングを
+       すべて緑（主役）＋グレー（中立）に統一。
+  ====================================================================== -->
   <style>
     /* ---- フィルタバー ---- */
     .filter-bar { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: start; margin-bottom: var(--gap); }
@@ -27,19 +30,17 @@
     .chips { display: flex; flex-wrap: wrap; gap: 8px; }
     .chip-btn { border: 1px solid var(--stroke); background: var(--bg); color: var(--muted); font-family: var(--font); font-size: 12.5px; padding: 7px 14px; border-radius: 0; cursor: pointer; transition: .15s; line-height: 1.3; white-space: nowrap; user-select: none; }
     .chip-btn:hover { color: var(--text); background: #fff; }
-    .chip-btn.on { background: var(--gray-soft); color: var(--text); font-weight: 700; border-color: var(--gray); }
-    .chip-btn.on.attr { background: var(--attr-soft); color: var(--attr); border-color: var(--attr); }
-    .chip-btn.on.rich { background: var(--rich-soft); color: var(--rich); border-color: var(--rich); }
-    .chip-btn.on.acq  { background: var(--acq-soft);  color: var(--acq);  border-color: var(--acq); }
+    /* スタンプ＝緑テーマ：選択チップは緑で統一 */
+    .chip-btn.on { background: var(--acq-soft); color: var(--acq); font-weight: 700; border-color: var(--acq); }
 
     .filter-foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 6px; flex-wrap: wrap; }
     .filter-foot .f-count { font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
     .filter-foot .f-count b { color: var(--acq); font-weight: 800; }
     .reset-btn { border: 1px solid var(--stroke); background: #fff; color: var(--muted); font-family: var(--font); font-size: 12px; padding: 7px 16px; cursor: pointer; border-radius: 0; transition: .15s; }
-    .reset-btn:hover { color: var(--text); background: var(--bg); border-color: var(--gray); }
+    .reset-btn:hover { color: var(--text); background: var(--bg); border-color: var(--acq); }
 
     .time-readout { font-size: 12.5px; color: var(--text); font-variant-numeric: tabular-nums; margin-bottom: 12px; }
-    .time-readout b { color: var(--gray); }
+    .time-readout b { color: var(--acq); }
 
     /* ---- 地図 ---- */
     .map-box { height: 520px; width: 100%; position: relative; background: var(--bg-b); }
@@ -106,6 +107,9 @@
     .sidebar-filter .filter-foot { flex-direction:column; align-items:stretch; gap:8px; margin-top:2px; }
     .sidebar-filter .reset-btn { width:100%; }
     .sidebar-filter .f-count { font-size:11.5px; }
+    /* noUiSlider をテーマ色（緑）に */
+    .sidebar-filter .noUi-connect { background: linear-gradient(90deg, #7bbf9f, var(--acq)); }
+    .sidebar-filter .noUi-horizontal .noUi-handle { border-color: var(--acq); }
   </style>
 </head>
 <body class="page-fade">
@@ -120,12 +124,12 @@
       </div>
 
       <nav class="nav-group switch-group">
-      <div class="cap">Dashboards</div>
-      <a class="switch-item" href="index.html">⌂ TOP</a>
-      <a class="switch-item" href="details_inflow.html">↗ 流入分析</a>
-      <a class="switch-item active" href="details_stamp.html">◨ スタンプ</a>
-      <a class="switch-item" href="details_drop.html">◧ 投稿マップ</a>
-    </nav>
+        <div class="cap">Dashboards</div>
+        <a class="switch-item" href="index.html">⌂ TOP</a>
+        <a class="switch-item" href="details_inflow.html">↗ 流入分析</a>
+        <a class="switch-item active" href="details_stamp.html">◨ スタンプ</a>
+        <a class="switch-item" href="details_drop.html">◧ 投稿マップ</a>
+      </nav>
 
       <div class="nav-group sidebar-filter">
         <div class="panel-head">
@@ -145,7 +149,7 @@
           </div>
 
           <div class="filter-group f-full">
-            <div class="f-title">獲得日（日時）</div>
+            <div class="f-title">獲得日</div>
             <div class="time-readout" id="timeReadout">–</div>
             <div class="slider-wrap" style="padding-left:0;padding-right:6px;">
               <div id="timeSlider"></div>
@@ -157,13 +161,6 @@
           <div class="f-count" id="filterCount">–</div>
           <button class="reset-btn" id="resetBtn">条件をリセット</button>
         </div>
-      </div>
-
-      <div class="side-foot">
-        <span class="dot">●</span> Live datamart<br />
-        source: <code>mart_action_stamp.json</code><br />
-        records: <span id="metaCount">–</span><br />
-        updated: <span id="metaUpdated">–</span>
       </div>
     </aside>
 
@@ -184,12 +181,12 @@
         <a class="chip" href="details_drop.html">◧ 投稿マップ</a>
       </div>
 
-      <!-- KPI -->
+      <!-- KPI（緑＝主要指標 / グレー＝中立） -->
       <div class="kpis">
         <div class="kpi acq"><div class="k-label">総スタンプ数</div><div class="k-val" id="kTotal">–</div><div class="k-cap">全獲得ログ</div></div>
         <div class="kpi gray"><div class="k-label">表示中</div><div class="k-val" id="kShown">–</div><div class="k-cap">フィルタ適用後</div></div>
-        <div class="kpi attr"><div class="k-label">獲得スポット数</div><div class="k-val" id="kSpots">–</div><div class="k-cap">ユニーク会場</div></div>
-        <div class="kpi rich"><div class="k-label">参加者数</div><div class="k-val" id="kUsers">–</div><div class="k-cap">ユニークアカウント</div></div>
+        <div class="kpi acq"><div class="k-label">獲得スポット数</div><div class="k-val" id="kSpots">–</div><div class="k-cap">ユニーク会場</div></div>
+        <div class="kpi gray"><div class="k-label">参加者数</div><div class="k-val" id="kUsers">–</div><div class="k-cap">ユニークアカウント</div></div>
       </div>
 <!-- ============ 上段：地図 ============ -->
       <div class="section-label" id="map-section">
@@ -231,10 +228,9 @@
   <!-- ===================== ページ固有ロジック（内包） ===================== -->
   <script>
   /* --- カラー割当 ---
-   *   --acq （緑） ＝ スタンプ獲得（メイン軸・地図/ランキング）
-   *   --attr（青） ＝ 性別: 男性
-   *   --rich（紫） ＝ 性別: 女性
-   *   --gray（灰） ＝ 無回答 / その他
+   *   スタンプ＝緑（--acq）で統一（地図/ランキング/フィルタ/KPI主要指標）
+   *   中立・補助指標は グレー（--gray）
+   *   ※ 性別・年齢は「フィルタの絞り込み軸」。色分けはせずラベルで区別する。
    */
   const CONFIG = {
     dataSource: "json/mart_action_stamp.json",
@@ -245,7 +241,6 @@
       tile: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
     },
-    genderSlot: (g) => g === "男性" ? "attr" : g === "女性" ? "rich" : "gray",
     genderLabel: (g) => (g && g.trim() !== "" ? g : "無回答"),
     ageOrder: ["20代", "30代", "40代", "50代"],
     ageLabel: (a) => (a && a.trim() !== "" ? a : "未設定"),
@@ -254,6 +249,7 @@
   };
 
   const el = (id) => document.getElementById(id);
+  const setText = (id, v) => { const e = el(id); if (e) e.textContent = v; };
   const esc = (t) => (t == null ? "" : String(t)).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
   const state = { genders: new Set(), ages: new Set(), dmin: null, dmax: null, limit: CONFIG.pageSize };
@@ -264,7 +260,9 @@
       id: r.action_id, spot: r.event_name || "(不明な会場)", eid: r.event_id,
       lat: r.spot_latitude, lng: r.spot_longitude,
       g: r.gender || "", a: r.action_account_age_group || "",
-      acc: r.action_account_id, date: r.event_date || ""
+      acc: r.action_account_id,
+      // event_date は "YYYY-MM-DD hh:mm:ss.ffffff" 形式 → 日付部のみ使用
+      date: (r.event_date || "").slice(0, 10)
     }));
   }
 
@@ -317,10 +315,10 @@
     });
 
     // KPI
-    el("kTotal").textContent = ROWS.length;
-    el("kShown").textContent = filtered.length;
-    el("kSpots").textContent = ranking.length;
-    el("kUsers").textContent = new Set(filtered.map(p => p.acc)).size;
+    setText("kTotal", ROWS.length);
+    setText("kShown", filtered.length);
+    setText("kSpots", ranking.length);
+    setText("kUsers", new Set(filtered.map(p => p.acc)).size);
     el("filterCount").innerHTML = `絞り込み結果 <b>${filtered.length}</b> 件 / 全 ${ROWS.length} 件`;
 
     renderRanking(ranking);
@@ -328,7 +326,7 @@
 
   function renderRanking(ranking) {
     const shown = ranking.slice(0, state.limit);
-    el("listMeta").textContent = `${ranking.length} 会場中 上位 ${shown.length} 会場を表示`;
+    setText("listMeta", `${ranking.length} 会場中 上位 ${shown.length} 会場を表示`);
 
     if (!ranking.length) {
       el("rankList").innerHTML = `<div class="empty-state"><b>該当するスタンプがありません</b>フィルタ条件を変更してください</div>`;
@@ -380,16 +378,17 @@
   }
 
   function buildChips() {
+    // 性別・年齢とも「緑テーマ」で統一（選択で .on → 緑）
     el("genderChips").innerHTML = CONFIG.genderOrder.map(g => {
       const n = ROWS.filter(p => p.g === g).length;
       if (!n) return "";
-      return `<button class="chip-btn ${CONFIG.genderSlot(g)}" data-type="g" data-val="${esc(g)}">${esc(CONFIG.genderLabel(g))} <span style="opacity:.6">${n}</span></button>`;
+      return `<button class="chip-btn" data-type="g" data-val="${esc(g)}">${esc(CONFIG.genderLabel(g))} <span style="opacity:.6">${n}</span></button>`;
     }).join("");
 
     el("ageChips").innerHTML = CONFIG.ageOrder.map(a => {
       const n = ROWS.filter(p => p.a === a).length;
       if (!n) return "";
-      return `<button class="chip-btn acq" data-type="a" data-val="${esc(a)}">${esc(CONFIG.ageLabel(a))} <span style="opacity:.6">${n}</span></button>`;
+      return `<button class="chip-btn" data-type="a" data-val="${esc(a)}">${esc(CONFIG.ageLabel(a))} <span style="opacity:.6">${n}</span></button>`;
     }).join("");
 
     document.querySelectorAll(".chip-btn[data-type]").forEach(btn => {
@@ -406,14 +405,14 @@
 
   function buildSlider() {
     const slider = el("timeSlider"), readout = el("timeReadout");
-    const maxIdx = DATES.length - 1;
+    const maxIdx = Math.max(DATES.length - 1, 0);
     noUiSlider.create(slider, {
-      start: [0, maxIdx], connect: true, step: 1, range: { min: 0, max: maxIdx },
+      start: [0, maxIdx], connect: true, step: 1, range: { min: 0, max: maxIdx || 1 },
       format: { to: v => Math.round(v), from: v => Math.round(v) }
     });
     slider.noUiSlider.on("update", (vals) => {
       state.dmin = +vals[0]; state.dmax = +vals[1];
-      readout.innerHTML = `獲得日 <b>${esc(DATES[state.dmin])}</b> 〜 <b>${esc(DATES[state.dmax])}</b>`;
+      readout.innerHTML = `獲得日 <b>${esc(DATES[state.dmin] || "–")}</b> 〜 <b>${esc(DATES[state.dmax] || "–")}</b>`;
     });
     slider.noUiSlider.on("change", () => { state.limit = CONFIG.pageSize; render(); });
     sliderBuilt = true;
@@ -421,9 +420,9 @@
 
   el("resetBtn").addEventListener("click", () => {
     state.genders.clear(); state.ages.clear();
-    state.dmin = 0; state.dmax = DATES.length - 1; state.limit = CONFIG.pageSize;
+    state.dmin = 0; state.dmax = Math.max(DATES.length - 1, 0); state.limit = CONFIG.pageSize;
     document.querySelectorAll(".chip-btn.on").forEach(b => b.classList.remove("on"));
-    if (sliderBuilt) el("timeSlider").noUiSlider.set([0, DATES.length - 1]);
+    if (sliderBuilt) el("timeSlider").noUiSlider.set([0, Math.max(DATES.length - 1, 0)]);
     render();
   });
 
@@ -442,11 +441,9 @@
     .then(json => {
       ROWS = normalize(json.records || []);
       DATES = Array.from(new Set(ROWS.map(p => p.date).filter(Boolean))).sort();
-      state.dmin = 0; state.dmax = DATES.length - 1;
+      state.dmin = 0; state.dmax = Math.max(DATES.length - 1, 0);
 
-      el("metaCount").textContent = ROWS.length;
-      el("metaUpdated").textContent = json.generated_at || "–";
-      el("metaUpdated2").textContent = json.generated_at || "–";
+      setText("metaUpdated2", json.generated_at || "–");
 
       buildChips();
       buildSlider();

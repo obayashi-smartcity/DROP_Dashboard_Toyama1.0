@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="dashboard-common.css" />
   <style>
+    /* ===== 流入分析＝グレー（--gray）テーマ ===== */
     /* サイドバー内フィルタ */
     .sidebar-filter { display:flex; flex-direction:column; gap:12px; }
     .sidebar-filter .cap { font-size:10.5px; letter-spacing:1.4px; text-transform:uppercase; color:var(--dim); margin:0 2px 2px; }
@@ -49,7 +50,6 @@
       <div class="btn-row"><button class="action-btn" id="applyBtn">更新</button><button class="action-btn secondary" id="resetBtn">全期間</button></div>
       <div class="filter-meta" id="filterMeta">–</div>
     </div>
-    <div class="side-foot"><span class="dot">●</span> Live datamart<br />source: <code>mart_ga.json</code><br />records: <span id="metaCount">–</span><br />updated: <span id="metaUpdated">–</span></div>
   </aside>
   <main class="main">
     <div class="topbar"><div><h1>Inflow Analytics</h1><p>日別・流入経路別のユニークユーザー分析</p></div><div class="status"><span class="pulse"></span> Live datamart · updated <b>&nbsp;<span id="metaUpdated2">–</span></b></div></div>
@@ -69,7 +69,9 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <script>
 const DATA_SOURCES=["json/mart_ga.json","mart_ga.json"];
+const GRAY="#64748b";   // 流入系テーマカラー
 const el=id=>document.getElementById(id);
+const setText=(id,v)=>{const e=el(id); if(e) e.textContent=v;};
 const esc=t=>String(t??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 let ROWS=[], chart;
 const validDate=s=>/^\d{4}-\d{2}-\d{2}$/.test(s||"");
@@ -78,11 +80,11 @@ function uniqueUsers(rows){return new Set(rows.map(r=>r.user_pseudo_id).filter(B
 function render(){const start=el("startDate").value,end=el("endDate").value;const filtered=ROWS.filter(r=>validDate(r.event_date_jp)&&(!start||r.event_date_jp>=start)&&(!end||r.event_date_jp<=end));
  const byDate=new Map();filtered.forEach(r=>{if(!byDate.has(r.event_date_jp))byDate.set(r.event_date_jp,new Set());if(r.user_pseudo_id)byDate.get(r.event_date_jp).add(r.user_pseudo_id)});const dates=[...byDate.keys()].sort();const vals=dates.map(d=>byDate.get(d).size);
  const byFlow=new Map();filtered.forEach(r=>{const key=(r.source_description||"").trim()||"未設定";if(!byFlow.has(key))byFlow.set(key,{users:new Set(),desc:new Set()});if(r.user_pseudo_id)byFlow.get(key).users.add(r.user_pseudo_id);if((r.inflow_category||"").trim())byFlow.get(key).desc.add(r.inflow_category.trim())});const flows=[...byFlow].map(([name,v])=>({name,count:v.users.size,desc:[...v.desc].slice(0,2).join(" / ")})).sort((a,b)=>b.count-a.count||a.name.localeCompare(b.name,"ja"));
- el("kUsers").textContent=uniqueUsers(filtered).toLocaleString("ja-JP");el("kDays").textContent=dates.length.toLocaleString("ja-JP");el("kChannels").textContent=flows.length.toLocaleString("ja-JP");el("filterMeta").textContent=`${start||"–"} ～ ${end||"–"} / ${filtered.length.toLocaleString("ja-JP")} レコード`;el("inflowMeta").textContent=`${flows.length} 経路`;
- if(chart)chart.destroy();chart=new Chart(el("dailyChart"),{type:"line",data:{labels:dates,datasets:[{label:"ユニークユーザー",data:vals,borderColor:"#64748b",backgroundColor:"rgba(100,116,139,.10)",fill:true,tension:.25,pointRadius:3,pointHoverRadius:5}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.parsed.y.toLocaleString("ja-JP")}人`}}},scales:{y:{beginAtZero:true,ticks:{precision:0}},x:{grid:{display:false}}}}});
+ setText("kUsers",uniqueUsers(filtered).toLocaleString("ja-JP"));setText("kDays",dates.length.toLocaleString("ja-JP"));setText("kChannels",flows.length.toLocaleString("ja-JP"));setText("filterMeta",`${start||"–"} ～ ${end||"–"} / ${filtered.length.toLocaleString("ja-JP")} レコード`);setText("inflowMeta",`${flows.length} 経路`);
+ if(chart)chart.destroy();chart=new Chart(el("dailyChart"),{type:"line",data:{labels:dates,datasets:[{label:"ユニークユーザー",data:vals,borderColor:GRAY,backgroundColor:"rgba(100,116,139,.10)",fill:true,tension:.25,pointRadius:3,pointHoverRadius:5}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.parsed.y.toLocaleString("ja-JP")}人`}}},scales:{y:{beginAtZero:true,ticks:{precision:0}},x:{grid:{display:false}}}}});
  const max=flows.length?flows[0].count:1;el("inflowList").innerHTML=flows.length?flows.map(f=>`<div class="inflow-row"><div class="inflow-name"><b>${esc(f.name)}</b>${f.desc?`<small>${esc(f.desc)}</small>`:""}</div><div class="bar-track"><div class="bar" style="width:${(f.count/max*100).toFixed(1)}%"></div></div><div class="inflow-value">${f.count.toLocaleString("ja-JP")} 人</div></div>`).join(""):'<div class="empty-state"><b>該当データがありません</b>日付条件を変更してください</div>';
 }
-(async()=>{try{const d=await loadData();ROWS=(d.records||[]);el("metaCount").textContent=(d.record_count??ROWS.length).toLocaleString("ja-JP");el("metaUpdated").textContent=d.generated_at||"–";el("metaUpdated2").textContent=d.generated_at||"–";const dates=ROWS.map(r=>r.event_date_jp).filter(validDate).sort();if(dates.length){el("startDate").value=dates[0];el("endDate").value=dates[dates.length-1];el("startDate").min=el("endDate").min=dates[0];el("startDate").max=el("endDate").max=dates[dates.length-1]}render()}catch(e){el("inflowList").innerHTML='<div class="empty-state"><b>データを読み込めませんでした</b>json/mart_ga.json または mart_ga.json の配置を確認してください</div>';console.error(e)}})();
+(async()=>{try{const d=await loadData();ROWS=(d.records||[]);setText("metaUpdated2",d.generated_at||"–");const dates=ROWS.map(r=>r.event_date_jp).filter(validDate).sort();if(dates.length){el("startDate").value=dates[0];el("endDate").value=dates[dates.length-1];el("startDate").min=el("endDate").min=dates[0];el("startDate").max=el("endDate").max=dates[dates.length-1]}render()}catch(e){el("inflowList").innerHTML='<div class="empty-state"><b>データを読み込めませんでした</b>json/mart_ga.json または mart_ga.json の配置を確認してください</div>';console.error(e)}})();
 el("applyBtn").addEventListener("click",()=>{if(el("startDate").value&&el("endDate").value&&el("startDate").value>el("endDate").value){[el("startDate").value,el("endDate").value]=[el("endDate").value,el("startDate").value]}render()});
 el("resetBtn").addEventListener("click",()=>{const dates=ROWS.map(r=>r.event_date_jp).filter(validDate).sort();if(dates.length){el("startDate").value=dates[0];el("endDate").value=dates[dates.length-1]}render()});
 </script></body></html>
