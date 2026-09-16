@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOP — Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="dashboard-common.css" />
+  <style>
+    .kpi-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:var(--gap); margin-bottom:6px; }
+    .kpi-card { background:var(--panel); padding:20px 16px 18px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:12px; }
+    .kpi-card.acq { border-top:3px solid var(--acq); }
+    .kpi-card.attr { border-top:3px solid var(--attr); }
+    .kpi-card.rich { border-top:3px solid var(--rich); }
+    .kpi-card.gray { border-top:3px solid var(--gray); }
+    .kpi-label { font-size:12px; font-weight:700; letter-spacing:.3px; color:var(--muted); }
+    .donut-wrap { position:relative; width:130px; height:130px; }
+    .donut-center { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; pointer-events:none; }
+    .donut-center .num { font-size:26px; font-weight:800; font-variant-numeric:tabular-nums; line-height:1; letter-spacing:-.5px; }
+    .donut-center .blank { font-size:13px; color:var(--dim); font-weight:600; }
+    .kpi-card.acq .donut-center .num { color:var(--acq); }
+    .kpi-card.attr .donut-center .num { color:var(--attr); }
+    .kpi-card.rich .donut-center .num { color:var(--rich); }
+    .kpi-card.gray .donut-center .num { color:var(--gray); }
+    .kpi-foot { font-size:11px; color:var(--dim); line-height:1.5; }
+    .kpi-foot b { color:var(--text); font-variant-numeric:tabular-nums; }
+    .kpi-rate { font-size:12px; font-weight:700; margin-top:2px; }
+    .chart-box.trend { height:340px; }
+    @media (max-width:1180px){ .kpi-grid{grid-template-columns:repeat(3,1fr);} }
+    @media (max-width:760px){ .kpi-grid{grid-template-columns:repeat(2,1fr);} .chart-box.trend{height:280px;} .donut-wrap{width:110px;height:110px;} }
+    @media (max-width:430px){ .kpi-grid{grid-template-columns:1fr 1fr;} }
+  </style>
+</head>
+<body class="page-fade">
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><div style="font-family:var(--font-display);font-weight:900;font-size:22px;letter-spacing:-.5px;line-height:1.1;">DROP<span style="color:var(--acq);">.</span><br><span style="font-size:12px;font-weight:700;color:var(--muted);letter-spacing:1px;">TRACKER</span></div></div>
+    <nav class="nav-group switch-group">
+      <div class="cap">Dashboards</div>
+      <a class="switch-item active" href="index.html">⌂ TOP</a>
+      <a class="switch-item" href="details_inflow.html">↗ 流入分析</a>
+      <a class="switch-item" href="details_stamp.html">◨ スタンプ</a>
+      <a class="switch-item" href="details_drop.html">◧ 投稿マップ</a>
+    </nav>
+    <nav class="nav-group"><div class="cap">Analytics</div>
+      <a class="nav-item active" href="#kpi-section"><span class="ic acq">◉</span> サマリー</a>
+      <a class="nav-item" href="#trend-section"><span class="ic acq">⌁</span> 時系列推移</a>
+    </nav>
+    <div class="side-foot"><span class="dot">●</span> Live datamart<br />source: <code>mart_ga / stamp / drop</code><br />updated: <span id="metaUpdated">–</span></div>
+  </aside>
+  <main class="main">
+    <div class="topbar"><div><h1>Summary</h1><p>イベント全体のKPIサマリーと時系列推移</p></div><div class="status"><span class="pulse"></span> Live datamart · updated <b>&nbsp;<span id="metaUpdated2">–</span></b></div></div>
+    <div class="switch-mobile"><a class="chip chip-active" href="index.html">⌂ TOP</a><a class="chip" href="details_inflow.html">↗ 流入分析</a><a class="chip" href="details_stamp.html">◨ スタンプ</a><a class="chip" href="details_drop.html">◧ 投稿マップ</a></div>
+    <div class="section-label" id="kpi-section"><h2>KPI Summary <span class="note">円内＝実数 / ドーナツ＝目標達成度</span></h2><div class="meta">目標値は config で設定</div></div>
+    <div class="kpi-grid">
+      <div class="kpi-card acq"><div class="kpi-label">全アクセス数</div><div class="donut-wrap"><canvas id="d_access"></canvas><div class="donut-center" id="c_access"></div></div><div class="kpi-rate" id="r_access">–</div><div class="kpi-foot">ユニークユーザー<br>目標 <b id="t_access">–</b></div></div>
+      <div class="kpi-card attr"><div class="kpi-label">アカウント登録数</div><div class="donut-wrap"><canvas id="d_signup"></canvas><div class="donut-center" id="c_signup"></div></div><div class="kpi-rate" id="r_signup">–</div><div class="kpi-foot">登録アカウント<br>目標 <b id="t_signup">–</b></div></div>
+      <div class="kpi-card rich"><div class="kpi-label">スタンプ取得数</div><div class="donut-wrap"><canvas id="d_stamp"></canvas><div class="donut-center" id="c_stamp"></div></div><div class="kpi-rate" id="r_stamp">–</div><div class="kpi-foot">スタンプ獲得ログ<br>目標 <b id="t_stamp">–</b></div></div>
+      <div class="kpi-card gray"><div class="kpi-label">投稿者数</div><div class="donut-wrap"><canvas id="d_poster"></canvas><div class="donut-center" id="c_poster"></div></div><div class="kpi-rate" id="r_poster">–</div><div class="kpi-foot">ユニーク投稿者<br>目標 <b id="t_poster">–</b></div></div>
+      <div class="kpi-card acq"><div class="kpi-label">アンケート回答者数</div><div class="donut-wrap"><canvas id="d_survey"></canvas><div class="donut-center" id="c_survey"></div></div><div class="kpi-rate" id="r_survey">–</div><div class="kpi-foot">回答ユーザー<br>目標 <b id="t_survey">–</b></div></div>
+    </div>
+    <div class="section-label" id="trend-section"><h2>Time Series <span class="note">日別の推移</span></h2><div class="meta" id="trendMeta">–</div></div>
+    <div class="panel" style="border-top:2px solid rgba(47,143,102,.55);"><div class="panel-head"><h3>時系列の折れ線グラフ</h3><span class="sub">アクセス（UU）・スタンプ取得</span></div><div class="chart-box trend"><canvas id="trendChart"></canvas></div></div>
+    <div class="footer-note">データソース: <code>mart_ga.json</code> / <code>mart_action_stamp.json</code> / <code>mart_action_drop.json</code> ・ 本ページはフィルタなし（各データを常に全期間で集計）</div>
+  </main>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+/* =====================================================================
+ *  config: 目標値（各KPIの達成度ドーナツで使用）— ここを編集してください
+ * ===================================================================== */
+const CONFIG = {
+  targets: {
+    access: 10000,   // 全アクセス数（ユニークユーザー数）
+    signup: 2000,    // アカウント登録数（データ未連携）
+    stamp:  300,     // スタンプ取得数
+    poster: 200,     // 投稿者数
+    survey: 500      // アンケート回答者数（データ未連携）
+  },
+  // カラースロット（--acq緑 / --attr青 / --rich紫 / --gray灰）
+  colors: { access:"#2f8f66", signup:"#3f66b3", stamp:"#7a58b0", poster:"#64748b", survey:"#2f8f66" }
+};
+/* ===================================================================== */
+const SRC = {
+  ga:    ["json/mart_ga.json","mart_ga.json"],
+  stamp: ["json/mart_action_stamp.json","mart_action_stamp.json"],
+  drop:  ["json/mart_action_drop.json","mart_action_drop.json"]
+};
+const el=id=>document.getElementById(id);
+const fmt=n=>Number(n).toLocaleString("ja-JP");
+const validDate=s=>/^\d{4}-\d{2}-\d{2}$/.test(s||"");
+async function loadOne(list){let last;for(const s of list){try{const r=await fetch(s);if(!r.ok)throw new Error(r.status);return await r.json()}catch(e){last=e}}throw last}
+
+function donut(canvasId,centerId,rateId,key,value,hasData){
+  const target=CONFIG.targets[key]||0, color=CONFIG.colors[key];
+  const center=el(centerId), rate=el(rateId);
+  if(!hasData){
+    center.innerHTML='<span class="blank">–</span>';
+    rate.textContent="データ未連携"; rate.style.color="var(--dim)";
+    new Chart(el(canvasId),{type:"doughnut",data:{datasets:[{data:[1],backgroundColor:["#e2e6ea"],borderWidth:0}]},options:{cutout:"72%",plugins:{legend:{display:false},tooltip:{enabled:false}}}});
+    return;
+  }
+  const pct = target>0 ? Math.min(value/target*100,100) : 0;
+  const rawPct = target>0 ? Math.round(value/target*100) : 0;
+  center.innerHTML='<span class="num">'+fmt(value)+'</span>';
+  rate.textContent="達成 "+rawPct+"%"; rate.style.color=color;
+  new Chart(el(canvasId),{type:"doughnut",data:{datasets:[{data:[pct,Math.max(100-pct,0)],backgroundColor:[color,"#e2e6ea"],borderWidth:0}]},options:{cutout:"72%",rotation:-90,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.dataIndex===0?" 達成 "+rawPct+"%":" 未達 "+Math.max(100-rawPct,0)+"%"}}}}});
+}
+
+(async()=>{
+  let ga,stamp,drop,updated="–";
+  try{ ga=await loadOne(SRC.ga); }catch(e){ ga={records:[]}; }
+  try{ stamp=await loadOne(SRC.stamp); }catch(e){ stamp={records:[]}; }
+  try{ drop=await loadOne(SRC.drop); }catch(e){ drop={records:[]}; }
+  updated = ga.generated_at || stamp.generated_at || drop.generated_at || "–";
+  el("metaUpdated").textContent=updated; el("metaUpdated2").textContent=updated;
+  const gaR=ga.records||[], stR=stamp.records||[], drR=drop.records||[];
+
+  // --- 実数 ---
+  const access = new Set(gaR.map(r=>r.user_pseudo_id).filter(Boolean)).size;   // 全アクセス数(UU)
+  const stampCnt = stR.length;                                                  // スタンプ取得数
+  const poster = new Set(drR.map(r=>r.account_id).filter(Boolean)).size;        // 投稿者数(ユニーク)
+  // signup / survey はデータ未連携 → ブランク
+
+  // 目標キャプション
+  el("t_access").textContent = fmt(CONFIG.targets.access);
+  el("t_signup").textContent = fmt(CONFIG.targets.signup);
+  el("t_stamp").textContent  = fmt(CONFIG.targets.stamp);
+  el("t_poster").textContent = fmt(CONFIG.targets.poster);
+  el("t_survey").textContent = fmt(CONFIG.targets.survey);
+
+  // --- ドーナツ ---
+  donut("d_access","c_access","r_access","access",access,true);
+  donut("d_signup","c_signup","r_signup","signup",0,false);   // ブランク
+  donut("d_stamp","c_stamp","r_stamp","stamp",stampCnt,true);
+  donut("d_poster","c_poster","r_poster","poster",poster,true);
+  donut("d_survey","c_survey","r_survey","survey",0,false);    // ブランク
+
+  // --- 時系列（日別）---
+  const accByDate=new Map();
+  gaR.forEach(r=>{ if(validDate(r.event_date_jp)){ if(!accByDate.has(r.event_date_jp))accByDate.set(r.event_date_jp,new Set()); if(r.user_pseudo_id)accByDate.get(r.event_date_jp).add(r.user_pseudo_id);} });
+  const stByDate=new Map();
+  stR.forEach(r=>{ const d=r.event_date; if(validDate(d)) stByDate.set(d,(stByDate.get(d)||0)+1); });
+  const dates=[...new Set([...accByDate.keys(),...stByDate.keys()])].sort();
+  const accVals=dates.map(d=>accByDate.has(d)?accByDate.get(d).size:0);
+  const stVals=dates.map(d=>stByDate.get(d)||0);
+  el("trendMeta").textContent = dates.length ? (dates[0]+" ～ "+dates[dates.length-1]) : "データなし";
+  new Chart(el("trendChart"),{type:"line",data:{labels:dates,datasets:[
+    {label:"全アクセス数(UU)",data:accVals,borderColor:CONFIG.colors.access,backgroundColor:"rgba(47,143,102,.08)",fill:true,tension:.25,pointRadius:2,pointHoverRadius:5,yAxisID:"y"},
+    {label:"スタンプ取得数",data:stVals,borderColor:CONFIG.colors.stamp,backgroundColor:"rgba(122,88,176,.06)",fill:false,tension:.25,pointRadius:2,pointHoverRadius:5,yAxisID:"y1"}
+  ]},options:{responsive:true,maintainAspectRatio:false,interaction:{mode:"index",intersect:false},plugins:{legend:{position:"top",labels:{boxWidth:12,font:{size:11}}}},scales:{y:{position:"left",beginAtZero:true,ticks:{precision:0},title:{display:true,text:"アクセス(UU)",font:{size:10}}},y1:{position:"right",beginAtZero:true,ticks:{precision:0},grid:{drawOnChartArea:false},title:{display:true,text:"スタンプ",font:{size:10}}},x:{grid:{display:false}}}}});
+})();
+</script></body></html>
