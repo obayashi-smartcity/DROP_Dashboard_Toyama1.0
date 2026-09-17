@@ -70,11 +70,11 @@
     <div class="switch-mobile"><a class="chip chip-active" href="index.html">Summary</a><a class="chip" href="details_inflow.html">流入分析</a><a class="chip" href="details_stamp.html">スタンプ</a><a class="chip" href="details_drop.html">投稿マップ</a></div>
     <div class="section-label" id="kpi-section"><h2>KPI<span class="note">円内＝実数 / ドーナツ＝目標達成度</span></h2><div class="meta">目標値は config.js で設定</div></div>
     <div class="kpi-grid">
-      <div class="kpi-card gray"><div class="kpi-label">アクセスユーザー数</div><div class="donut-wrap"><canvas id="d_access"></canvas><div class="donut-center" id="c_access"></div></div><div class="kpi-rate" id="r_access">–</div><div class="kpi-foot">ユニークユーザー<br>目標 <b id="t_access">–</b></div></div>
-      <div class="kpi-card attr"><div class="kpi-label">アカウント登録者数</div><div class="donut-wrap"><canvas id="d_signup"></canvas><div class="donut-center" id="c_signup"></div></div><div class="kpi-rate" id="r_signup">–</div><div class="kpi-foot">登録アカウント<br>目標 <b id="t_signup">–</b></div></div>
-      <div class="kpi-card acq"><div class="kpi-label">スタンプ獲得者数</div><div class="donut-wrap"><canvas id="d_stamp"></canvas><div class="donut-center" id="c_stamp"></div></div><div class="kpi-rate" id="r_stamp">–</div><div class="kpi-foot">ユニーク獲得者<br>目標 <b id="t_stamp">–</b></div></div>
-      <div class="kpi-card rich"><div class="kpi-label">投稿者数</div><div class="donut-wrap"><canvas id="d_poster"></canvas><div class="donut-center" id="c_poster"></div></div><div class="kpi-rate" id="r_poster">–</div><div class="kpi-foot">ユニーク投稿者<br>目標 <b id="t_poster">–</b></div></div>
-      <div class="kpi-card gray"><div class="kpi-label">アンケート回答者数</div><div class="donut-wrap"><canvas id="d_survey"></canvas><div class="donut-center" id="c_survey"></div></div><div class="kpi-rate" id="r_survey">–</div><div class="kpi-foot">回答ユーザー<br>目標 <b id="t_survey">–</b></div></div>
+      <div class="kpi-card gray"><div class="kpi-label">アクセスユーザー数</div><div class="donut-wrap"><canvas id="d_access"></canvas><div class="donut-center" id="c_access"></div></div><div class="kpi-rate" id="r_access">–</div><div class="kpi-foot">目標 <b id="t_access">–</b></div></div>
+      <div class="kpi-card attr"><div class="kpi-label">アカウント登録者数</div><div class="donut-wrap"><canvas id="d_signup"></canvas><div class="donut-center" id="c_signup"></div></div><div class="kpi-rate" id="r_signup">–</div><div class="kpi-foot">目標 <b id="t_signup">–</b></div></div>
+      <div class="kpi-card acq"><div class="kpi-label">スタンプ獲得者数</div><div class="donut-wrap"><canvas id="d_stamp"></canvas><div class="donut-center" id="c_stamp"></div></div><div class="kpi-rate" id="r_stamp">–</div><div class="kpi-foot">目標 <b id="t_stamp">–</b></div></div>
+      <div class="kpi-card rich"><div class="kpi-label">投稿者数</div><div class="donut-wrap"><canvas id="d_poster"></canvas><div class="donut-center" id="c_poster"></div></div><div class="kpi-rate" id="r_poster">–</div><div class="kpi-foot">目標 <b id="t_poster">–</b></div></div>
+      <div class="kpi-card gray"><div class="kpi-label">アンケート回答者数</div><div class="donut-wrap"><canvas id="d_survey"></canvas><div class="donut-center" id="c_survey"></div></div><div class="kpi-rate" id="r_survey">–</div><div class="kpi-foot">目標 <b id="t_survey">–</b></div></div>
     </div>
     <div class="section-label" id="trend-section"><h2>Time Series <span class="note">日別の推移</span></h2><div class="meta" id="trendMeta">–</div></div>
     <div class="panel" style="border-top:2px solid rgba(100,116,139,.55);"><div class="panel-head"><h3>時系列の折れ線グラフ</h3><span class="sub">アクセス（UU）・スタンプ取得・投稿者数</span></div><div class="chart-box trend"><canvas id="trendChart"></canvas></div></div>
@@ -158,8 +158,8 @@ function donut(canvasId,centerId,rateId,key,value,hasData){
   const posterVals=dates.map(d=>posterByDate.has(d)?posterByDate.get(d).size:0);
   setText("trendMeta", dates.length ? (dates[0]+" ～ "+dates[dates.length-1]) : "データなし");
   new Chart(el("trendChart"),{type:"line",data:{labels:dates,datasets:[
-    {label:"全アクセス数(UU)",data:accVals,borderColor:CONFIG.colors.access,backgroundColor:"rgba(100,116,139,.08)",fill:true,tension:.25,pointRadius:2,pointHoverRadius:5,yAxisID:"y"},
-    {label:"スタンプ取得数",data:stVals,borderColor:CONFIG.colors.stamp,backgroundColor:"rgba(47,143,102,.06)",fill:false,tension:.25,pointRadius:2,pointHoverRadius:5,yAxisID:"y1"},
+    {label:"アクセスユーザー数(UU)",data:accVals,borderColor:CONFIG.colors.access,backgroundColor:"rgba(100,116,139,.08)",fill:true,tension:.25,pointRadius:2,pointHoverRadius:5,yAxisID:"y"},
+    {label:"スタンプ取得者数",data:stVals,borderColor:CONFIG.colors.stamp,backgroundColor:"rgba(47,143,102,.06)",fill:false,tension:.25,pointRadius:2,pointHoverRadius:5,yAxisID:"y1"},
     {label:"投稿者数",data:posterVals,borderColor:CONFIG.colors.poster,backgroundColor:"rgba(122,88,176,.06)",borderDash:[5,4],fill:false,tension:.25,pointRadius:2,pointHoverRadius:5,yAxisID:"y1"}
   ]},options:{responsive:true,maintainAspectRatio:false,interaction:{mode:"index",intersect:false},plugins:{legend:{position:"top",labels:{boxWidth:12,font:{size:11}}}},scales:{y:{position:"left",beginAtZero:true,ticks:{precision:0},title:{display:true,text:"アクセス(UU)",font:{size:10}}},y1:{position:"right",beginAtZero:true,ticks:{precision:0},grid:{drawOnChartArea:false},title:{display:true,text:"スタンプ / 投稿者",font:{size:10}}},x:{grid:{display:false}}}}});
 })();
