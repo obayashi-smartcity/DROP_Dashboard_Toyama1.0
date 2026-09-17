@@ -392,3 +392,118 @@ a.switch-item.active {
   .topbar h1 { font-size: 24px; }
   .section-label h2 { font-size: 20px; }
 }
+
+
+/* ============================== 9. Post Detail Modal ============================== */
+body.modal-open { overflow: hidden; }
+.post-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(16, 24, 40, .78);
+}
+.post-modal.show { display: flex; }
+.post-modal-inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(300px, 420px) minmax(300px, 1fr);
+  width: min(920px, 96vw);
+  max-height: 92vh;
+  overflow: hidden;
+  background: #fff;
+  border-top: 3px solid var(--rich);
+  box-shadow: 0 22px 70px rgba(16, 24, 40, .35);
+}
+.post-modal-media {
+  display: grid;
+  place-items: center;
+  min-height: 680px;
+  background: #15171b;
+  overflow: hidden;
+}
+.post-modal-img {
+  display: block;
+  width: 100%;
+  height: min(80vh, 760px);
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center;
+  background: var(--bg-b);
+}
+.post-modal-img[hidden], .post-modal-no-image[hidden] { display: none; }
+.post-modal-no-image {
+  color: #aeb4bd;
+  font-size: 13px;
+}
+.post-modal-body {
+  padding: 34px 30px;
+  overflow-y: auto;
+}
+.post-modal-user {
+  padding-right: 42px;
+  margin-bottom: 14px;
+  color: var(--text);
+  font-size: 20px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+.post-modal-time {
+  margin-top: 12px;
+  color: var(--dim);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.post-modal-text {
+  margin-top: 22px;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.85;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.post-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid var(--stroke);
+  background: rgba(255, 255, 255, .96);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+.post-modal-close:hover,
+.post-modal-close:focus-visible {
+  color: var(--rich);
+  border-color: var(--rich);
+  outline: none;
+}
+@media (max-width: 760px) {
+  .post-modal { padding: 12px; align-items: flex-start; overflow-y: auto; }
+  .post-modal-inner {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-height: none;
+    overflow: visible;
+  }
+  .post-modal-media { min-height: 0; }
+  .post-modal-img {
+    width: 100%;
+    height: auto;
+    max-height: 72vh;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+  }
+  .post-modal-body { padding: 22px 18px 28px; overflow: visible; }
+  .post-modal-user { font-size: 18px; }
+  .post-modal-close { position: fixed; top: 20px; right: 20px; }
+}

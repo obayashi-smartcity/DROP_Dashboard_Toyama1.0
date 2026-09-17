@@ -233,6 +233,24 @@
     </main>
   </div>
 
+
+  <!-- ============ 投稿詳細モーダル ============ -->
+  <div id="postModal" class="post-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalUser">
+    <div class="post-modal-inner" role="document">
+      <button id="modalClose" class="post-modal-close" type="button" aria-label="投稿詳細を閉じる">&times;</button>
+      <div class="post-modal-media">
+        <img id="modalImg" class="post-modal-img" alt="投稿画像">
+        <div id="modalNoImage" class="post-modal-no-image">画像はありません</div>
+      </div>
+      <div class="post-modal-body">
+        <div id="modalUser" class="post-modal-user"></div>
+        <div id="modalBadges" class="badges"></div>
+        <div id="modalTime" class="post-modal-time"></div>
+        <div id="modalText" class="post-modal-text"></div>
+      </div>
+    </div>
+  </div>
+
   <!-- Scripts -->
   <!-- 共通設定（CARTO APIキー等を一元管理）。地図設定は config.js の map で差し替え -->
   <script src="config.js"></script>
@@ -319,6 +337,56 @@
     return true;
   }
 
+
+  function openPostModal(p) {
+    const modal = el("postModal");
+    const img = el("modalImg");
+    const noImage = el("modalNoImage");
+
+    if (p.img) {
+      img.src = p.img;
+      img.alt = (p.n ? p.n + "さんの" : "") + "投稿画像";
+      img.hidden = false;
+      noImage.hidden = true;
+    } else {
+      img.removeAttribute("src");
+      img.hidden = true;
+      noImage.hidden = false;
+    }
+
+    setText("modalUser", p.n || "投稿者名なし");
+    setText("modalTime", p.t || "");
+    setText("modalText", p.s || "");
+    el("modalBadges").innerHTML = `
+      <span class="badge gender">${esc(CONFIG.genderLabel(p.g))}</span>
+      <span class="badge age">${esc(CONFIG.ageLabel(p.a))}</span>
+    `;
+
+    modal.classList.add("show");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+    el("modalClose").focus();
+  }
+
+  function closePostModal() {
+    const modal = el("postModal");
+    modal.classList.remove("show");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
+  }
+
+  el("modalClose").addEventListener("click", closePostModal);
+  el("postModal").addEventListener("click", (event) => {
+    if (event.target === el("postModal")) closePostModal();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && el("postModal").classList.contains("show")) closePostModal();
+  });
+  el("modalImg").addEventListener("error", () => {
+    el("modalImg").hidden = true;
+    el("modalNoImage").hidden = false;
+  });
+
   function render() {
     const filtered = POSTS.filter(pass);
 
@@ -326,8 +394,10 @@
     markerById = {};
     filtered.forEach(p => {
       const m = L.marker([p.lat, p.lng], { icon: pinIcon() });
-      m.bindPopup(popupHtml(p), { closeButton: true });
-      m.on("click", () => highlightCard(p.id));
+      m.on("click", () => {
+        highlightCard(p.id);
+        openPostModal(p);
+      });
       m.addTo(markerLayer);
       markerById[p.id] = m;
     });
@@ -374,10 +444,8 @@
         const id = card.getAttribute("data-id");
         const p = POSTS.find(x => x.id === id);
         if (!p) return;
-        map.flyTo([p.lat, p.lng], 16, { duration: .6 });
-        const m = markerById[id];
-        if (m) setTimeout(() => m.openPopup(), 300);
-        document.querySelector(".map-panel").scrollIntoView({ behavior: "smooth", block: "start" });
+        highlightCard(p.id);
+        openPostModal(p);
       });
     });
 
