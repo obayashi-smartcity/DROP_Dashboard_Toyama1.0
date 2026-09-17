@@ -1,4 +1,7 @@
-[
+{
+  "mart": "mart_user",
+  "record_count": 29,
+  "records": [
   {
     "account_id": "67540ad8-90b1-70b7-6eb1-61f3857d39fe",
     "created_at": "2026-09-14 11:39:44",
@@ -348,3 +351,4 @@
     "is_operation_member": false
   }
 ]
+}
