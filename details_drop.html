@@ -387,10 +387,16 @@
     el("modalNoImage").hidden = false;
   });
 
-  function render() {
-    const filtered = POSTS.filter(pass);
+function render() {
+  const filtered = POSTS
+    .filter(pass)
+    .sort((a, b) => {
+      const da = new Date(a.t || a.date || 0);
+      const db = new Date(b.t || b.date || 0);
+      return db - da;   // 新しい順
+    });
 
-    markerLayer.clearLayers();
+  markerLayer.clearLayers();
     markerById = {};
     filtered.forEach(p => {
       const m = L.marker([p.lat, p.lng], { icon: pinIcon() });
