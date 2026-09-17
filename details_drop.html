@@ -545,7 +545,14 @@ function render() {
       buildChips();
       buildSlider();
       render();
-      setTimeout(() => map.invalidateSize(), 200);
+      setTimeout(() => {
+        map.invalidateSize();
+        // データの緯度経度から自動的に地図の中心・ズームを合わせる
+        const pts = POSTS.filter(p => p.lat != null && p.lng != null).map(p => [p.lat, p.lng]);
+        if (pts.length) {
+          map.fitBounds(L.latLngBounds(pts), { padding: [30, 30] });
+        }
+      }, 200);
     })
     .catch(err => {
       el("postGrid").innerHTML = `<div class="empty-state" style="grid-column:1/-1"><b>データを読み込めませんでした</b>${esc(String(err.message))}<br>ローカルで開く場合は簡易サーバー経由で表示してください（file:// では fetch できません）</div>`;
