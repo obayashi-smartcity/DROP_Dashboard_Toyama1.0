@@ -12,6 +12,9 @@
     .kpi-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:var(--gap); margin-bottom:6px; }
     /* ドーナツKPIは白背景タイル */
     .kpi-card { background:var(--panel); border:none; padding:20px 16px 18px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:12px; }
+    .kpi-card.linkable { cursor:pointer; transition:transform .15s, box-shadow .15s; }
+    .kpi-card.linkable:hover { transform:translateY(-3px); box-shadow:0 8px 20px rgba(16,24,40,.10); }
+    .kpi-card.linkable:focus-visible { outline:2px solid var(--gray); outline-offset:2px; }
     .kpi-card.acq  { border-top:3px solid var(--acq); }
     .kpi-card.attr { border-top:3px solid var(--attr); }
     .kpi-card.rich { border-top:3px solid var(--rich); }
@@ -71,10 +74,10 @@
     <div class="switch-mobile"><a class="chip chip-active" href="index.html">Summary</a><a class="chip" href="details_inflow.html">流入分析</a><a class="chip" href="details_user.html">アカウント登録</a><a class="chip" href="details_stamp.html">スタンプ</a><a class="chip" href="details_drop.html">投稿</a></div>
     <div class="section-label" id="kpi-section"><h2>KPI<span class="note">円内＝実数 / ドーナツ＝目標達成度</span></h2><div class="meta">目標値は config.js で設定</div></div>
     <div class="kpi-grid">
-      <div class="kpi-card gray"><div class="kpi-label">アクセスユーザー数</div><div class="donut-wrap"><canvas id="d_access"></canvas><div class="donut-center" id="c_access"></div></div><div class="kpi-rate" id="r_access">–</div><div class="kpi-foot">目標 <b id="t_access">–</b></div></div>
-      <div class="kpi-card attr"><div class="kpi-label">アカウント登録者数</div><div class="donut-wrap"><canvas id="d_signup"></canvas><div class="donut-center" id="c_signup"></div></div><div class="kpi-rate" id="r_signup">–</div><div class="kpi-foot">目標 <b id="t_signup">–</b></div></div>
-      <div class="kpi-card acq"><div class="kpi-label">スタンプ獲得者数</div><div class="donut-wrap"><canvas id="d_stamp"></canvas><div class="donut-center" id="c_stamp"></div></div><div class="kpi-rate" id="r_stamp">–</div><div class="kpi-foot">目標 <b id="t_stamp">–</b></div></div>
-      <div class="kpi-card rich"><div class="kpi-label">投稿者数</div><div class="donut-wrap"><canvas id="d_poster"></canvas><div class="donut-center" id="c_poster"></div></div><div class="kpi-rate" id="r_poster">–</div><div class="kpi-foot">目標 <b id="t_poster">–</b></div></div>
+      <div class="kpi-card gray linkable" data-href="details_inflow.html" role="link" tabindex="0" aria-label="流入分析の詳細を見る"><div class="kpi-label">アクセスユーザー数</div><div class="donut-wrap"><canvas id="d_access"></canvas><div class="donut-center" id="c_access"></div></div><div class="kpi-rate" id="r_access">–</div><div class="kpi-foot">目標 <b id="t_access">–</b></div></div>
+      <div class="kpi-card attr linkable" data-href="details_user.html" role="link" tabindex="0" aria-label="アカウント登録の詳細を見る"><div class="kpi-label">アカウント登録者数</div><div class="donut-wrap"><canvas id="d_signup"></canvas><div class="donut-center" id="c_signup"></div></div><div class="kpi-rate" id="r_signup">–</div><div class="kpi-foot">目標 <b id="t_signup">–</b></div></div>
+      <div class="kpi-card acq linkable" data-href="details_stamp.html" role="link" tabindex="0" aria-label="スタンプの詳細を見る"><div class="kpi-label">スタンプ獲得者数</div><div class="donut-wrap"><canvas id="d_stamp"></canvas><div class="donut-center" id="c_stamp"></div></div><div class="kpi-rate" id="r_stamp">–</div><div class="kpi-foot">目標 <b id="t_stamp">–</b></div></div>
+      <div class="kpi-card rich linkable" data-href="details_drop.html" role="link" tabindex="0" aria-label="投稿の詳細を見る"><div class="kpi-label">投稿者数</div><div class="donut-wrap"><canvas id="d_poster"></canvas><div class="donut-center" id="c_poster"></div></div><div class="kpi-rate" id="r_poster">–</div><div class="kpi-foot">目標 <b id="t_poster">–</b></div></div>
       <div class="kpi-card gray"><div class="kpi-label">アンケート回答者数</div><div class="donut-wrap"><canvas id="d_survey"></canvas><div class="donut-center" id="c_survey"></div></div><div class="kpi-rate" id="r_survey">–</div><div class="kpi-foot">目標 <b id="t_survey">–</b></div></div>
     </div>
     <div class="section-label" id="trend-section"><h2>Time Series <span class="note">日別の推移</span></h2><div class="meta" id="trendMeta">–</div></div>
@@ -167,4 +170,11 @@ function donut(canvasId,centerId,rateId,key,value,hasData){
     {label:"投稿者数",data:posterVals,borderColor:CONFIG.colors.poster,backgroundColor:"rgba(122,88,176,.06)",borderDash:[5,4],fill:false,tension:.25,pointRadius:2,pointHoverRadius:5,yAxisID:"y1"}
   ]},options:{responsive:true,maintainAspectRatio:false,interaction:{mode:"index",intersect:false},plugins:{legend:{position:"top",labels:{boxWidth:12,font:{size:11}}}},scales:{y:{position:"left",beginAtZero:true,ticks:{precision:0},title:{display:true,text:"アクセス(UU)",font:{size:10}}},y1:{position:"right",beginAtZero:true,ticks:{precision:0},grid:{drawOnChartArea:false},title:{display:true,text:"スタンプ / 投稿者",font:{size:10}}},x:{grid:{display:false}}}}});
 })();
+
+// --- ドーナツKPIカードのクリックで各詳細ページへ遷移 ---
+document.querySelectorAll(".kpi-card.linkable[data-href]").forEach(card=>{
+  const go=()=>{ window.location.href = card.getAttribute("data-href"); };
+  card.addEventListener("click", go);
+  card.addEventListener("keydown", e=>{ if(e.key==="Enter" || e.key===" "){ e.preventDefault(); go(); } });
+});
 </script></body></html>
