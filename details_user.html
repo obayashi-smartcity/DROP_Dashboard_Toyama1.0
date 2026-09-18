@@ -84,7 +84,7 @@
     </div>
   </aside>
   <main class="main">
-    <div class="topbar"><div><h1>User Attributes</h1><p>会員属性・登録ユーザーの分析</p></div><div class="status"><span class="pulse"></span> Live datamart · updated <b>&nbsp;<span id="metaUpdated2">–</span></b></div></div>
+    <div class="topbar"><div><h1>User Attributes</h1><p>会員属性・登録ユーザーの分析</p></div><div class="status"><span class="pulse"></span> latest timestamp: <b>&nbsp;<span id="metaUpdated2">–</span></b></div></div>
     <div class="switch-mobile"><a class="chip" href="index.html">Summary</a><a class="chip" href="details_inflow.html">流入分析</a><a class="chip chip-active" href="details_user.html">アカウント登録</a><a class="chip" href="details_stamp.html">スタンプ</a><a class="chip" href="details_drop.html">投稿</a></div>
     <div class="kpis kpis-3">
       <div class="kpi attr"><div class="k-label">総登録ユーザー数</div><div class="k-val" id="kUsers">–</div><div class="k-cap">account_id 個別カウント（有効会員）</div></div>
@@ -127,12 +127,12 @@ function render(){
  const filtered=active.filter(r=>{const d=dateOnly(r.created_at);return validDate(d)&&(!start||d>=start)&&(!end||d<=end)});
  const byDate=new Map();filtered.forEach(r=>{const d=dateOnly(r.created_at);if(!validDate(d))return;if(!byDate.has(d))byDate.set(d,new Set());if(r.account_id)byDate.get(d).add(r.account_id)});const dates=[...byDate.keys()].sort();const vals=dates.map(d=>byDate.get(d).size);
  const byGender=new Map();filtered.forEach(r=>{const key=(r.gender||"").trim()||"未回答";if(!byGender.has(key))byGender.set(key,new Set());if(r.account_id)byGender.get(key).add(r.account_id)});const genders=[...byGender].map(([name,set])=>({name,count:set.size})).sort((a,b)=>b.count-a.count);
- const byAge=new Map();filtered.forEach(r=>{const key=(r.age_group||"").trim()||"未回答";const half=(r.age_group_half||"").trim();if(!byAge.has(key))byAge.set(key,{users:new Set(),half});if(r.account_id)byAge.get(key).users.add(r.account_id)});const ages=[...byAge].map(([name,v])=>({name,count:v.users.size,half:v.half})).sort((a,b)=>ageSortKey(a.name)-ageSortKey(b.name));
+ const byAge=new Map();filtered.forEach(r=>{let key=(r.age_group||"").trim()||"未回答";if(ageSortKey(key)>=100)key="未回答";if(!byAge.has(key))byAge.set(key,{users:new Set()});if(r.account_id)byAge.get(key).users.add(r.account_id)});const ages=[...byAge].map(([name,v])=>({name,count:v.users.size})).sort((a,b)=>ageSortKey(a.name)-ageSortKey(b.name));
  const opsCount=new Set(filtered.filter(r=>r.is_operation_member).map(r=>r.account_id)).size;
  setText("kUsers",uniqueUsers(filtered).toLocaleString("ja-JP"));setText("kDays",dates.length.toLocaleString("ja-JP"));setText("kOps",opsCount.toLocaleString("ja-JP"));setText("filterMeta",`${filtered.length.toLocaleString("ja-JP")} レコード`);setText("genderMeta",`${genders.length} カテゴリ`);setText("ageMeta",`${ages.length} カテゴリ`);
  if(chart)chart.destroy();chart=new Chart(el("dailyChart"),{type:"line",data:{labels:dates,datasets:[{label:"新規登録ユーザー",data:vals,borderColor:ATTR,backgroundColor:"rgba(63,102,179,.10)",fill:true,tension:.25,pointRadius:3,pointHoverRadius:5}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.parsed.y.toLocaleString("ja-JP")}人`}}},scales:{y:{beginAtZero:true,ticks:{precision:0}},x:{grid:{display:false}}}}});
  const gmax=genders.length?Math.max(...genders.map(g=>g.count)):1;el("genderList").innerHTML=genders.length?genders.map(g=>`<div class="attr-row"><div class="attr-name"><b>${esc(g.name)}</b></div><div class="bar-track"><div class="bar" style="width:${(g.count/gmax*100).toFixed(1)}%"></div></div><div class="attr-value">${g.count.toLocaleString("ja-JP")} 人</div></div>`).join(""):'<div class="empty-state"><b>該当データがありません</b>期間条件を変更してください</div>';
- const amax=ages.length?Math.max(...ages.map(a=>a.count)):1;el("ageList").innerHTML=ages.length?ages.map(a=>`<div class="attr-row"><div class="attr-name"><b>${esc(a.name)}</b>${a.half?`<small>${esc(a.half)}</small>`:""}</div><div class="bar-track"><div class="bar" style="width:${(a.count/amax*100).toFixed(1)}%"></div></div><div class="attr-value">${a.count.toLocaleString("ja-JP")} 人</div></div>`).join(""):'<div class="empty-state"><b>該当データがありません</b>期間条件を変更してください</div>';
+ const amax=ages.length?Math.max(...ages.map(a=>a.count)):1;el("ageList").innerHTML=ages.length?ages.map(a=>`<div class="attr-row"><div class="attr-name"><b>${esc(a.name)}</b></div><div class="bar-track"><div class="bar" style="width:${(a.count/amax*100).toFixed(1)}%"></div></div><div class="attr-value">${a.count.toLocaleString("ja-JP")} 人</div></div>`).join(""):'<div class="empty-state"><b>該当データがありません</b>期間条件を変更してください</div>';
 }
 function buildSlider(){
  const slider=el("dateSlider"), readout=el("timeReadout");

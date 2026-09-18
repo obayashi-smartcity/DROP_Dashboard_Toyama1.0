@@ -83,7 +83,7 @@
     </div>
   </aside>
   <main class="main">
-    <div class="topbar"><div><h1>Inflow Analytics</h1><p>日別・流入経路別のユニークユーザー分析</p></div><div class="status"><span class="pulse"></span> Live datamart · updated <b>&nbsp;<span id="metaUpdated2">–</span></b></div></div>
+    <div class="topbar"><div><h1>Inflow Analytics</h1><p>日別・流入経路別のユニークユーザー分析</p></div><div class="status"><span class="pulse"></span> latest timestamp: <b>&nbsp;<span id="metaUpdated2">–</span></b></div></div>
     <div class="switch-mobile"><a class="chip" href="index.html">Summary</a><a class="chip chip-active" href="details_inflow.html">流入分析</a><a class="chip" href="details_user.html">アカウント登録</a><a class="chip" href="details_stamp.html">スタンプ</a><a class="chip" href="details_drop.html">投稿</a></div>
     <div class="kpis kpis-3">
       <div class="kpi gray"><div class="k-label">ユニークユーザー</div><div class="k-val" id="kUsers">–</div><div class="k-cap">user_pseudo_id 個別カウント</div></div>
@@ -127,6 +127,6 @@ function buildSlider(){
  slider.noUiSlider.on("change",()=>render());
  sliderBuilt=true;
 }
-(async()=>{try{const d=await loadData();ROWS=(d.records||[]);setText("metaUpdated2",d.generated_at||"–");DATES=[...new Set(ROWS.map(r=>r.event_date_jp).filter(validDate))].sort();state.dmin=0;state.dmax=Math.max(DATES.length-1,0);buildSlider();render()}catch(e){el("inflowList").innerHTML='<div class="empty-state"><b>データを読み込めませんでした</b>json/mart_ga.json または mart_ga.json の配置を確認してください</div>';console.error(e)}})();
+(async()=>{try{const d=await loadData();ROWS=(d.records||[]);const latest=ROWS.map(r=>r.event_date_time_jp).filter(Boolean).sort().pop();setText("metaUpdated2",latest||"–");DATES=[...new Set(ROWS.map(r=>r.event_date_jp).filter(validDate))].sort();state.dmin=0;state.dmax=Math.max(DATES.length-1,0);buildSlider();render()}catch(e){el("inflowList").innerHTML='<div class="empty-state"><b>データを読み込めませんでした</b>json/mart_ga.json または mart_ga.json の配置を確認してください</div>';console.error(e)}})();
 el("resetBtn").addEventListener("click",()=>{if(sliderBuilt)el("dateSlider").noUiSlider.set([0,Math.max(DATES.length-1,0)]);render()});
 </script></body></html>

@@ -184,7 +184,7 @@
         <div>
           <h1>DROP Post Map</h1>
         </div>
-        <div class="status"><span class="pulse"></span> Live datamart · updated <b>&nbsp;<span id="metaUpdated2">–</span></b></div>
+        <div class="status"><span class="pulse"></span> latest timestamp: <b>&nbsp;<span id="metaUpdated2">–</span></b></div>
       </div>
 
       <!-- モバイル用ダッシュボード切替 -->
@@ -462,7 +462,7 @@ function render() {
     const grid = el("postGrid");
     grid.querySelectorAll(".post-card.hl").forEach(c => c.classList.remove("hl"));
     const card = grid.querySelector(`.post-card[data-id="${id}"]`);
-    if (card) { card.classList.add("hl"); card.scrollIntoView({ behavior: "smooth", block: "center" }); }
+    if (card) { card.classList.add("hl"); }
   }
 
   function buildChips() {
@@ -540,12 +540,20 @@ function render() {
       DATES = Array.from(new Set(POSTS.map(p => p.date).filter(Boolean))).sort();
       state.dmin = 0; state.dmax = Math.max(DATES.length - 1, 0);
 
-      setText("metaUpdated2", json.generated_at || "–");
+      const latest = records.map(r => r.post_dated_at).filter(Boolean).sort().pop();
+      setText("metaUpdated2", latest || "–");
 
       buildChips();
       buildSlider();
       render();
-      setTimeout(() => map.invalidateSize(), 200);
+      setTimeout(() => {
+        map.invalidateSize();
+        // データの緯度経度から自動的に地図の中心・ズームを合わせる
+        const pts = POSTS.filter(p => p.lat != null && p.lng != null).map(p => [p.lat, p.lng]);
+        if (pts.length) {
+          map.fitBounds(L.latLngBounds(pts), { padding: [30, 30] });
+        }
+      }, 200);
     })
     .catch(err => {
       el("postGrid").innerHTML = `<div class="empty-state" style="grid-column:1/-1"><b>データを読み込めませんでした</b>${esc(String(err.message))}<br>ローカルで開く場合は簡易サーバー経由で表示してください（file:// では fetch できません）</div>`;
