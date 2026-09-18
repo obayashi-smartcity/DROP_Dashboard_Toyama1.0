@@ -184,7 +184,7 @@
         <div>
           <h1>DROP Post Map</h1>
         </div>
-        <div class="status"><span class="pulse"></span> Live datamart · updated <b>&nbsp;<span id="metaUpdated2">–</span></b></div>
+        <div class="status"><span class="pulse"></span> latest timestamp: <b>&nbsp;<span id="metaUpdated2">–</span></b></div>
       </div>
 
       <!-- モバイル用ダッシュボード切替 -->
@@ -540,7 +540,8 @@ function render() {
       DATES = Array.from(new Set(POSTS.map(p => p.date).filter(Boolean))).sort();
       state.dmin = 0; state.dmax = Math.max(DATES.length - 1, 0);
 
-      setText("metaUpdated2", json.generated_at || "–");
+      const latest = records.map(r => r.post_dated_at).filter(Boolean).sort().pop();
+      setText("metaUpdated2", latest || "–");
 
       buildChips();
       buildSlider();

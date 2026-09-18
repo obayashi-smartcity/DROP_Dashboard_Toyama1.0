@@ -70,7 +70,7 @@
     </nav>
   </aside>
   <main class="main">
-    <div class="topbar"><div><h1>Summary</h1></div><div class="status"><span class="pulse"></span> Live datamart · updated <b>&nbsp;<span id="metaUpdated2">–</span></b></div></div>
+    <div class="topbar"><div><h1>Summary</h1></div><div class="status"><span class="pulse"></span> latest timestamp: <b>&nbsp;<span id="metaUpdated2">–</span></b></div></div>
     <div class="switch-mobile"><a class="chip chip-active" href="index.html">Summary</a><a class="chip" href="details_inflow.html">流入分析</a><a class="chip" href="details_user.html">アカウント登録</a><a class="chip" href="details_stamp.html">スタンプ</a><a class="chip" href="details_drop.html">投稿</a></div>
     <div class="section-label" id="kpi-section"><h2>KPI<span class="note">円内＝実数 / ドーナツ＝目標達成度</span></h2><div class="meta">目標値は config.js で設定</div></div>
     <div class="kpi-grid">
@@ -126,9 +126,14 @@ function donut(canvasId,centerId,rateId,key,value,hasData){
   try{ stamp=await loadOne(SRC.stamp); }catch(e){ stamp={records:[]}; }
   try{ drop=await loadOne(SRC.drop); }catch(e){ drop={records:[]}; }
   try{ user=await loadOne(SRC.user); }catch(e){ user={records:[]}; }
-  updated = ga.generated_at || stamp.generated_at || drop.generated_at || user.generated_at || "–";
-  setText("metaUpdated2",updated);
   const gaR=ga.records||[], stR=stamp.records||[], drR=drop.records||[], usR=(user.records||[]).filter(r=>!r.del_flg);
+  updated = [
+    ...gaR.map(r=>r.event_date_time_jp),
+    ...stR.map(r=>r.action_occurred_at),
+    ...drR.map(r=>r.post_dated_at),
+    ...usR.map(r=>r.created_at)
+  ].filter(Boolean).sort().pop() || "–";
+  setText("metaUpdated2",updated);
 
   // --- 実数 ---
   const access = new Set(gaR.map(r=>r.user_pseudo_id).filter(Boolean)).size;   // 全アクセス数(UU)
