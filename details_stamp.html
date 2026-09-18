@@ -129,6 +129,30 @@
     a.switch-item:hover .mi { color: var(--muted); }
     a.switch-item.active .mi { color: var(--accent); }
     .switch-item .mi svg { width: 100%; height: 100%; display: block; }
+    /* ---- スタンプ詳細モーダル（画面中央に固定表示・スクロール無し） ---- */
+    .spot-modal {
+      position: fixed; inset: 0; z-index: 1000;
+      display: flex; align-items: center; justify-content: center; padding: 20px;
+      background: rgba(15, 23, 42, .55);
+      opacity: 0; visibility: hidden; transition: opacity .15s ease;
+    }
+    .spot-modal.show { opacity: 1; visibility: visible; }
+    .spot-modal-inner {
+      background: #fff; width: 100%; max-width: 380px; position: relative;
+      padding: 30px 26px 26px; box-shadow: 0 20px 60px rgba(16,24,40,.35);
+      border-top: 3px solid var(--acq);
+    }
+    .spot-modal-close {
+      position: absolute; top: 8px; right: 10px; width: 32px; height: 32px;
+      border: none; background: transparent; font-size: 22px; line-height: 1;
+      color: var(--muted); cursor: pointer;
+    }
+    .spot-modal-close:hover { color: var(--text); }
+    .spot-modal-rank { font-size: 12px; font-weight: 800; color: var(--acq); letter-spacing: .5px; margin-bottom: 8px; }
+    .spot-modal-name { font-size: 18px; font-weight: 700; color: var(--text); line-height: 1.45; margin-bottom: 16px; }
+    .spot-modal-count { font-size: 36px; font-weight: 800; color: var(--acq); font-variant-numeric: tabular-nums; }
+    .spot-modal-count small { font-size: 13px; color: var(--muted); font-weight: 600; margin-left: 6px; }
+    body.modal-open { overflow: hidden; }
   </style>
 </head>
 <body class="page-fade">
@@ -236,6 +260,18 @@
     </main>
   </div>
 
+  <!-- ============ スタンプ詳細モーダル ============ -->
+  <div id="spotModal" class="spot-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalSpotName">
+    <div class="spot-modal-inner" role="document">
+      <button id="spotModalClose" class="spot-modal-close" type="button" aria-label="詳細を閉じる">&times;</button>
+      <div class="spot-modal-body">
+        <div id="modalSpotRank" class="spot-modal-rank"></div>
+        <div id="modalSpotName" class="spot-modal-name"></div>
+        <div id="modalSpotCount" class="spot-modal-count"></div>
+      </div>
+    </div>
+  </div>
+
   <!-- Scripts -->
   <!-- 共通設定（CARTO APIキー等を一元管理）。地図設定は config.js の map で差し替え -->
   <script src="config.js"></script>
@@ -277,7 +313,32 @@
   const esc = (t) => (t == null ? "" : String(t)).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
   const state = { genders: new Set(), ages: new Set(), dmin: null, dmax: null, limit: CONFIG.pageSize };
-  let ROWS = [], DATES = [], map, markerLayer, markerBySpot = {}, sliderBuilt = false;
+  let ROWS = [], DATES = [], map, markerLayer, markerBySpot = {}, sliderBuilt = false, LAST_RANKING = [];
+
+  // ---- スタンプ詳細モーダル（画面中央固定・スクロールなし） ----
+  function openSpotModal(r, rank) {
+    setText("modalSpotRank", `第 ${rank} 位`);
+    setText("modalSpotName", r.spot);
+    el("modalSpotCount").innerHTML = `${r.count}<small>スタンプ</small>`;
+    const modal = el("spotModal");
+    modal.classList.add("show");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+    el("spotModalClose").focus();
+  }
+  function closeSpotModal() {
+    const modal = el("spotModal");
+    modal.classList.remove("show");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
+  }
+  el("spotModalClose").addEventListener("click", closeSpotModal);
+  el("spotModal").addEventListener("click", (event) => {
+    if (event.target === el("spotModal")) closeSpotModal();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && el("spotModal").classList.contains("show")) closeSpotModal();
+  });
 
   function normalize(records) {
     return records.map(r => ({
@@ -314,6 +375,7 @@
   function render() {
     const filtered = ROWS.filter(pass);
     const ranking = aggregate(filtered);
+    LAST_RANKING = ranking;
 
     // 地図
     markerLayer.clearLayers();
@@ -328,12 +390,7 @@
         iconSize: [radius*2, radius*2], iconAnchor: [radius, radius], popupAnchor: [0, -radius]
       });
       const mk = L.marker([r.lat, r.lng], { icon });
-      mk.bindPopup(`<div class="stamp-pop"><div class="sp-body">
-        <div class="sp-rank">第 ${idx + 1} 位</div>
-        <div class="sp-name">${esc(r.spot)}</div>
-        <div class="sp-cnt">${r.count}<small>スタンプ</small></div>
-      </div></div>`);
-      mk.on("click", () => highlightRow(r.spot));
+      mk.on("click", () => { highlightRow(r.spot); openSpotModal(r, idx + 1); });
       mk.addTo(markerLayer);
       markerBySpot[r.spot] = mk;
     });
@@ -380,10 +437,10 @@
         if (mk) {
           const ll = mk.getLatLng();
           map.flyTo([ll.lat, ll.lng], 16, { duration: .6 });
-          setTimeout(() => mk.openPopup(), 300);
-          document.querySelector(".map-panel").scrollIntoView({ behavior: "smooth", block: "start" });
         }
         highlightRow(spot);
+        const idx = LAST_RANKING.findIndex(x => x.spot === spot);
+        if (idx >= 0) openSpotModal(LAST_RANKING[idx], idx + 1);
       });
     });
 
@@ -398,7 +455,7 @@
     const list = el("rankList");
     list.querySelectorAll(".rank-row.hl").forEach(r => r.classList.remove("hl"));
     const row = list.querySelector(`.rank-row[data-spot="${(spot || "").replace(/"/g, '\\"')}"]`);
-    if (row) { row.classList.add("hl"); row.scrollIntoView({ behavior: "smooth", block: "center" }); }
+    if (row) { row.classList.add("hl"); }
   }
 
   function buildChips() {
