@@ -160,7 +160,7 @@ function donut(canvasId,centerId,rateId,key,value,hasData){
   const accByDate=new Map();
   gaR.forEach(r=>{ if(validDate(r.event_date_jp)){ if(!accByDate.has(r.event_date_jp))accByDate.set(r.event_date_jp,new Set()); if(r.user_pseudo_id)accByDate.get(r.event_date_jp).add(r.user_pseudo_id);} });
   const stByDate=new Map();
-  stR.forEach(r=>{ const d=(r.event_date||"").slice(0,10); if(validDate(d)) stByDate.set(d,(stByDate.get(d)||0)+1); });
+  stR.forEach(r=>{ const d=r.event_date || (r.action_occurred_at||"").slice(0,10); if(validDate(d)){ if(!stByDate.has(d))stByDate.set(d,new Set()); if(r.action_account_id)stByDate.get(d).add(r.action_account_id);} });
   // 投稿者数（日別ユニーク投稿者）— drop データを account_id で個別カウント
   const posterByDate=new Map();
   drR.forEach(r=>{ const d=r.post_date || (r.post_dated_at||"").slice(0,10); if(validDate(d)){ if(!posterByDate.has(d))posterByDate.set(d,new Set()); if(r.account_id)posterByDate.get(d).add(r.account_id);} });
@@ -169,7 +169,7 @@ function donut(canvasId,centerId,rateId,key,value,hasData){
   usR.forEach(r=>{ const d=r.created_date || (r.created_at||"").slice(0,10); if(validDate(d)){ if(!signupByDate.has(d))signupByDate.set(d,new Set()); if(r.account_id)signupByDate.get(d).add(r.account_id);} });
   const dates=[...new Set([...accByDate.keys(),...stByDate.keys(),...posterByDate.keys(),...signupByDate.keys()])].sort();
   const accVals=dates.map(d=>accByDate.has(d)?accByDate.get(d).size:0);
-  const stVals=dates.map(d=>stByDate.get(d)||0);
+  const stVals=dates.map(d=>stByDate.has(d)?stByDate.get(d).size:0);
   const posterVals=dates.map(d=>posterByDate.has(d)?posterByDate.get(d).size:0);
   const signupVals=dates.map(d=>signupByDate.has(d)?signupByDate.get(d).size:0);
   setText("trendMeta", dates.length ? (dates[0]+" ～ "+dates[dates.length-1]) : "データなし");
