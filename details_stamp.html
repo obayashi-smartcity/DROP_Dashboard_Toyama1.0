@@ -302,8 +302,8 @@
       attribution: MAP_CFG.attribution
     },
     genderLabel: (g) => (g && g.trim() !== "" ? g : "無回答"),
-    ageOrder: ["20代", "30代", "40代", "50代"],
-    ageLabel: (a) => (a && a.trim() !== "" ? a : "未設定"),
+    ageOrder: ["20代", "30代", "40代", "50代", "無回答"],
+    ageLabel: (a) => (a && a.trim() !== "" ? a : "無回答"),
     genderOrder: ["男性", "女性", "無回答"],
     pageSize: 20
   };
@@ -340,11 +340,19 @@
     if (event.key === "Escape" && el("spotModal").classList.contains("show")) closeSpotModal();
   });
 
+  // 性別・年齢は「規定の区分に一致しないものはすべて無回答として扱う」
+  // ＝ index.html 側（フィルタなし・全件カウント）の総数と一致させるため、
+  //    未回答・未設定・想定外の区分（レンジ外の年代等）を漏れなく「無回答」に集約する。
+  const GENDER_KNOWN = CONFIG.genderOrder.filter(v => v !== "無回答");
+  const AGE_KNOWN = CONFIG.ageOrder.filter(v => v !== "無回答");
+  const normGender = (g) => (GENDER_KNOWN.includes(g) ? g : "無回答");
+  const normAge = (a) => (AGE_KNOWN.includes(a) ? a : "無回答");
+
   function normalize(records) {
     return records.map(r => ({
       id: r.action_id, spot: r.event_name || "(不明な会場)", eid: r.event_id,
       lat: r.spot_latitude, lng: r.spot_longitude,
-      g: r.gender || "", a: r.action_account_age_group || "",
+      g: normGender(r.gender), a: normAge(r.action_account_age_group),
       acc: r.action_account_id,
       // event_date は "YYYY-MM-DD hh:mm:ss.ffffff" 形式 → 日付部のみ使用
       date: (r.event_date || "").slice(0, 10)
