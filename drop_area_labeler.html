@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DROP 投稿 エリア分類ツール</title>
+  <title>DROP 投稿 エリア分類ツール v2</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <style>
     :root {
       --font: "Inter", "Noto Sans JP", "Hiragino Sans", "Yu Gothic UI", "Meiryo", sans-serif;
       --text: #1d2433; --muted: #5b6475; --dim: #8a90a0; --stroke: #dfe2e8; --bg: #f5f6f8; --bg-b: #eceef2;
-      --rich: #6a3fb0; --sel: #111;
+      --rich: #6a3fb0;
     }
     * { box-sizing: border-box; }
     html, body { margin: 0; height: 100%; }
@@ -28,7 +28,7 @@
     .topbar .stats { display: flex; gap: 14px; color: var(--muted); font-variant-numeric: tabular-nums; }
     .topbar .stats b { color: var(--text); font-size: 14px; }
     .topbar .actions { margin-left: auto; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
-    .topbar label.chk { display: inline-flex; gap: 5px; align-items: center; color: var(--muted); font-size: 12px; }
+    label.chk { display: inline-flex; gap: 5px; align-items: center; color: var(--muted); font-size: 12px; }
 
     /* ===== レイアウト ===== */
     .layout { display: grid; grid-template-columns: minmax(0, 1fr) 400px; height: calc(100vh - 54px); }
@@ -60,17 +60,15 @@
     .area-list { display: flex; flex-direction: column; gap: 6px; }
     .area-btn { display: flex; align-items: center; gap: 8px; width: 100%; text-align: left; border: 1px solid var(--stroke); background: #fff; padding: 8px 10px; cursor: pointer; transition: .12s; }
     .area-btn:hover { border-color: var(--rich); background: #faf8fe; }
+    .area-btn.other { border-style: dashed; border-color: #adb5bd; }
     .area-btn .key { font-size: 10.5px; color: var(--dim); border: 1px solid var(--stroke); padding: 0 5px; min-width: 18px; text-align: center; }
     .area-btn .nm { font-weight: 700; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     .area-btn .cnt { font-size: 11.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
-    .area-btn .del { border: none; background: none; color: var(--dim); cursor: pointer; font-size: 15px; padding: 0 2px; line-height: 1; }
-    .area-btn .del:hover { color: #c92a2a; }
-    .other-box { margin-top: 8px; border: 1px dashed #adb5bd; padding: 8px 10px; display: flex; flex-direction: column; gap: 6px; }
-    .other-box .row { display: flex; gap: 6px; }
-    .other-box input { flex: 1; min-width: 0; padding: 7px 8px; border: 1px solid var(--stroke); }
-    .other-box .lbl { display: flex; align-items: center; gap: 8px; font-weight: 700; }
-    .other-box .lbl .cnt { margin-left: auto; font-size: 11.5px; color: var(--muted); font-weight: 500; }
-    .sub-actions { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
+    .area-btn .ic { border: none; background: none; color: var(--dim); cursor: pointer; font-size: 14px; padding: 0 3px; line-height: 1; }
+    .area-btn .ic.ren:hover { color: var(--rich); }
+    .area-btn .ic.del:hover { color: #c92a2a; }
+    .area-btn input.ren-input { flex: 1; min-width: 0; padding: 4px 6px; border: 1px solid var(--rich); font-weight: 700; }
+    .sub-actions { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; align-items: center; }
     .add-area { display: flex; gap: 6px; margin-top: 10px; }
     .add-area input { flex: 1; min-width: 0; padding: 7px 8px; border: 1px solid var(--stroke); }
     .note { font-size: 11px; color: var(--dim); margin-top: 6px; line-height: 1.6; }
@@ -89,11 +87,9 @@
 
     .leaflet-tooltip.pt-tip { font-family: var(--font); font-size: 11.5px; padding: 4px 8px; border-radius: 0; }
 
-    /* ===== トースト ===== */
     .toast { position: fixed; left: 50%; bottom: 28px; transform: translateX(-50%); z-index: 11000; background: #1d2433; color: #fff; padding: 10px 18px; font-size: 13px; box-shadow: 0 8px 24px rgba(0,0,0,.25); opacity: 0; pointer-events: none; transition: opacity .2s; }
     .toast.show { opacity: 1; }
 
-    /* ===== 読込エラー ===== */
     .load-err { position: absolute; inset: 0; z-index: 1000; background: rgba(245,246,248,.97); display: none; align-items: center; justify-content: center; padding: 24px; }
     .load-err.show { display: flex; }
     .load-err .box { background: #fff; border: 1px solid var(--stroke); padding: 20px 22px; max-width: 640px; line-height: 1.7; }
@@ -118,7 +114,7 @@
 </head>
 <body>
   <div class="topbar">
-    <h1>DROP 投稿 エリア分類</h1>
+    <h1>DROP 投稿 エリア分類 <span style="font-size:11px;font-weight:700;color:#fff;background:#6a3fb0;padding:2px 7px;vertical-align:middle;">v2</span></h1>
     <div class="stats">
       <span>全 <b id="stTotal">–</b> 件</span>
       <span>分類済 <b id="stDone">–</b></span>
@@ -178,25 +174,16 @@
       <div class="sec">
         <h2>分類を入力（選択中の投稿に一括適用）</h2>
         <div class="area-list" id="areaList"></div>
-        <div class="other-box">
-          <div class="lbl"><span class="dot" id="otherDot"></span>その他（自由記述）<span class="key" style="font-size:10.5px;color:var(--dim);border:1px solid var(--stroke);padding:0 5px;">0</span><span class="cnt" id="otherCnt"></span></div>
-          <div class="row">
-            <input type="text" id="otherText" placeholder="例：駅北口の駐輪場付近" />
-            <button class="btn" id="otherApplyBtn">適用</button>
-          </div>
-        </div>
         <div class="sub-actions">
           <button class="btn" id="unlabelBtn">分類を外す</button>
           <button class="btn" id="undoBtn" disabled>元に戻す</button>
-          <label class="chk" style="display:inline-flex;gap:5px;align-items:center;color:var(--muted);font-size:12px;margin-left:auto;">
-            <input type="checkbox" id="optClearAfter" checked /> 適用後に選択解除
-          </label>
+          <label class="chk" style="margin-left:auto;"><input type="checkbox" id="optClearAfter" checked /> 適用後に選択解除</label>
         </div>
         <div class="add-area">
           <input type="text" id="newAreaName" placeholder="エリア名を追加" />
           <button class="btn" id="addAreaBtn">追加</button>
         </div>
-        <div class="note">エリア一覧と分類結果はこのブラウザに自動保存されます（ブラウザを閉じても残ります）。<br />別PCで続きをやる場合は CSV出力 → CSV読込 で引き継げます。</div>
+        <div class="note">✎ でエリア名を変更できます（分類済みの投稿にも新しい名前が反映されます）。<br />エリア一覧と分類結果はこのブラウザに自動保存されます。別PCで続きをやる場合は CSV出力 → CSV読込 で引き継げます。</div>
       </div>
 
       <div class="sec" style="border-bottom:none;flex:1;">
@@ -206,7 +193,6 @@
     </aside>
   </div>
 
-  <!-- 拡大表示ポップアップ -->
   <div id="postModal" class="post-modal" aria-hidden="true" role="dialog" aria-modal="true">
     <div class="post-modal-inner">
       <button id="modalClose" class="post-modal-close" type="button" aria-label="閉じる">&times;</button>
@@ -234,23 +220,21 @@
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
   };
   const CONFIG = {
-    // 読みに行くJSON（上から順に試す）。drop_post_map_list.html と同じ
     dataSources: ["json/mart_action_drop.json", "mart_action_drop.json"],
     idField: "artwork_id",
     latField: "latitude",
     lngField: "longitude",
-    // ★ 事前に用意するエリア名（初回起動時の初期値。画面からも追加・削除できます）
+    // 初回起動時のエリア名（画面上で追加・名前変更・削除できます）
     defaultAreas: ["エリアA", "エリアB", "エリアC"],
-    // ブラウザ保存用のキー（別案件で使い回すときは名前を変える）
     storageKey: "drop_area_labeler_v1",
     map: { center: [34.6905, 135.5023], zoom: 13, minZoom: 5, maxZoom: 19,
            cartoApiKey: MAP_CFG.cartoApiKey, tile: MAP_CFG.tile, attribution: MAP_CFG.attribution }
   };
   const OTHER = "その他";
   const PALETTE = ["#e8590c", "#1971c2", "#2f9e44", "#c2255c", "#f59f00", "#0c8599", "#5c940d", "#d9480f", "#364fc7", "#a61e4d", "#087f5b", "#e67700"];
-  const COLOR_UNLABELED = "#8f7bb8";   // 未分類
-  const COLOR_OTHER = "#495057";       // その他
-  const COLOR_UNKNOWN = "#adb5bd";     // エリア一覧に無い名前
+  const COLOR_UNLABELED = "#8f7bb8";
+  const COLOR_OTHER = "#495057";
+  const COLOR_UNKNOWN = "#adb5bd";
 
   /* ===================== 共通 ===================== */
   const el = (id) => document.getElementById(id);
@@ -261,14 +245,14 @@
 
   /* ===================== 状態 ===================== */
   let POSTS = [], byId = {}, markers = {};
-  let labels = {};               // { artwork_id: { area, other, at } }
-  let areas = [];                // エリア名の配列
+  let labels = {};               // { artwork_id: { area, at } }
+  let areas = [];
   const selected = new Set();
-  const history = [];            // 元に戻す用
+  const history = [];
   let viewFilter = "__all__";
   let rectMode = false;
+  let renaming = null;           // 名前変更中のエリア名
 
-  /* ===================== 保存・復元（localStorage） ===================== */
   function save() {
     try { localStorage.setItem(CONFIG.storageKey, JSON.stringify({ areas, labels })); }
     catch (e) { console.warn("保存に失敗", e); }
@@ -276,7 +260,11 @@
   function load() {
     try {
       const s = JSON.parse(localStorage.getItem(CONFIG.storageKey) || "null");
-      if (s && Array.isArray(s.areas)) { areas = s.areas; labels = s.labels || {}; return; }
+      if (s && Array.isArray(s.areas)) {
+        areas = s.areas; labels = {};
+        Object.entries(s.labels || {}).forEach(([id, v]) => { if (v && v.area) labels[id] = { area: v.area, at: v.at || "" }; });
+        return;
+      }
     } catch (_) {}
     areas = CONFIG.defaultAreas.slice(); labels = {};
   }
@@ -287,17 +275,11 @@
     const i = areas.indexOf(name);
     return i < 0 ? COLOR_UNKNOWN : PALETTE[i % PALETTE.length];
   }
-  function labelText(lab) { return !lab ? "未分類" : (lab.area === OTHER ? `${OTHER}${lab.other ? "：" + lab.other : ""}` : lab.area); }
+  const labelText = (lab) => lab ? lab.area : "未分類";
   function styleFor(id) {
     const lab = labels[id], sel = selected.has(id);
-    return {
-      radius: sel ? 10 : 7,
-      color: sel ? "#111" : "#fff",
-      weight: sel ? 3.5 : 2,
-      opacity: 1,
-      fillColor: lab ? areaColor(lab.area) : COLOR_UNLABELED,
-      fillOpacity: .95
-    };
+    return { radius: sel ? 10 : 7, color: sel ? "#111" : "#fff", weight: sel ? 3.5 : 2, opacity: 1,
+             fillColor: lab ? areaColor(lab.area) : COLOR_UNLABELED, fillOpacity: .95 };
   }
   function isVisible(id) {
     const lab = labels[id];
@@ -333,7 +315,7 @@
       const vis = isVisible(p.id);
       if (vis && !pointLayer.hasLayer(m)) pointLayer.addLayer(m);
       if (!vis && pointLayer.hasLayer(m)) pointLayer.removeLayer(m);
-      if (vis) { m.setStyle(styleFor(p.id)); m.setRadius(styleFor(p.id).radius); if (selected.has(p.id)) m.bringToFront(); }
+      if (vis) { const st = styleFor(p.id); m.setStyle(st); m.setRadius(st.radius); if (selected.has(p.id)) m.bringToFront(); }
     });
   }
   function fitAll() {
@@ -352,28 +334,21 @@
     el("modeBtn").textContent = `▭ 範囲選択モード：${on ? "ON" : "OFF"}`;
   }
   el("modeBtn").addEventListener("click", () => setRectMode(!rectMode));
-
-  // capture で Leaflet より先に拾い、四角形選択のときは地図のドラッグ移動を止める
   mapBox.addEventListener("mousedown", (e) => {
     if (e.button !== 0) return;
     const additive = e.ctrlKey || e.metaKey;
     if (!(rectMode || e.shiftKey || additive)) return;
-    // 投稿点・地図コントロール・ツールバー上は通常のクリック扱い（Ctrl+クリックで追加選択できるように）
     if (e.target.closest(".leaflet-interactive, .leaflet-control, .map-tools, .help, .load-err")) return;
     e.preventDefault(); e.stopPropagation();
     const start = map.mouseEventToContainerPoint(e);
     drag = { start, cur: start, additive };
     drawRect();
   }, true);
-  document.addEventListener("mousemove", (e) => {
-    if (!drag) return;
-    drag.cur = map.mouseEventToContainerPoint(e);
-    drawRect();
-  });
+  document.addEventListener("mousemove", (e) => { if (!drag) return; drag.cur = map.mouseEventToContainerPoint(e); drawRect(); });
   document.addEventListener("mouseup", () => {
     if (!drag) return;
     const { start, cur, additive } = drag; drag = null; selRect.style.display = "none";
-    if (Math.abs(cur.x - start.x) < 4 && Math.abs(cur.y - start.y) < 4) return;   // ほぼ動いていない＝クリック
+    if (Math.abs(cur.x - start.x) < 4 && Math.abs(cur.y - start.y) < 4) return;
     const bounds = L.latLngBounds(map.containerPointToLatLng(start), map.containerPointToLatLng(cur));
     const hits = POSTS.filter(p => isVisible(p.id) && bounds.contains([p.lat, p.lng])).map(p => p.id);
     if (!additive) selected.clear();
@@ -383,64 +358,78 @@
   });
   function drawRect() {
     const { start, cur } = drag;
-    Object.assign(selRect.style, {
-      display: "block",
+    Object.assign(selRect.style, { display: "block",
       left: Math.min(start.x, cur.x) + "px", top: Math.min(start.y, cur.y) + "px",
-      width: Math.abs(cur.x - start.x) + "px", height: Math.abs(cur.y - start.y) + "px"
-    });
+      width: Math.abs(cur.x - start.x) + "px", height: Math.abs(cur.y - start.y) + "px" });
   }
 
   /* ===================== 分類の適用 ===================== */
-  function pushHistory(ids) {
-    history.push(ids.map(id => [id, labels[id] ? { ...labels[id] } : null]));
+  // 履歴は「分類」と「エリア一覧」の両方を丸ごと保存（名前変更・削除も元に戻せる）
+  function pushHistory() {
+    history.push({ labels: JSON.parse(JSON.stringify(labels)), areas: areas.slice() });
     if (history.length > 50) history.shift();
     el("undoBtn").disabled = false;
   }
   function undo() {
     const h = history.pop(); if (!h) { toast("元に戻す操作はありません"); return; }
-    h.forEach(([id, prev]) => { if (prev) labels[id] = prev; else delete labels[id]; });
+    labels = h.labels; areas = h.areas;
+    if (viewFilter !== "__all__" && viewFilter !== "__none__" && viewFilter !== OTHER && !areas.includes(viewFilter)) viewFilter = "__all__";
     el("undoBtn").disabled = !history.length;
-    save(); refresh(); toast(`${h.length} 件の分類を元に戻しました`);
+    save(); refresh(); toast("直前の操作を元に戻しました");
   }
-  function applyArea(area, other) {
+  function applyArea(area) {
     if (!selected.size) { toast("先に地図上で投稿を選択してください"); return; }
-    other = (other || "").trim();
-    if (area === OTHER && !other && !confirm("自由記述が空です。このまま「その他」で登録しますか？")) return;
     const ids = [...selected];
-    pushHistory(ids);
+    pushHistory();
     const at = new Date().toISOString();
-    ids.forEach(id => { labels[id] = { area, other: area === OTHER ? other : "", at }; });
+    ids.forEach(id => { labels[id] = { area, at }; });
     save();
     if (el("optClearAfter").checked) selected.clear();
     refresh();
-    toast(`${ids.length} 件を「${labelText({ area, other })}」に分類しました`);
+    toast(`${ids.length} 件を「${area}」に分類しました`);
   }
   function unlabel() {
     if (!selected.size) { toast("先に投稿を選択してください"); return; }
     const ids = [...selected].filter(id => labels[id]);
     if (!ids.length) { toast("選択中の投稿は未分類です"); return; }
-    pushHistory(ids); ids.forEach(id => delete labels[id]);
+    pushHistory(); ids.forEach(id => delete labels[id]);
     save(); refresh(); toast(`${ids.length} 件の分類を外しました`);
   }
-  el("otherApplyBtn").addEventListener("click", () => applyArea(OTHER, el("otherText").value));
-  el("otherText").addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); applyArea(OTHER, el("otherText").value); } });
   el("unlabelBtn").addEventListener("click", unlabel);
   el("undoBtn").addEventListener("click", undo);
   el("clearSelBtn").addEventListener("click", () => { selected.clear(); refresh(); });
 
-  /* ===================== エリア管理 ===================== */
+  /* ===================== エリア管理（追加・名前変更・削除） ===================== */
+  function validName(name, current) {
+    if (!name) { toast("エリア名を入力してください"); return false; }
+    if (name === OTHER) { toast("「その他」は固定の分類として用意されています"); return false; }
+    if (name !== current && areas.includes(name)) { toast("同じ名前のエリアがあります"); return false; }
+    return true;
+  }
   function addArea() {
     const name = el("newAreaName").value.trim();
-    if (!name) return;
-    if (name === OTHER) { toast("「その他」は自由記述欄を使ってください"); return; }
-    if (areas.includes(name)) { toast("同じ名前のエリアがあります"); return; }
-    areas.push(name); el("newAreaName").value = ""; save(); refresh();
+    if (!validName(name)) return;
+    pushHistory(); areas.push(name); el("newAreaName").value = ""; save(); refresh();
+  }
+  function renameArea(oldName, newName) {
+    newName = (newName || "").trim();
+    renaming = null;
+    if (newName === oldName || !newName) { refresh(); return; }
+    if (!validName(newName, oldName)) { refresh(); return; }
+    pushHistory();
+    areas = areas.map(a => a === oldName ? newName : a);
+    let n = 0;
+    Object.values(labels).forEach(v => { if (v.area === oldName) { v.area = newName; n++; } });
+    if (viewFilter === oldName) viewFilter = newName;
+    save(); refresh();
+    toast(`「${oldName}」を「${newName}」に変更しました${n ? `（分類済み ${n} 件に反映）` : ""}`);
   }
   function deleteArea(name) {
     const used = Object.keys(labels).filter(id => labels[id].area === name);
     const msg = used.length ? `「${name}」は ${used.length} 件で使われています。\nエリアを削除し、これらの分類も解除しますか？` : `「${name}」を削除しますか？`;
     if (!confirm(msg)) return;
-    if (used.length) { pushHistory(used); used.forEach(id => delete labels[id]); }
+    pushHistory();
+    used.forEach(id => delete labels[id]);
     areas = areas.filter(a => a !== name);
     if (viewFilter === name) viewFilter = "__all__";
     save(); refresh();
@@ -454,8 +443,48 @@
     Object.keys(labels).forEach(id => { if (!byId[id]) return; done++; const a = labels[id].area; c[a] = (c[a] || 0) + 1; });
     return { c, done };
   }
+  function renderAreaList(c) {
+    const rows = areas.map((a, i) => {
+      const head = `<span class="dot" style="background:${areaColor(a)}"></span><span class="key">${i < 9 ? i + 1 : ""}</span>`;
+      if (renaming === a) {
+        return `<div class="area-btn" data-area="${esc(a)}">${head}
+          <input class="ren-input" type="text" value="${esc(a)}" data-old="${esc(a)}" />
+          <button class="ic" data-ren-ok title="確定">✔</button></div>`;
+      }
+      return `<div class="area-btn" data-area="${esc(a)}" role="button" title="選択中の投稿を「${esc(a)}」に分類">${head}
+        <span class="nm">${esc(a)}</span>
+        <span class="cnt">${(c[a] || 0).toLocaleString()} 件</span>
+        <button class="ic ren" data-ren="${esc(a)}" title="名前を変更">✎</button>
+        <button class="ic del" data-del="${esc(a)}" title="エリアを削除">×</button></div>`;
+    });
+    rows.push(`<div class="area-btn other" data-area="${OTHER}" role="button" title="選択中の投稿を「その他」に分類">
+      <span class="dot" style="background:${COLOR_OTHER}"></span><span class="key">0</span>
+      <span class="nm">${OTHER}</span><span class="cnt">${(c[OTHER] || 0).toLocaleString()} 件</span></div>`);
+    el("areaList").innerHTML = rows.join("");
+
+    el("areaList").querySelectorAll(".area-btn").forEach(b => b.addEventListener("click", (e) => {
+      if (e.target.closest(".ic, input")) return;
+      if (renaming) return;
+      applyArea(b.getAttribute("data-area"));
+    }));
+    el("areaList").querySelectorAll("[data-ren]").forEach(b => b.addEventListener("click", (e) => {
+      e.stopPropagation(); renaming = b.getAttribute("data-ren"); refresh();
+    }));
+    el("areaList").querySelectorAll("[data-del]").forEach(b => b.addEventListener("click", (e) => { e.stopPropagation(); deleteArea(b.getAttribute("data-del")); }));
+    const inp = el("areaList").querySelector(".ren-input");
+    if (inp) {
+      const old = inp.getAttribute("data-old");
+      let done = false;
+      const commit = () => { if (done) return; done = true; renameArea(old, inp.value); };
+      inp.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") { e.preventDefault(); commit(); }
+        if (e.key === "Escape") { e.preventDefault(); e.stopPropagation(); done = true; renaming = null; refresh(); }
+      });
+      inp.addEventListener("blur", commit);
+      inp.focus(); inp.select();
+    }
+  }
   function refresh() {
-    // 表示フィルタ外の点は選択から外す
     [...selected].forEach(id => { if (!byId[id] || !isVisible(id)) selected.delete(id); });
     refreshMarkers();
     const { c, done } = counts();
@@ -463,28 +492,12 @@
     el("stDone").textContent = done.toLocaleString();
     el("stTodo").textContent = (POSTS.length - done).toLocaleString();
 
-    // エリアボタン
-    el("areaList").innerHTML = areas.map((a, i) => `
-      <div class="area-btn" data-area="${esc(a)}" role="button" tabindex="0" title="選択中の投稿を「${esc(a)}」に分類">
-        <span class="dot" style="background:${areaColor(a)}"></span>
-        <span class="key">${i < 9 ? i + 1 : ""}</span>
-        <span class="nm">${esc(a)}</span>
-        <span class="cnt">${(c[a] || 0).toLocaleString()} 件</span>
-        <button class="del" data-del="${esc(a)}" title="エリアを削除">×</button>
-      </div>`).join("") || `<div class="empty">エリアがありません。下の欄から追加してください。</div>`;
-    el("areaList").querySelectorAll(".area-btn").forEach(b => b.addEventListener("click", (e) => {
-      if (e.target.closest(".del")) return; applyArea(b.getAttribute("data-area"));
-    }));
-    el("areaList").querySelectorAll(".del").forEach(b => b.addEventListener("click", (e) => { e.stopPropagation(); deleteArea(b.getAttribute("data-del")); }));
-    el("otherDot").style.background = COLOR_OTHER;
-    el("otherCnt").textContent = `${(c[OTHER] || 0).toLocaleString()} 件`;
+    renderAreaList(c);
 
-    // 表示フィルタ
     const opts = [["__all__", "すべて"], ["__none__", "未分類のみ"], ...areas.map(a => [a, a]), [OTHER, OTHER]];
     Object.keys(c).forEach(a => { if (a !== OTHER && !areas.includes(a)) opts.push([a, a + "（一覧外）"]); });
     el("viewFilter").innerHTML = opts.map(([v, t]) => `<option value="${esc(v)}"${v === viewFilter ? " selected" : ""}>${esc(t)}</option>`).join("");
 
-    // 凡例
     el("legend").innerHTML = [
       `<span><i class="dot" style="background:${COLOR_UNLABELED}"></i>未分類</span>`,
       ...areas.map(a => `<span><i class="dot" style="background:${areaColor(a)}"></i>${esc(a)}</span>`),
@@ -492,7 +505,6 @@
       `<span><i class="dot sel" style="background:#fff"></i>選択中</span>`
     ].join("");
 
-    // 選択中
     el("selCount").textContent = selected.size.toLocaleString();
     const br = {};
     selected.forEach(id => { const k = labelText(labels[id]); br[k] = (br[k] || 0) + 1; });
@@ -510,7 +522,7 @@
     el("thumbs").innerHTML = ids.slice(0, THUMB_MAX).map(id => {
       const p = byId[id], lab = labels[id];
       const img = p.img ? `<img src="${esc(p.img)}" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'noimg',textContent:'画像なし'}))">` : `<div class="noimg">画像なし</div>`;
-      const chip = lab ? `<span class="chip" style="background:${areaColor(lab.area)}">${esc(labelText(lab))}</span>` : `<span class="chip none">未分類</span>`;
+      const chip = lab ? `<span class="chip" style="background:${areaColor(lab.area)}">${esc(lab.area)}</span>` : `<span class="chip none">未分類</span>`;
       return `<div class="thumb" data-id="${esc(id)}" title="クリックで拡大表示">${img}
         <button class="x" data-x="${esc(id)}" title="選択から外す">×</button>
         <div class="cap"><div class="n">${esc(p.n || "（名前なし）")}</div>${chip}</div></div>`;
@@ -545,7 +557,7 @@
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "a") { e.preventDefault(); POSTS.forEach(p => { if (isVisible(p.id)) selected.add(p.id); }); refresh(); toast(`表示中の ${selected.size} 件を選択しました`); return; }
     if (e.ctrlKey || e.metaKey || e.altKey) return;
     if (/^[1-9]$/.test(e.key)) { const a = areas[Number(e.key) - 1]; if (a) applyArea(a); return; }
-    if (e.key === "0") { e.preventDefault(); el("otherText").focus(); return; }
+    if (e.key === "0") { applyArea(OTHER); return; }
     if (e.key.toLowerCase() === "r") setRectMode(!rectMode);
   });
 
@@ -553,13 +565,10 @@
   const csvCell = (v) => { const s = v == null ? "" : String(v); return /[",\r\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; };
   function exportCsv() {
     const includeAll = el("optIncludeAll").checked;
-    const header = ["artwork_id", "account_name", "post_dated_at", "latitude", "longitude", "area", "area_other", "area_label", "labeled_at", "sentence", "image_file_path_thumbnail"];
-    const rows = POSTS.filter(p => includeAll || labels[p.id]).map(p => {
-      const lab = labels[p.id];
-      return [p.id, p.n, p.t, p.lat, p.lng, lab ? lab.area : "", lab ? lab.other : "", lab ? labelText(lab) : "", lab ? lab.at : "", p.s, p.img];
-    });
+    const header = ["artwork_id", "account_name", "post_dated_at", "area_label"];
+    const rows = POSTS.filter(p => includeAll || labels[p.id]).map(p => [p.id, p.n, p.t, labels[p.id] ? labels[p.id].area : ""]);
     if (!rows.length) { toast("出力する行がありません"); return; }
-    const csv = "\uFEFF" + [header, ...rows].map(r => r.map(csvCell).join(",")).join("\r\n");   // Excelで文字化けしないようBOM付きUTF-8
+    const csv = "\uFEFF" + [header, ...rows].map(r => r.map(csvCell).join(",")).join("\r\n");
     const d = new Date(), z = (n) => String(n).padStart(2, "0");
     const name = `drop_area_label_${d.getFullYear()}${z(d.getMonth() + 1)}${z(d.getDate())}_${z(d.getHours())}${z(d.getMinutes())}.csv`;
     const a = document.createElement("a");
@@ -589,25 +598,27 @@
   el("importFile").addEventListener("change", async (e) => {
     const f = e.target.files[0]; e.target.value = ""; if (!f) return;
     const rows = parseCsv(await f.text());
-    const h = rows.shift() || [];
-    const iId = h.indexOf("artwork_id"), iArea = h.indexOf("area"), iOther = h.indexOf("area_other"), iAt = h.indexOf("labeled_at");
-    if (iId < 0 || iArea < 0) { alert("CSVに artwork_id と area の列が必要です"); return; }
-    const items = rows.map(r => ({ id: r[iId], area: (r[iArea] || "").trim(), other: iOther >= 0 ? (r[iOther] || "").trim() : "", at: iAt >= 0 ? r[iAt] : "" })).filter(x => x.id && x.area);
+    const h = (rows.shift() || []).map(s => s.trim());
+    const iId = h.indexOf("artwork_id");
+    const iLab = h.indexOf("area_label") >= 0 ? h.indexOf("area_label") : h.indexOf("area");
+    if (iId < 0 || iLab < 0) { alert("CSVに artwork_id と area_label の列が必要です"); return; }
+    const items = rows.map(r => ({ id: (r[iId] || "").trim(), area: (r[iLab] || "").trim() })).filter(x => x.id && x.area);
     if (!items.length) { alert("分類済みの行がありませんでした"); return; }
     const notFound = items.filter(x => !byId[x.id]).length;
     if (!confirm(`${items.length} 件の分類を読み込みます（同じIDは上書き）。` + (notFound ? `\n※うち ${notFound} 件は現在のJSONに存在しないIDです（保持はします）。` : "") + "\nよろしいですか？")) return;
-    pushHistory(items.map(x => x.id));
+    pushHistory();
+    const at = new Date().toISOString();
     items.forEach(x => {
-      labels[x.id] = { area: x.area, other: x.area === OTHER ? x.other : "", at: x.at || new Date().toISOString() };
-      if (x.area !== OTHER && !areas.includes(x.area)) areas.push(x.area);   // 一覧に無いエリア名は自動追加
+      labels[x.id] = { area: x.area, at };
+      if (x.area !== OTHER && !areas.includes(x.area)) areas.push(x.area);
     });
     save(); refresh(); toast(`${items.length} 件の分類を読み込みました`);
   });
 
   el("resetAllBtn").addEventListener("click", () => {
-    const ids = Object.keys(labels); if (!ids.length) { toast("分類はまだありません"); return; }
-    if (!confirm(`${ids.length} 件の分類をすべて消去します。よろしいですか？\n（エリア一覧は残ります／「元に戻す」で復元可）`)) return;
-    pushHistory(ids); labels = {}; save(); refresh();
+    const n = Object.keys(labels).length; if (!n) { toast("分類はまだありません"); return; }
+    if (!confirm(`${n} 件の分類をすべて消去します。よろしいですか？\n（エリア一覧は残ります／「元に戻す」で復元可）`)) return;
+    pushHistory(); labels = {}; save(); refresh();
   });
 
   /* ===================== データ読込 ===================== */
@@ -632,7 +643,6 @@
     buildMarkers(); refresh();
     setTimeout(() => { map.invalidateSize(); fitAll(); }, 200);
   }
-  // pandas 出力でありがちな NaN / 末尾カンマ / BOM を補正して読む
   function parseJsonLenient(text) {
     text = text.replace(/^\uFEFF/, "");
     try { return JSON.parse(text); } catch (_) {}
