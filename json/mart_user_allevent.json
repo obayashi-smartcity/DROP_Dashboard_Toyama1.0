@@ -20,8 +20,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 20
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "b7142af8-5091-7071-2141-92ee5fa89b98",
@@ -42,7 +42,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "2704ba28-c081-7068-b09c-e9ceb4e8b1b3",
@@ -104,8 +104,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
-      "total_stamp": 4
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "a7e48aa8-90c1-7098-4dea-75f6bb20a7dd",
@@ -125,8 +125,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 7
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "27c45ab8-6021-7074-82b8-94454343dfba",
@@ -189,7 +189,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 23
+      "total_stamp": 0
     },
     {
       "account_id": "87045a48-9021-70d3-6d4f-974ba5f7f423",
@@ -210,7 +210,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 25
+      "total_stamp": 0
     },
     {
       "account_id": "67540ad8-90b1-70b7-6eb1-61f3857d39fe",
@@ -314,8 +314,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 20
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "d7e44af8-9031-7066-c84f-0942fd6ec038",
@@ -356,8 +356,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 11
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "d7849ae8-d091-70f7-a77c-4fbaa2d67aff",
@@ -377,7 +377,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 13,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -399,7 +399,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "47142af8-9091-7000-cd3c-01a444595143",
@@ -419,7 +419,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -462,7 +462,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "87945a58-b051-705b-ae20-063b672f8584",
@@ -483,7 +483,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "f7448aa8-60b1-7035-ec6d-df29d12576b0",
@@ -713,8 +713,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 12
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "e714dad8-9071-703f-5ab1-c6f38b4fa543",
@@ -755,8 +755,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 20
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "4754ea48-5001-703f-be19-d4c498c0fd4f",
@@ -1134,7 +1134,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 6
+      "total_stamp": 0
     },
     {
       "account_id": "57e4ca58-7081-7049-7ae8-95346c03ffaf",
@@ -1155,7 +1155,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 6
+      "total_stamp": 0
     },
     {
       "account_id": "b7643ad8-4051-7021-52d4-ff5201101dfe",
@@ -1175,8 +1175,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 8
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "3724ba88-d001-70d4-ae2d-925e8532e113",
@@ -1197,7 +1197,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 7
+      "total_stamp": 0
     },
     {
       "account_id": "c7340a08-b061-7053-89a3-d1e994f1697c",
@@ -1218,7 +1218,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 7
+      "total_stamp": 0
     },
     {
       "account_id": "c7848ac8-7081-7046-bcdb-d6d08e89e57f",
@@ -1239,7 +1239,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 7
+      "total_stamp": 0
     },
     {
       "account_id": "77a4fa68-5041-7046-52f9-00b34d5ca4cd",
@@ -1260,7 +1260,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 8
+      "total_stamp": 0
     },
     {
       "account_id": "3724ba58-80b1-7024-8d5c-65c2f62d5a57",
@@ -1281,7 +1281,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 7
+      "total_stamp": 0
     },
     {
       "account_id": "4764ca88-7031-70a3-aaac-67b2c58968c8",
@@ -1323,7 +1323,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 12
+      "total_stamp": 0
     },
     {
       "account_id": "97541af8-a0c1-70de-d754-fd1f40cc1eb9",
@@ -1364,8 +1364,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 28
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "57147ae8-d0f1-706a-2ebf-499af352540f",
@@ -1385,8 +1385,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 3
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "07144a98-7061-70f7-0ffb-0122ba0fda8f",
@@ -1406,8 +1406,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "a7842ab8-8071-70fb-18b3-b5b4e7a70278",
@@ -1512,7 +1512,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 3
+      "total_stamp": 0
     },
     {
       "account_id": "8744ba58-5071-7068-9a09-136e46be652d",
@@ -1574,8 +1574,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 20
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "77e48a38-e071-7098-8e04-ee0b5107c977",
@@ -1595,8 +1595,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 20
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "a7e45a98-c011-7047-03b7-a90707d1111d",
@@ -1637,8 +1637,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 3
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "67645aa8-a061-700e-0c8f-a95e094bd9e1",
@@ -1910,8 +1910,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "87046ab8-5071-708c-d357-2ef5a241448d",
@@ -1974,7 +1974,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 12
+      "total_stamp": 0
     },
     {
       "account_id": "17e4baa8-50f1-70cf-1232-3c20407e6d9e",
@@ -1994,8 +1994,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 24
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "e7641ac8-e0b1-707b-c4e1-5647901a49ca",
@@ -2057,7 +2057,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -2120,7 +2120,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -2225,7 +2225,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -2331,7 +2331,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "67d46af8-d0d1-706c-9307-e5e54765c79c",
@@ -2436,7 +2436,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 9
+      "total_stamp": 0
     },
     {
       "account_id": "c7542ad8-00c1-7014-b970-d1ecdd3cbb70",
@@ -3107,7 +3107,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -3149,8 +3149,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 59,
-      "total_stamp": 21
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "f764ba38-c011-70c3-e9a7-e98e136debba",
@@ -3170,8 +3170,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 55,
-      "total_stamp": 9
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "b724da68-d0a1-70d5-60fd-cd16416077b0",
@@ -3233,8 +3233,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 35,
-      "total_stamp": 7
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "a7648ae8-1051-703a-2f9a-81c25ca9e47b",
@@ -3254,8 +3254,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
-      "total_stamp": 19
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "87340a08-2071-703d-f6a1-2e515c9614f4",
@@ -3317,8 +3317,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 3
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "77a4cae8-e0e1-70fe-3487-09c234beec03",
@@ -3338,8 +3338,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 6,
-      "total_stamp": 4
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "27f4aa58-e0d1-7077-4d60-7699ec219763",
@@ -3401,7 +3401,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -3444,7 +3444,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 4
+      "total_stamp": 0
     },
     {
       "account_id": "d7c4bad8-30d1-706b-0ba3-6d058b50366d",
@@ -3465,7 +3465,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 31
+      "total_stamp": 0
     },
     {
       "account_id": "27e4ba88-f0e1-701f-0c96-d95455c36fdf",
@@ -3527,8 +3527,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
-      "total_stamp": 2
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "d7a4caa8-f041-70f3-1a4c-7452c8fa2397",
@@ -3548,8 +3548,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "a744ca88-6071-7099-ef44-7663cb57655c",
@@ -3569,8 +3569,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 8
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "e7e4aa48-b0e1-700d-a166-4afaad0e43be",
@@ -3590,8 +3590,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 6
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "77f4ca28-1001-7011-1453-5014252edb58",
@@ -3716,7 +3716,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -3737,8 +3737,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 6
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "67841a88-b061-70cd-4066-ceeb4a77822d",
@@ -3759,7 +3759,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "77c4dad8-60e1-7005-99e8-572f66d8e07c",
@@ -3779,7 +3779,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -3800,7 +3800,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -3842,8 +3842,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 7
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "07549ad8-1081-70f5-ce0f-61cc5a104114",
@@ -3884,7 +3884,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -3927,7 +3927,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "07e47a08-e021-7001-a632-ed2212c6406b",
@@ -3947,7 +3947,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -3968,8 +3968,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "87846a68-3071-70b7-ea07-43f743ac27d3",
@@ -3990,7 +3990,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 6
+      "total_stamp": 0
     },
     {
       "account_id": "d7546a88-e011-7011-f7ca-2701c2491cf7",
@@ -4032,7 +4032,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 2
+      "total_stamp": 0
     },
     {
       "account_id": "a7d40a48-90b1-70b6-adf2-11048d8b217a",
@@ -4073,8 +4073,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 1
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "87345a08-00d1-7058-76f4-2cdf0248d562",
@@ -4136,8 +4136,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 14
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "97948af8-1031-7096-72b8-21625c47e619",
@@ -4157,8 +4157,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 5
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "b7947a98-a0b1-7079-ada7-392d6c2bba78",
@@ -4178,8 +4178,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 18
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "3734bae8-5001-7030-ace7-fd187cc43241",
@@ -4220,7 +4220,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -4284,7 +4284,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "f7444a18-e091-70c9-66be-24ef77bfa699",
@@ -4326,7 +4326,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 11
+      "total_stamp": 0
     },
     {
       "account_id": "1744ca68-2061-7074-9f09-6f9ab7fe689f",
@@ -4347,7 +4347,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 11
+      "total_stamp": 0
     },
     {
       "account_id": "97f45ac8-5031-70b0-4899-bc9d760a0425",
@@ -4389,7 +4389,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 3
+      "total_stamp": 0
     },
     {
       "account_id": "f7748a38-7061-70f7-9ea4-e418944cccd0",
@@ -4472,8 +4472,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 1
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "77049a18-b0a1-7048-ded0-515fae49ec05",
@@ -4514,8 +4514,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "07a46a18-8061-7001-8ea3-640178f42cdf",
@@ -4557,7 +4557,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 22
+      "total_stamp": 0
     },
     {
       "account_id": "a7543a98-20b1-70d0-7b8e-07eb99b31ca1",
@@ -4577,7 +4577,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -4641,7 +4641,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 10
+      "total_stamp": 0
     },
     {
       "account_id": "67c43ad8-1061-704e-986d-bb7cff833e84",
@@ -4661,8 +4661,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "67b4ca18-5061-70ac-ff18-63e6d22f9d2b",
@@ -4683,7 +4683,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 3
+      "total_stamp": 0
     },
     {
       "account_id": "c764ca48-80e1-70c1-f37a-b14e3f6158db",
@@ -4767,7 +4767,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 25
+      "total_stamp": 0
     },
     {
       "account_id": "7754ea48-8001-70b3-770f-d8295582daab",
@@ -4809,7 +4809,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "37b4aaa8-6051-70df-07b0-eda747658297",
@@ -4892,7 +4892,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 21,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -4934,7 +4934,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -5040,7 +5040,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 4
+      "total_stamp": 0
     },
     {
       "account_id": "97147a18-00d1-70b0-f09f-ff5265902028",
@@ -5102,7 +5102,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -5123,8 +5123,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 18
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "57c44a38-f0d1-703f-af0f-66a4732cfcb0",
@@ -5144,8 +5144,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 12
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "5714ca38-2001-7041-e4d1-13d717a4db69",
@@ -5166,7 +5166,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 7
+      "total_stamp": 0
     },
     {
       "account_id": "9714daa8-20e1-707e-9931-f3e1c9b0a5b4",
@@ -5208,7 +5208,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 11
+      "total_stamp": 0
     },
     {
       "account_id": "e7f43ab8-e001-7002-96e4-ca6193999bfa",
@@ -5229,7 +5229,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 14
+      "total_stamp": 0
     },
     {
       "account_id": "f7c4fa58-f061-70c9-8e9a-b9fe97711b24",
@@ -5271,7 +5271,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 7
+      "total_stamp": 0
     },
     {
       "account_id": "47d40a28-6021-70bd-5bdf-cba1547a73a8",
@@ -5333,7 +5333,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -5354,7 +5354,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -5417,7 +5417,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -5438,7 +5438,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -5522,8 +5522,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 4,
-      "total_stamp": 4
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "87149a78-d041-7061-b577-53208af6cb3d",
@@ -5564,7 +5564,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -5586,7 +5586,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 41
+      "total_stamp": 0
     },
     {
       "account_id": "27f47a08-c021-70a6-d6fb-dc39d3673611",
@@ -5607,7 +5607,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "e7143a18-a0e1-70e2-8e4a-eda46d5ab0d8",
@@ -5627,8 +5627,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 8,
-      "total_stamp": 31
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "7724cad8-9031-705e-5e1f-2b1b7b52d3e6",
@@ -5691,7 +5691,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "e7c4aa18-a071-7071-44a3-2b89f3292bc6",
@@ -5733,7 +5733,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 9
+      "total_stamp": 0
     },
     {
       "account_id": "d7b47ab8-d031-7022-51a1-78a8b5168160",
@@ -6845,8 +6845,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 11,
-      "total_stamp": 19
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "5794aac8-90b1-70a4-2aca-1640a05e9d65",
@@ -6888,7 +6888,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 14
+      "total_stamp": 0
     },
     {
       "account_id": "87b4da58-2061-70df-595f-de05a6a4a712",
@@ -6909,7 +6909,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 4
+      "total_stamp": 0
     },
     {
       "account_id": "e794aad8-c011-705a-da5a-6180e46cd8ee",
@@ -6929,8 +6929,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 7,
-      "total_stamp": 32
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "b7242aa8-60a1-707d-53e6-ec83b7588da1",
@@ -6950,7 +6950,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -6971,8 +6971,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 20
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "e7941a48-b071-70d5-0974-5fe75c91149c",
@@ -6992,8 +6992,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 9,
-      "total_stamp": 9
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "7714cad8-0041-708b-9438-66216c46ba78",
@@ -7035,7 +7035,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 20
+      "total_stamp": 0
     },
     {
       "account_id": "87b48ad8-3011-70be-b28e-11c3abbb8779",
@@ -7055,7 +7055,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -7076,7 +7076,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -7118,7 +7118,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -7139,8 +7139,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 22
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "a7448aa8-d0f1-70a5-0e77-f4db848b5697",
@@ -7161,7 +7161,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 3
+      "total_stamp": 0
     },
     {
       "account_id": "c7d4fa88-a0f1-70a8-8e54-e3fa7c2648db",
@@ -7202,8 +7202,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "07841a38-10e1-7072-c00d-df72a9e86dc4",
@@ -7224,7 +7224,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 5
+      "total_stamp": 0
     },
     {
       "account_id": "d7445a28-8071-7057-9f02-6528a2fa02c6",
@@ -7266,7 +7266,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "97e44a88-f011-701a-646a-43ca170d75df",
@@ -7286,8 +7286,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 21
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "e7548ad8-90c1-70a2-f66b-e99091f5c596",
@@ -7308,7 +7308,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 20
+      "total_stamp": 0
     },
     {
       "account_id": "f7743aa8-50b1-701f-50f7-3def023258bc",
@@ -7328,8 +7328,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "87649ae8-f091-7047-252f-44f311a347ea",
@@ -7349,8 +7349,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 5,
-      "total_stamp": 11
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "97f40aa8-90c1-70f5-fd7d-d47d0faf7dd7",
@@ -7370,7 +7370,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -7391,8 +7391,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 1
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "87f45aa8-80b1-7069-f87f-9db3805134bb",
@@ -7412,8 +7412,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 5
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "b7242a68-0001-709d-0476-71fd7e60561a",
@@ -7475,8 +7475,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 2
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "e754faa8-00b1-70bc-25e3-dcab8ff23c7e",
@@ -7538,7 +7538,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -7560,7 +7560,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 2
+      "total_stamp": 0
     },
     {
       "account_id": "77349ab8-3031-70ff-4aa3-f3e6ed315613",
@@ -7581,7 +7581,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 5
+      "total_stamp": 0
     },
     {
       "account_id": "17441af8-6001-70b0-684b-f1235effd5f0",
@@ -7601,8 +7601,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "57f4aa98-10f1-700d-7d12-902743963395",
@@ -7686,7 +7686,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "07c46ac8-2071-7038-f07a-dadedb4a3ee5",
@@ -7748,8 +7748,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 13
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "4794fa28-7081-7010-ddae-1e41a3d57bf1",
@@ -7770,7 +7770,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "7744fa68-d0e1-7034-3e4e-4c7c4560749a",
@@ -7790,7 +7790,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -7875,7 +7875,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 3
+      "total_stamp": 0
     },
     {
       "account_id": "e7244af8-b081-7093-086b-27d65900ffaa",
@@ -8022,7 +8022,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "a7546a28-6011-70e0-522c-aba367d1ace7",
@@ -8043,7 +8043,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "f7e4baa8-5011-708f-1ec8-cc97e47962e4",
@@ -8063,8 +8063,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 30
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "d7940a78-8051-706d-4c74-381e3df6c8dd",
@@ -8084,8 +8084,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "a764cad8-5021-70e7-56ca-bb0a0fce6e9b",
@@ -8105,8 +8105,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "87744a18-60c1-703a-4bda-8d997fd89d2f",
@@ -8126,7 +8126,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -8274,7 +8274,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 10
+      "total_stamp": 0
     },
     {
       "account_id": "b7348af8-d021-70f6-312d-2efe1f7fa5dc",
@@ -8336,7 +8336,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -8399,8 +8399,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "97c44a38-7001-7087-8574-a2050efd4c7d",
@@ -8420,8 +8420,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "97041af8-f0c1-702d-cd84-6a9180204429",
@@ -8442,7 +8442,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 10
+      "total_stamp": 0
     },
     {
       "account_id": "c7544a58-6041-70d9-71de-099ff78a338a",
@@ -8462,8 +8462,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 20
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "8784da38-2031-7025-7e32-9808f5795ee0",
@@ -8483,7 +8483,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -8505,7 +8505,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 3
+      "total_stamp": 0
     },
     {
       "account_id": "87e4da38-40d1-707e-9330-412a87a711dc",
@@ -8525,7 +8525,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -8547,7 +8547,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 19
+      "total_stamp": 0
     },
     {
       "account_id": "77847a18-9071-709e-a9bb-74481aaae8e4",
@@ -8567,8 +8567,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 10,
-      "total_stamp": 5
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "c7347a08-f0f1-702b-3cf8-84aae4a774b5",
@@ -8588,7 +8588,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -8630,7 +8630,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -8714,7 +8714,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 5,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -8735,8 +8735,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "77d40a18-7091-7048-fa74-4d7f9dc3ae8d",
@@ -8757,7 +8757,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 3
+      "total_stamp": 0
     },
     {
       "account_id": "97248ae8-b041-701b-e368-bff48ac692aa",
@@ -8777,8 +8777,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "37244a78-3071-70f8-a41b-4100cb0fb8e2",
@@ -8799,7 +8799,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 4
+      "total_stamp": 0
     },
     {
       "account_id": "37a47a98-7061-706b-1bab-c633cc212930",
@@ -8819,7 +8819,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 44,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -8841,7 +8841,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 4
+      "total_stamp": 0
     },
     {
       "account_id": "d7f47ad8-f021-70f7-e8e5-e6979132428c",
@@ -8861,8 +8861,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 18
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "4744ca48-4031-704f-a1af-d7508637a4b2",
@@ -8882,8 +8882,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 7
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "27e4ca88-4041-7040-4976-9877e895648f",
@@ -8903,8 +8903,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 19
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "8784da38-6051-70d0-cfbb-e72c2e7225fe",
@@ -8924,7 +8924,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -8945,7 +8945,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -9029,7 +9029,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 8,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -9092,7 +9092,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 4,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -9135,7 +9135,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 16
+      "total_stamp": 0
     },
     {
       "account_id": "87e49af8-8011-702e-de6e-a3359c0d2bc5",
@@ -9156,7 +9156,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 11
+      "total_stamp": 0
     },
     {
       "account_id": "c7d48a78-1041-7029-3659-cc659fc66a3c",
@@ -9177,7 +9177,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 7
+      "total_stamp": 0
     },
     {
       "account_id": "8714dad8-b0a1-7009-8e19-680b843be2ec",
@@ -9197,8 +9197,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 11
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "c7946af8-e031-7046-2f3c-1d7abdf1b238",
@@ -9219,7 +9219,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 2
+      "total_stamp": 0
     },
     {
       "account_id": "a7142aa8-b071-7033-c14a-ea458e98a59f",
@@ -9240,7 +9240,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "37d46a78-00b1-7025-3238-a9fe3de232ca",
@@ -9324,7 +9324,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 29
+      "total_stamp": 0
     },
     {
       "account_id": "37b4fa98-30d1-7006-94d2-7b12b2047678",
@@ -9345,7 +9345,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 29
+      "total_stamp": 0
     },
     {
       "account_id": "97642ad8-7021-708e-d5eb-d4ddb5c43674",
@@ -9429,7 +9429,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "4704baa8-9091-70af-176d-173e10628e33",
@@ -9450,7 +9450,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 2
+      "total_stamp": 0
     },
     {
       "account_id": "37343a48-c021-7099-68aa-7d2ce53acec6",
@@ -9554,7 +9554,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -10688,7 +10688,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -10709,8 +10709,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 29,
-      "total_stamp": 57
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "f7049ad8-d051-7088-a848-d5d47da2db77",
@@ -10730,7 +10730,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 4,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -10751,8 +10751,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 4,
-      "total_stamp": 3
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "e7f44a28-d0a1-70f2-dad4-8c2900211109",
@@ -10773,7 +10773,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "c7149ae8-4041-70f0-c9b1-9415d7b9e29f",
@@ -10793,8 +10793,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 28,
-      "total_stamp": 77
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "9714ba58-5071-7077-3eab-00b5ed53c4df",
@@ -10835,8 +10835,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 28,
-      "total_stamp": 62
+      "total_drop": 2,
+      "total_stamp": 0
     },
     {
       "account_id": "37547aa8-d021-7037-de96-661e2da7eb06",
@@ -10877,8 +10877,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
-      "total_stamp": 26
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "d7b46a88-2091-70ea-d829-debbc85fde9c",
@@ -10898,8 +10898,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 5
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "b7d43a68-d011-70f6-49b0-b7131c62547c",
@@ -10962,7 +10962,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 13
+      "total_stamp": 0
     },
     {
       "account_id": "07341af8-2051-70d6-85b2-551ea751d256",
@@ -10982,8 +10982,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "a7c4fae8-a0f1-7033-69be-b438f74d5478",
@@ -11003,7 +11003,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -11024,7 +11024,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -11067,7 +11067,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 8
+      "total_stamp": 0
     },
     {
       "account_id": "b7b43a38-1011-70e3-a9ab-1484185fc512",
@@ -11087,7 +11087,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 5,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -11108,8 +11108,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 8,
-      "total_stamp": 3
+      "total_drop": 0,
+      "total_stamp": 2
     },
     {
       "account_id": "b7143a08-00e1-70e4-90fe-a82a5491a5dd",
@@ -11129,7 +11129,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -11234,7 +11234,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -11255,7 +11255,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -11276,8 +11276,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 22
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "27743aa8-0021-700d-35fa-d121d4ff950b",
@@ -11318,8 +11318,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 20
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "87841a48-10d1-706d-a15b-28d9fc8aaa21",
@@ -11445,7 +11445,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 8
+      "total_stamp": 0
     },
     {
       "account_id": "d7344af8-b011-7090-ef70-49b0b4ddf750",
@@ -11466,7 +11466,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "17044a38-f081-7006-4612-68fbae3cdee9",
@@ -11507,8 +11507,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "d7948ae8-3041-70ad-3d44-8906654c8f4f",
@@ -11528,7 +11528,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -11592,7 +11592,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 2
+      "total_stamp": 0
     },
     {
       "account_id": "57f48ab8-c0d1-705a-f694-6c6cc3de43f6",
@@ -11633,8 +11633,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 21
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "17a47a38-9041-708b-3d92-6411da5f8b99",
@@ -11675,8 +11675,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 1
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "07648aa8-3001-7051-5450-316cdf448eb3",
@@ -11696,8 +11696,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "47446a68-6081-704b-87f3-9b176c74b2c6",
@@ -11717,8 +11717,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "2704eab8-30f1-70cf-ac6f-9ee8cbed3877",
@@ -11759,8 +11759,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 10,
-      "total_stamp": 19
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "67b49a48-c081-7043-4d1b-d424236f9b5d",
@@ -11823,7 +11823,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "57641af8-5051-70ea-98ef-84b3035ad35f",
@@ -11864,8 +11864,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 2
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "57949a68-f0b1-7057-c32b-6e246254d3f6",
@@ -11886,7 +11886,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 10
+      "total_stamp": 0
     },
     {
       "account_id": "f764ba08-a041-7054-3a37-e2d0df324f0f",
@@ -11969,8 +11969,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 2
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "f704bac8-f041-707f-9e79-f4e28c816ca7",
@@ -12032,8 +12032,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 1
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "2754da68-6031-702d-8cf7-b8a390ecc695",
@@ -12053,8 +12053,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 20
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "d734fa78-10c1-704e-3196-04be192ed9e3",
@@ -12074,8 +12074,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "8754cae8-60a1-705d-3313-78f80ea009b8",
@@ -12096,7 +12096,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 3
+      "total_stamp": 0
     },
     {
       "account_id": "77746aa8-7001-7041-31c1-6e9e0b6a2294",
@@ -12242,8 +12242,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
-      "total_stamp": 4
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "a7c47a68-f071-7081-248a-f8b6e107cfbe",
@@ -12284,7 +12284,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -12431,8 +12431,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "1714fae8-b081-70bf-6733-5c09ccd56d9a",
@@ -12452,8 +12452,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "3794daf8-d051-7020-df4e-db561bc664a3",
@@ -12473,8 +12473,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "27e4fa58-40e1-702a-5229-5657a0d1cc78",
@@ -12515,8 +12515,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 20
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "67740aa8-f081-70b8-a2f7-b5ec57f2df29",
@@ -12536,7 +12536,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -12557,8 +12557,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "8784aab8-b091-708c-6d03-01910f8e7de8",
@@ -12578,8 +12578,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "e7c4ba78-e061-70ae-1533-8cae38ceb859",
@@ -12621,7 +12621,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 4
+      "total_stamp": 0
     },
     {
       "account_id": "d7846ad8-c0e1-7083-46b2-3978cc2ae841",
@@ -12641,8 +12641,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 4,
-      "total_stamp": 253
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "37a4da18-5041-7022-5af8-2abe05731e22",
@@ -12662,8 +12662,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 33,
-      "total_stamp": 40
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "17245a38-3041-70c1-7774-d95eb537febd",
@@ -12746,7 +12746,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -12767,7 +12767,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -12788,8 +12788,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 1
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "57644a18-8051-70c9-9ea1-5ee5fd3e2efc",
@@ -12872,8 +12872,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 6,
-      "total_stamp": 21
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "57e41ac8-4071-7096-74b2-ff70c2d3d4f4",
@@ -12894,7 +12894,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 3
+      "total_stamp": 0
     },
     {
       "account_id": "0744da88-8051-70ff-34ca-f2cfaef9b1aa",
@@ -12999,7 +12999,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "f7341a78-7031-70eb-f588-4edfd47a9b4c",
@@ -13019,7 +13019,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13040,7 +13040,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13061,7 +13061,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13082,7 +13082,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13103,7 +13103,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 7,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13145,7 +13145,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13166,7 +13166,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13187,7 +13187,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 5,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13208,7 +13208,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 7,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13229,7 +13229,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 1
     },
     {
@@ -13271,7 +13271,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13313,7 +13313,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13355,7 +13355,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 4,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13376,7 +13376,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13397,8 +13397,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 6
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "07043a98-1001-701d-e9ec-58e8f3f86546",
@@ -13439,7 +13439,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13481,8 +13481,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 14
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "47842a28-70f1-7015-dd20-756b9ae2a660",
@@ -13503,7 +13503,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 4
+      "total_stamp": 0
     },
     {
       "account_id": "17e46ab8-a081-706c-54f2-28fba6307ab6",
@@ -13524,7 +13524,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 8
+      "total_stamp": 0
     },
     {
       "account_id": "d754ca68-a081-70c0-9620-761d0221a1a0",
@@ -13545,7 +13545,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 4
+      "total_stamp": 0
     },
     {
       "account_id": "37848a58-30a1-7062-bd97-0f2b71532a4f",
@@ -13566,7 +13566,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 4
+      "total_stamp": 0
     },
     {
       "account_id": "f7641a88-20d1-704c-2142-3a15bec76182",
@@ -13608,7 +13608,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 2
+      "total_stamp": 0
     },
     {
       "account_id": "77a46a68-50a1-7029-adfb-d14931ef1cac",
@@ -13691,7 +13691,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13733,7 +13733,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13775,7 +13775,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13796,8 +13796,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 9,
-      "total_stamp": 1
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "77046a68-90e1-70c2-9c0c-31aff01cf7e1",
@@ -13838,7 +13838,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13859,7 +13859,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13901,7 +13901,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13922,7 +13922,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13943,7 +13943,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 7,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13964,7 +13964,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -13985,7 +13985,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 14,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -14027,7 +14027,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 5,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -14048,7 +14048,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -14069,7 +14069,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -14153,7 +14153,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -14237,7 +14237,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -14258,7 +14258,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -14279,7 +14279,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -14300,7 +14300,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -14343,7 +14343,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 61
+      "total_stamp": 0
     },
     {
       "account_id": "97b47aa8-a0a1-703c-ace1-1e31abf04ce4",
@@ -14426,8 +14426,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 32
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "47342a18-50e1-709c-8b09-8a426773419e",
@@ -14448,7 +14448,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 9
+      "total_stamp": 0
     },
     {
       "account_id": "67941a98-7021-705a-2bae-345ffb7321ba",
@@ -14469,7 +14469,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 13
+      "total_stamp": 0
     },
     {
       "account_id": "4774fa38-9061-701a-8283-af46e88dec58",
@@ -14490,7 +14490,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 10
+      "total_stamp": 0
     },
     {
       "account_id": "77940a78-f0d1-7045-3ed5-06a38eb5316d",
@@ -14511,7 +14511,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 13
+      "total_stamp": 0
     },
     {
       "account_id": "b7045a48-b0e1-7098-6191-bd209aefffa6",
@@ -14531,8 +14531,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
-      "total_stamp": 5
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "77e40ab8-f041-707f-8cc3-3faed20f4c5b",
@@ -14573,8 +14573,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 2
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "67c4faa8-b021-7024-dd9c-9a15da8d35f7",
@@ -14594,7 +14594,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -14615,7 +14615,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -14636,8 +14636,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 2
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "27d4daf8-f091-70a8-d1dc-8a827348be5b",
@@ -14658,7 +14658,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 7
+      "total_stamp": 0
     },
     {
       "account_id": "4714ba38-3061-709e-66d5-fa6319fa3296",
@@ -14700,7 +14700,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 4
+      "total_stamp": 0
     },
     {
       "account_id": "77f4fa48-8051-70eb-1b9f-d05fdfdf5ab4",
@@ -14720,7 +14720,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -14742,7 +14742,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 24
+      "total_stamp": 0
     },
     {
       "account_id": "d774ea88-d0f1-704b-9747-7f102f22cd56",
@@ -14763,7 +14763,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 2
+      "total_stamp": 0
     },
     {
       "account_id": "87448ae8-20f1-70ab-46ef-133d110c5928",
@@ -14783,8 +14783,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 24
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "07747a18-6091-7099-6db1-c6cd5ed4c368",
@@ -14804,7 +14804,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -16106,8 +16106,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 7,
-      "total_stamp": 1
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "2774ca68-1021-7064-79e6-899833bce77f",
@@ -16128,7 +16128,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 4
+      "total_stamp": 0
     },
     {
       "account_id": "67e42a08-1091-709c-2ccf-69e206511b61",
@@ -16232,8 +16232,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 23,
-      "total_stamp": 27
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "57248a68-50c1-70d6-3292-8f20ab5a6399",
@@ -16254,7 +16254,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 156
+      "total_stamp": 0
     },
     {
       "account_id": "b7047a88-3071-7010-ff6d-b056aa58a86e",
@@ -16274,8 +16274,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 31
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "67048a38-d001-700f-947f-a91888dc356a",
@@ -16296,7 +16296,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 7
+      "total_stamp": 0
     },
     {
       "account_id": "f7042a38-5081-7052-938e-4327b24bf3ad",
@@ -16400,8 +16400,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 21
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "97340ab8-f0a1-7095-e6cf-0f8c38986727",
@@ -16421,8 +16421,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 20
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "e7e49a68-7031-7032-8f51-ac93180b6543",
@@ -16505,8 +16505,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 8
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "17e4fa58-8021-703a-9ab6-5d121bb4f841",
@@ -16547,7 +16547,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -16568,8 +16568,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 13
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "87a41a18-f0d1-701d-a9e8-3403903f1fc9",
@@ -16610,7 +16610,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -16632,7 +16632,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 4
+      "total_stamp": 0
     },
     {
       "account_id": "47344a88-7001-70de-eb59-d25b4eaf3b79",
@@ -16673,8 +16673,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 12
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "57a44a98-40b1-706c-508a-afc3a93de8cf",
@@ -16695,7 +16695,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 8
+      "total_stamp": 0
     },
     {
       "account_id": "07a41a18-00d1-70c0-f7b7-7d7a29e6fd2a",
@@ -16715,8 +16715,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 1
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "07242af8-30a1-7057-2905-5acaf32b43d7",
@@ -16799,7 +16799,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -16820,8 +16820,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "97f4daa8-2001-7063-77d0-1ac2b6cafc1d",
@@ -16841,7 +16841,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -16883,8 +16883,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "a774fa78-20b1-7085-960f-b3956b8174a9",
@@ -16925,7 +16925,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -16946,7 +16946,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -16967,8 +16967,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "67848a58-90e1-7056-2441-29fee756dd91",
@@ -16988,8 +16988,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 4
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "37f47a08-2071-70b5-2de7-a84177cdff4d",
@@ -17009,8 +17009,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 4
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "17948ad8-a0f1-70b9-fa77-2f10573646f2",
@@ -17093,8 +17093,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 1
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "27147ae8-b0b1-700e-7be8-36d45220d4ba",
@@ -17136,7 +17136,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 38
+      "total_stamp": 0
     },
     {
       "account_id": "07e44ae8-5071-70f1-289c-7dca48527e4c",
@@ -17178,7 +17178,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 7
+      "total_stamp": 0
     },
     {
       "account_id": "d774ea68-b091-70b0-20ac-ec5dce232099",
@@ -17199,7 +17199,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 7
+      "total_stamp": 0
     },
     {
       "account_id": "b7a45aa8-80b1-7069-537f-5a717902a3e7",
@@ -17366,8 +17366,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 27
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "b754daa8-b0f1-70fe-c3c3-2b551de80619",
@@ -17429,7 +17429,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -17513,7 +17513,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -17535,7 +17535,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 2
+      "total_stamp": 0
     },
     {
       "account_id": "f7245a58-5081-7015-0999-87a4a833b150",
@@ -17598,7 +17598,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "b7b4aaa8-30e1-7071-001c-21160be7669b",
@@ -17618,8 +17618,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 7,
-      "total_stamp": 11
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "a7945a38-60f1-700f-ffcc-c82b0e5866ff",
@@ -17702,7 +17702,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -17723,8 +17723,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 21
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "2724fa28-f0b1-709b-5625-ea69b35dccc1",
@@ -17786,8 +17786,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 1
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "67946af8-b051-70f4-ed15-61377a3a0063",
@@ -17912,8 +17912,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "27d40a88-4021-70d8-7b06-36a050e784bd",
@@ -17934,7 +17934,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 6
+      "total_stamp": 0
     },
     {
       "account_id": "c7c4ea88-9011-70b6-36df-5d6205d846c4",
@@ -17976,7 +17976,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 2
+      "total_stamp": 0
     },
     {
       "account_id": "77644ac8-40e1-708e-a37c-77da9d18f6c5",
@@ -17996,8 +17996,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 17
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "0794aa78-f0f1-70ed-4ac4-793648f4dd7b",
@@ -18060,7 +18060,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 23
+      "total_stamp": 0
     },
     {
       "account_id": "e7e4fa98-20f1-705f-6339-f1c30af18f73",
@@ -18081,7 +18081,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 5
+      "total_stamp": 0
     },
     {
       "account_id": "9714baa8-6021-704c-98b0-60726535c185",
@@ -18101,7 +18101,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 5,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -18122,7 +18122,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -18164,7 +18164,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 4,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -18185,7 +18185,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -18206,7 +18206,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -18248,7 +18248,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -18353,7 +18353,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -18416,7 +18416,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -18437,7 +18437,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -18458,7 +18458,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 5,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -18480,7 +18480,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 5
+      "total_stamp": 0
     },
     {
       "account_id": "57e46a98-2011-706a-fcec-a6df52eacf6a",
@@ -18522,7 +18522,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 12
+      "total_stamp": 0
     },
     {
       "account_id": "5774ca28-00e1-7052-3652-d1823714c2af",
@@ -18542,8 +18542,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 17,
-      "total_stamp": 2
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "67e45a48-1051-7069-211a-702c7e53dcb1",
@@ -18564,7 +18564,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 31
+      "total_stamp": 0
     },
     {
       "account_id": "4794fa38-1011-7059-41ea-ff050fc5b32e",
@@ -18584,8 +18584,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 8
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "c7d4ea08-8081-7097-7371-c6ed4b4fd39c",
@@ -18605,8 +18605,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 8
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "d7f43ae8-d0c1-7053-bcf7-ff85d90a584d",
@@ -18668,7 +18668,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -18689,7 +18689,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -18794,7 +18794,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -18858,7 +18858,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 4
+      "total_stamp": 0
     },
     {
       "account_id": "a7e45a98-1081-706e-569b-fac5c6f365e9",
@@ -18900,7 +18900,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 10
+      "total_stamp": 0
     },
     {
       "account_id": "a724ea48-f0a1-70cd-1de6-a2510dd725e6",
@@ -19005,7 +19005,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 12
+      "total_stamp": 0
     },
     {
       "account_id": "57848a18-6031-7029-64f8-19130273a141",
@@ -19026,7 +19026,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 2
+      "total_stamp": 0
     },
     {
       "account_id": "3774da98-d0e1-7034-e202-eab2be6081ce",
@@ -19047,7 +19047,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 16
+      "total_stamp": 0
     },
     {
       "account_id": "47040ae8-9021-70dc-2ee7-4437684f0793",
@@ -19067,8 +19067,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 6,
-      "total_stamp": 43
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "07549a18-9031-7015-483e-1b3c10ea9998",
@@ -19088,8 +19088,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 4,
-      "total_stamp": 47
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "77c4ca58-70a1-708b-0271-0709698dcdc0",
@@ -19109,7 +19109,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -19131,7 +19131,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 9
+      "total_stamp": 0
     },
     {
       "account_id": "e7e46af8-f0e1-70f9-f16a-7aa03997e509",
@@ -19152,7 +19152,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "57f47a28-d021-702d-5bca-db90be05a62a",
@@ -19172,7 +19172,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -19193,8 +19193,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 12
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "77045ad8-2011-70bc-ed83-0084ef42c3ae",
@@ -19214,7 +19214,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 12,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -19277,7 +19277,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -19299,7 +19299,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "d7141aa8-d0b1-7072-4e43-3b74428765cf",
@@ -19341,7 +19341,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 10
+      "total_stamp": 0
     },
     {
       "account_id": "d7746af8-60a1-70f0-f84e-be3cdea9f14c",
@@ -20264,8 +20264,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 10,
-      "total_stamp": 90
+      "total_drop": 5,
+      "total_stamp": 32
     },
     {
       "account_id": "0764cad8-60e1-70f3-4243-c9fd5ef6641c",
@@ -20285,8 +20285,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 43
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "07744a28-20f1-7008-a750-cd7499726434",
@@ -20306,8 +20306,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 15,
-      "total_stamp": 18
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "17444aa8-d011-701a-9973-0b39fc4745b1",
@@ -20327,8 +20327,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 5,
-      "total_stamp": 50
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "f7b43ac8-0061-7093-3ccd-ddbaa396d997",
@@ -20390,7 +20390,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -20453,8 +20453,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 20
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "27047ae8-d041-7081-335f-ac73e258f50d",
@@ -20495,8 +20495,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 20
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "9714aaf8-90c1-70cd-b505-3be0fec7709d",
@@ -20558,8 +20558,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 11
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "a7f4dad8-f051-704d-8235-8ad5b0327a1a",
@@ -20580,7 +20580,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 3
+      "total_stamp": 0
     },
     {
       "account_id": "a7642a78-5021-7035-289d-0ba5117b6e70",
@@ -20684,8 +20684,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 20
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "67d48a78-30f1-7013-3407-67fcd7eacbab",
@@ -20705,7 +20705,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -20789,8 +20789,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 1
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "87a4ba28-70e1-703e-722e-cf1f50fae31a",
@@ -20810,7 +20810,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -20831,8 +20831,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "e754aac8-7061-7069-11fe-b750977e6185",
@@ -20936,8 +20936,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 3
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "b7f46a18-b0e1-702d-cad3-523bb78355ff",
@@ -20978,8 +20978,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 4
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "67b4da18-4021-707b-843f-1a908d332016",
@@ -21000,7 +21000,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "87a48a88-7041-7068-78ee-612562107871",
@@ -21020,8 +21020,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 20
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "c7842a28-60d1-7019-947c-7c887cce9869",
@@ -21041,8 +21041,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 13
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "f7e47a38-6091-70a2-ad56-fc45860d5d0e",
@@ -21189,7 +21189,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 11
+      "total_stamp": 0
     },
     {
       "account_id": "07e41ab8-6041-7054-502a-832e416511aa",
@@ -21231,7 +21231,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 4
+      "total_stamp": 0
     },
     {
       "account_id": "97641a88-f031-7073-fd7b-402ef737a69b",
@@ -21335,8 +21335,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 4,
-      "total_stamp": 3
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "c7e4ca88-3041-708e-1d8e-339bd42e6d5c",
@@ -21398,7 +21398,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 14,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -21462,7 +21462,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 45
+      "total_stamp": 0
     },
     {
       "account_id": "37048a28-e021-702b-9b1b-c04960db7500",
@@ -21482,7 +21482,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -21524,7 +21524,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -21545,7 +21545,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -21566,7 +21566,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -21608,7 +21608,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -21629,7 +21629,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -21650,7 +21650,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -21692,7 +21692,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -21713,8 +21713,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 7,
-      "total_stamp": 5
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "97745a98-b0c1-70ca-675c-406d1274ad5c",
@@ -21734,7 +21734,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 5,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -21755,7 +21755,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -21776,7 +21776,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -21818,7 +21818,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -21839,7 +21839,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -21881,7 +21881,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -21923,7 +21923,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -21944,7 +21944,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -21965,7 +21965,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -22029,7 +22029,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "87841a38-4041-70ad-8c63-9eb7d5533e84",
@@ -22049,7 +22049,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -22070,7 +22070,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -22091,7 +22091,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -22112,7 +22112,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 9,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -22133,7 +22133,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 9,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -22175,8 +22175,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 23
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "e7246a28-a031-70a8-fa9b-ae571782638a",
@@ -22196,8 +22196,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 1
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "5744bac8-7001-70a7-cef8-d3ff098264ab",
@@ -22217,8 +22217,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
-      "total_stamp": 36
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "87841a78-8041-7080-a1aa-f5a7f51f63f4",
@@ -22260,7 +22260,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 32
+      "total_stamp": 0
     },
     {
       "account_id": "2764eae8-e011-7070-37a8-28b3cfa175e5",
@@ -22302,7 +22302,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 5
+      "total_stamp": 0
     },
     {
       "account_id": "27541af8-3041-7075-d2ad-09a0ad45612b",
@@ -22323,7 +22323,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 3
+      "total_stamp": 0
     },
     {
       "account_id": "57043ae8-4011-703c-45c5-c9022b713aaa",
@@ -22386,7 +22386,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 4
+      "total_stamp": 0
     },
     {
       "account_id": "f7c4ba28-20c1-70ec-9089-36da7d36972c",
@@ -22407,7 +22407,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 18
+      "total_stamp": 0
     },
     {
       "account_id": "27d44a98-b081-70cb-426e-0338a7347436",
@@ -22448,8 +22448,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 13
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "b7342a98-30a1-701c-e5e9-f9a9609711f8",
@@ -22470,7 +22470,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 23
+      "total_stamp": 0
     },
     {
       "account_id": "a7240ae8-4031-70e3-015d-ae26f6e0ad28",
@@ -22512,7 +22512,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 4
+      "total_stamp": 0
     },
     {
       "account_id": "47146aa8-3001-7025-318f-c566f611491e",
@@ -22658,7 +22658,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -22700,7 +22700,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -22784,7 +22784,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -22847,7 +22847,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -22931,7 +22931,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 5,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -22974,7 +22974,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 41
+      "total_stamp": 0
     },
     {
       "account_id": "b7b44ab8-10d1-70fc-29f7-dba368825745",
@@ -23037,7 +23037,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 5
+      "total_stamp": 0
     },
     {
       "account_id": "37549af8-10a1-7010-94f8-848ece7a78db",
@@ -23057,8 +23057,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "97246a78-a071-707d-bec5-4954999923da",
@@ -23099,8 +23099,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 25
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "97a4fa78-60e1-7067-c9a2-20fe5964cd67",
@@ -23121,7 +23121,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 8
+      "total_stamp": 0
     },
     {
       "account_id": "c7e42af8-50f1-705f-d09f-6e209fb00554",
@@ -23142,7 +23142,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "b7e4da38-f0f1-70ce-f115-42e3039265b0",
@@ -23204,8 +23204,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
-      "total_stamp": 8
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "97c4eaf8-0071-7094-4493-cda31745c734",
@@ -23247,7 +23247,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 18
+      "total_stamp": 0
     },
     {
       "account_id": "d7447ae8-b021-70ec-6e4d-9364c35711b9",
@@ -23310,7 +23310,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "87b49ad8-2041-7047-a7f8-c74d2fc676a1",
@@ -23331,7 +23331,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "57c46a78-f0a1-70d8-857a-0802abf2d130",
@@ -23352,7 +23352,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 17
+      "total_stamp": 0
     },
     {
       "account_id": "77a4ba18-e0a1-7019-dbfe-697f3ab8b790",
@@ -23394,7 +23394,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 3
+      "total_stamp": 0
     },
     {
       "account_id": "5744cab8-70b1-70cb-3183-8a52671d0318",
@@ -23415,7 +23415,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "37844a18-f031-70cc-cc66-17a26a8aea7c",
@@ -23456,8 +23456,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
-      "total_stamp": 16
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "b774fa98-e0c1-70df-c692-25bc90df1678",
@@ -23478,7 +23478,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 30
+      "total_stamp": 0
     },
     {
       "account_id": "f7843a88-a0b1-70b7-2c9f-0a48135f3f81",
@@ -23499,7 +23499,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 2
+      "total_stamp": 0
     },
     {
       "account_id": "c7a4ea68-4011-70e7-f7ac-fbc8395e612b",
@@ -23583,7 +23583,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "b784aa38-40f1-70b8-ac67-c682fea8d0d0",
@@ -23604,7 +23604,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 6
+      "total_stamp": 0
     },
     {
       "account_id": "6744aaf8-5021-70e6-6185-9f61ea8843a5",
@@ -23646,7 +23646,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 2
+      "total_stamp": 0
     },
     {
       "account_id": "27041a98-8021-70cd-6493-7d9d28e2fc3e",
@@ -23667,7 +23667,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 5
+      "total_stamp": 0
     },
     {
       "account_id": "1744bab8-f0e1-7067-9602-b09405ecadbe",
@@ -23709,7 +23709,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "9784cab8-b011-7064-0118-e1d9437e0ced",
@@ -23897,7 +23897,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -24653,7 +24653,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -24674,7 +24674,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -24696,7 +24696,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 5
+      "total_stamp": 0
     },
     {
       "account_id": "67245a88-6011-70cc-5afd-b852acb78a99",
@@ -24716,8 +24716,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 21,
-      "total_stamp": 53
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "27b46a68-6051-709f-47bf-ea6cf03a646b",
@@ -24737,7 +24737,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -24842,8 +24842,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 2
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "87e4caf8-2051-7005-fc07-2b49551460ab",
@@ -24948,7 +24948,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 3
+      "total_stamp": 0
     },
     {
       "account_id": "b7c4fa98-40e1-7058-31f8-b7c850f9bdca",
@@ -24969,7 +24969,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "87d46a88-70f1-7052-12ec-6f5cca10133d",
@@ -25074,7 +25074,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 2
+      "total_stamp": 0
     },
     {
       "account_id": "67f4eae8-80c1-700a-743e-40f1c02513d2",
@@ -25116,7 +25116,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "97340a18-b021-7016-876d-ed17f0149dc9",
@@ -25157,7 +25157,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -25199,8 +25199,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 22
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "f7a4ca58-b0a1-70da-14c3-1f9a42069880",
@@ -25242,7 +25242,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "17b4daa8-40f1-7030-eac1-0ffca440601f",
@@ -25262,8 +25262,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 20
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "9784cac8-9081-7072-b2a5-18230c5bd6c8",
@@ -25283,8 +25283,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 20
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "37543a58-d011-70b7-c00e-7870e6f84873",
@@ -25305,7 +25305,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "c7e4da38-1061-70d7-423f-76962580d00f",
@@ -25346,7 +25346,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -25367,8 +25367,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 23
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "a7b4eaa8-0081-7026-0e65-df663a41a9fa",
@@ -25409,7 +25409,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -25451,7 +25451,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -25536,7 +25536,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "77b46a88-3011-70a0-b51b-6114c1e1e214",
@@ -25577,8 +25577,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 15
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "c7c46a38-00a1-7067-7b3d-ec7f61c8c6e4",
@@ -25662,7 +25662,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 2
+      "total_stamp": 0
     },
     {
       "account_id": "c7a48a08-d071-7027-0313-f945f72d5d66",
@@ -25683,7 +25683,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "07c41a58-0001-703b-cf8e-0776286014c8",
@@ -25724,8 +25724,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 17
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "17340a68-8081-70cb-a6e6-019fd16b0028",
@@ -25787,8 +25787,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 20
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "c7f40ac8-30a1-7016-df31-af6a776864e8",
@@ -25808,8 +25808,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 22
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "17144a78-d081-707c-36f1-283694731a31",
@@ -25829,8 +25829,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "87b42a98-a0a1-70c7-d9b9-93df04c1c48e",
@@ -25850,8 +25850,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "17246a78-5011-70a4-1c9c-21e29940c4ad",
@@ -25871,7 +25871,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -25914,7 +25914,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 14
+      "total_stamp": 0
     },
     {
       "account_id": "37d4ea78-20a1-70c3-307a-3d6eca22093a",
@@ -25934,7 +25934,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -25976,7 +25976,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 16,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -26060,7 +26060,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -26081,8 +26081,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 8,
-      "total_stamp": 3
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "77e4ca28-e021-7060-fc1b-0091bc44096e",
@@ -26102,7 +26102,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -26186,7 +26186,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -26207,7 +26207,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -26228,7 +26228,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -26291,7 +26291,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -26312,7 +26312,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -26333,7 +26333,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -26354,7 +26354,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -26396,7 +26396,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -26417,7 +26417,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -26480,7 +26480,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -26501,7 +26501,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -26522,7 +26522,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 4,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -26543,7 +26543,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 8,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -26564,7 +26564,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -26585,7 +26585,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -26669,7 +26669,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 19,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -26690,8 +26690,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 6,
-      "total_stamp": 7
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "57e4dac8-d011-70de-a3e1-58bee9ae78ad",
@@ -26712,7 +26712,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 3
+      "total_stamp": 0
     },
     {
       "account_id": "47a49a28-f0c1-70fc-a4aa-53d85543a025",
@@ -26732,8 +26732,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 30
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "b7c42a98-9061-707c-8499-1f3787266b0a",
@@ -26754,7 +26754,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 3
+      "total_stamp": 0
     },
     {
       "account_id": "97242ab8-8041-7090-216c-f64a0ff3430f",
@@ -26816,8 +26816,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "77e4fac8-20c1-7031-a15b-cf1e8a045c5f",
@@ -26838,7 +26838,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 9
+      "total_stamp": 0
     },
     {
       "account_id": "e7343af8-8021-70d5-b443-951e04de3287",
@@ -26859,7 +26859,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "17743a48-b001-7074-7701-5b01e455054b",
@@ -26880,7 +26880,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 21
+      "total_stamp": 0
     },
     {
       "account_id": "6704da68-f031-7088-eec5-0c8fd2e69265",
@@ -26963,8 +26963,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 9
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "07e48a78-5001-7083-f420-939b4fa047b9",
@@ -26985,7 +26985,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "57748ae8-4031-70d7-fbe2-8212a1c79d4c",
@@ -27005,7 +27005,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 12,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -27026,7 +27026,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -27047,7 +27047,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -27131,7 +27131,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -27194,7 +27194,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -27215,8 +27215,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 1
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "b7b48a48-6071-70e3-11de-cee365da3ecf",
@@ -27405,7 +27405,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 34
+      "total_stamp": 0
     },
     {
       "account_id": "17d40a78-10a1-709a-ebb6-f984a76b3e04",
@@ -27425,7 +27425,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 5,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -27446,7 +27446,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 8,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -27488,8 +27488,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 16,
-      "total_stamp": 52
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "4714da98-d061-7068-01de-256de92f0ecd",
@@ -27510,7 +27510,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 39
+      "total_stamp": 0
     },
     {
       "account_id": "27d44aa8-90f1-7025-4747-ad6285af03f6",
@@ -27531,7 +27531,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "c7d4da88-c011-70f4-8960-b9f6f2b792c6",
@@ -27552,7 +27552,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "57d4baa8-a0c1-70cd-d984-2cb9f0bf61ec",
@@ -27572,8 +27572,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 1
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "97546a18-4011-70b2-3c1c-444bf35c67ba",
@@ -27593,8 +27593,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 3
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "77445a28-b081-705b-1d47-23ca64ad710c",
@@ -27614,8 +27614,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 2
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "1754ea68-9061-70f8-4585-331e5de9c609",
@@ -27635,8 +27635,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 1
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "87c4aa88-8081-70ec-c643-dd2da74b314f",
@@ -27678,7 +27678,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 17
+      "total_stamp": 0
     },
     {
       "account_id": "47244af8-f031-702e-3e8e-739c62e43bd6",
@@ -27740,8 +27740,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 15
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "b7e40ae8-e031-7035-1483-c7a7fc149280",
@@ -27762,7 +27762,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 7
+      "total_stamp": 0
     },
     {
       "account_id": "7754dac8-e0b1-7091-d549-ad305f306844",
@@ -27782,8 +27782,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 15
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "57442a08-2021-7003-c4b7-c6d230612618",
@@ -27804,7 +27804,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 2
+      "total_stamp": 0
     },
     {
       "account_id": "57543ae8-3071-70a7-4b0d-3211d8982f96",
@@ -27824,8 +27824,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
-      "total_stamp": 16
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "97744aa8-30b1-7085-b321-ecddedb947ee",
@@ -27888,7 +27888,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 2
+      "total_stamp": 0
     },
     {
       "account_id": "b7547ab8-80f1-704c-e34f-5fcceff99eec",
@@ -27909,7 +27909,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 5
+      "total_stamp": 0
     },
     {
       "account_id": "07b4da08-1051-70b4-496a-c17a19058fd8",
@@ -27951,7 +27951,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "47646a18-d031-709a-f751-b9e3d80c6f44",
@@ -27972,7 +27972,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "e7640a38-80f1-706f-f527-2d70cda82f92",
@@ -27993,7 +27993,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "37c42ab8-f041-7025-85f2-da222f1f9e78",
@@ -28014,7 +28014,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 12
+      "total_stamp": 0
     },
     {
       "account_id": "5784da18-c061-70b5-1764-e688631320d0",
@@ -28349,7 +28349,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -29421,7 +29421,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 9
+      "total_stamp": 0
     },
     {
       "account_id": "c7a4fab8-60f1-70d2-0467-95ceb6e78da9",
@@ -29442,7 +29442,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 5
+      "total_stamp": 0
     },
     {
       "account_id": "07b4bac8-e031-70d8-958e-eb10d3ea1667",
@@ -29462,7 +29462,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -29484,7 +29484,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 20
+      "total_stamp": 0
     },
     {
       "account_id": "1784caf8-5001-707d-969b-41009374c5c8",
@@ -29504,8 +29504,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 31,
-      "total_stamp": 40
+      "total_drop": 14,
+      "total_stamp": 3
     },
     {
       "account_id": "d7f42a78-f041-7048-11a0-5c84784a7679",
@@ -29526,7 +29526,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 7
+      "total_stamp": 0
     },
     {
       "account_id": "d7e4aaa8-c0e1-705d-0b18-29caa4962697",
@@ -29568,7 +29568,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "a7243a58-1091-70b3-3843-825a0421f95d",
@@ -29610,7 +29610,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 10
+      "total_stamp": 0
     },
     {
       "account_id": "07247a88-3061-70e1-f602-91d6fd6c7924",
@@ -29651,8 +29651,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 29,
-      "total_stamp": 38
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "8754aaa8-5051-7044-bd03-03636a8d149e",
@@ -29777,8 +29777,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "2714da48-a0a1-709a-7eeb-c7881af94fbc",
@@ -29798,8 +29798,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 1
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "47842aa8-80c1-705c-0535-43e18635d7ef",
@@ -29862,7 +29862,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 3
+      "total_stamp": 0
     },
     {
       "account_id": "17e49a18-50d1-701e-e13e-bd8e5a4cb5ef",
@@ -29882,8 +29882,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 2
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "b7144a58-b0f1-7096-6503-3f1fcf489889",
@@ -29903,8 +29903,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 22
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "2714cab8-50f1-7073-bb0c-4eb6b625e88b",
@@ -29925,7 +29925,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 17
+      "total_stamp": 0
     },
     {
       "account_id": "07e4aaf8-20c1-7016-a604-f52003351ede",
@@ -29966,7 +29966,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -29987,7 +29987,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -30029,8 +30029,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 32
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "4734fa68-10e1-7075-cf00-364495b1e23d",
@@ -30050,8 +30050,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "37847a78-40d1-707e-935c-25822e3f5de7",
@@ -30071,8 +30071,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 3
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "47c4aab8-8061-70c8-92c7-ff65ccd6f91b",
@@ -30093,7 +30093,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "4744baa8-70b1-7094-4e62-2df8eec6afeb",
@@ -30113,8 +30113,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 1
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "47e4da38-7091-7086-651a-0639661d3649",
@@ -30218,7 +30218,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -30281,8 +30281,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 20
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "5754fa18-4091-708d-40b6-093cbaa07ba0",
@@ -30302,8 +30302,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 20
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "67b40ae8-e051-70f6-d5e5-43fe16d35de0",
@@ -30407,7 +30407,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -30428,8 +30428,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 25
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "77545af8-2071-70a5-1e32-651f1074ca11",
@@ -30471,7 +30471,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 3
+      "total_stamp": 0
     },
     {
       "account_id": "37f4ca28-c071-70c6-7d1d-9390448bc515",
@@ -30492,7 +30492,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 6
+      "total_stamp": 0
     },
     {
       "account_id": "e7c4ea08-a021-7032-3256-51fcfaf28d58",
@@ -30512,8 +30512,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 4
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "a7e49a38-e0a1-70ed-9cc4-0db5fb0c5584",
@@ -30554,8 +30554,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 30
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "37c4eaa8-10c1-7055-ba48-dded6e78c1f3",
@@ -30576,7 +30576,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "37741a98-60f1-70d1-1a0c-6d7facb4c6bd",
@@ -30681,7 +30681,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "b7747a08-6071-7018-39dd-c2c4f8cec9ae",
@@ -30722,8 +30722,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 25
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "97e42a28-90a1-70d0-a811-eb0c7d8766de",
@@ -30744,7 +30744,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 27
+      "total_stamp": 0
     },
     {
       "account_id": "57e46a58-9011-7087-6802-d23d2456e068",
@@ -30828,7 +30828,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 2
+      "total_stamp": 0
     },
     {
       "account_id": "97249a58-d041-7091-599d-dafe60004ef3",
@@ -30849,7 +30849,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "37144a78-e091-7089-89b5-58583c513c9d",
@@ -30890,8 +30890,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "8724faf8-5051-70b6-7a50-ddf69bc03bf8",
@@ -30911,8 +30911,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "97445a88-90b1-7021-bfbf-bc96a08178a6",
@@ -30954,7 +30954,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 33
+      "total_stamp": 0
     },
     {
       "account_id": "47944ab8-b081-7032-f048-57d43780aca4",
@@ -31079,7 +31079,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -31100,7 +31100,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -31121,7 +31121,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -31163,7 +31163,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -31227,7 +31227,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "97240a18-9091-704c-3ff5-60bf74469b0c",
@@ -31373,8 +31373,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 5,
-      "total_stamp": 25
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "b7a45ac8-90d1-7011-76b5-0a96f4031520",
@@ -31415,7 +31415,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 6,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -31436,7 +31436,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 10,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -31478,7 +31478,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -31499,7 +31499,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -31541,7 +31541,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 6,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -31583,7 +31583,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 8,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -31646,7 +31646,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -31709,7 +31709,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -31730,7 +31730,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -31751,7 +31751,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -31814,7 +31814,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -31919,7 +31919,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -31940,7 +31940,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -31961,7 +31961,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 6,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -32003,7 +32003,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 6,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -32024,7 +32024,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 7,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -32108,7 +32108,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -32129,7 +32129,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -32172,7 +32172,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 5
+      "total_stamp": 0
     },
     {
       "account_id": "07a42aa8-f0e1-7046-ad51-08b955ce8b1f",
@@ -32192,8 +32192,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 9
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "d7c40a78-5061-7017-65a1-d3ac83fccf1e",
@@ -32255,7 +32255,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -32276,8 +32276,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
-      "total_stamp": 31
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "d7b42ad8-f041-70e9-0384-a4d412569f16",
@@ -32298,7 +32298,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 21
+      "total_stamp": 0
     },
     {
       "account_id": "f7648a78-3071-704f-452a-ddccce27798b",
@@ -32340,7 +32340,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 8
+      "total_stamp": 0
     },
     {
       "account_id": "6704fab8-1021-70ea-8d79-76ba1637079a",
@@ -32382,7 +32382,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 5
+      "total_stamp": 0
     },
     {
       "account_id": "4724daf8-1001-70fa-804e-4bf5485c41d3",
@@ -32423,8 +32423,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 19,
-      "total_stamp": 6
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "77c46ad8-6061-7088-d565-eed07d0c48cb",
@@ -32445,7 +32445,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 4
+      "total_stamp": 0
     },
     {
       "account_id": "9774faa8-70c1-705b-1593-7a6342665175",
@@ -32466,7 +32466,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "f794ea68-b061-70a0-f69c-189d7031aa1b",
@@ -32528,8 +32528,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 6
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "c734ea48-f021-705b-1846-0cf7d9a6a5c6",
@@ -32570,8 +32570,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
-      "total_stamp": 25
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "a7940ad8-50c1-7019-f599-ee86745e2dba",
@@ -32612,7 +32612,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 16,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -32654,7 +32654,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -32696,7 +32696,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -32738,7 +32738,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -32844,7 +32844,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "77c45a38-8051-700b-8feb-8976dad2be03",
@@ -32906,8 +32906,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 6
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "d774da68-80e1-7058-631e-7e4e0d8494ba",
@@ -32927,7 +32927,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -32990,7 +32990,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -33033,7 +33033,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "17942aa8-c0e1-7003-31d2-f67a1356cd24",
@@ -33074,7 +33074,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -33096,7 +33096,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 13
+      "total_stamp": 0
     },
     {
       "account_id": "f764aa58-3091-7083-3fc5-87a97b72eb81",
@@ -33117,7 +33117,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 3
+      "total_stamp": 0
     },
     {
       "account_id": "a7345a28-00d1-706e-5013-0e7984a567d4",
@@ -33158,8 +33158,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 11,
-      "total_stamp": 11
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "17b48a48-f071-706d-64dc-ee5d21c0d647",
@@ -33179,8 +33179,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 1
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "17448a78-90f1-704f-424a-d9c0cb47bb45",
@@ -33200,8 +33200,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 16
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "37d40a08-7011-702b-2401-7f99a252d988",
@@ -33264,7 +33264,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 8
+      "total_stamp": 0
     },
     {
       "account_id": "67e4cae8-0061-7053-fd0c-06d3620e0740",
@@ -33285,7 +33285,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 12
+      "total_stamp": 0
     },
     {
       "account_id": "a704ea58-6011-7074-62cc-8304f3e82473",
@@ -33327,7 +33327,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 3
+      "total_stamp": 0
     },
     {
       "account_id": "47f40a58-90a1-704b-4e01-e198ed976c06",
@@ -33348,7 +33348,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "c774dab8-60c1-70b5-b9a3-801a635f5f40",
@@ -33369,7 +33369,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 2
+      "total_stamp": 0
     },
     {
       "account_id": "0724fad8-4091-7018-b56c-0b1770584739",
@@ -33390,7 +33390,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 17
+      "total_stamp": 0
     },
     {
       "account_id": "f7145ab8-d0d1-7027-ab23-5c651e157841",
@@ -33452,8 +33452,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 7
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "c7041aa8-00f1-708b-838c-f881d45d48a5",
@@ -33473,8 +33473,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 6,
-      "total_stamp": 6
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "c7c44ac8-a041-7015-615f-8e30d41de5d2",
@@ -33495,7 +33495,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 14
+      "total_stamp": 0
     },
     {
       "account_id": "e7546ac8-6041-7048-f7ce-8a3c93f8d5aa",
@@ -33516,7 +33516,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 14
+      "total_stamp": 0
     },
     {
       "account_id": "a774faa8-4071-7081-617f-ae91c451aa5d",
@@ -33557,8 +33557,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 12
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "77941a78-b001-705f-0fb5-efd0cccfb350",
@@ -33620,8 +33620,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 1
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "57446ae8-f011-70bc-ffe1-c12f52efdd47",
@@ -33726,7 +33726,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "6794faa8-f081-70fc-8cf7-1f7e6aa39b11",
@@ -34901,8 +34901,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 13,
-      "total_stamp": 42
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "87e42af8-8071-70ab-057a-9473b1f51963",
@@ -34922,7 +34922,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -34944,7 +34944,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 6
+      "total_stamp": 0
     },
     {
       "account_id": "b714cae8-9091-7071-61e5-1911f253d806",
@@ -34985,8 +34985,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "a7a46a18-9081-706a-ce70-1f1af10ba1e4",
@@ -35090,8 +35090,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 51
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "17846a28-10b1-70e8-f7dd-fa131f878de0",
@@ -35111,8 +35111,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 21
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "3754ba18-c001-70cf-161a-b48f25b5faba",
@@ -35132,8 +35132,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 20
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "8724fa88-8021-70d4-6a8a-9ea85cf47ddc",
@@ -35174,7 +35174,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -35195,8 +35195,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 14
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "97d4ea08-6061-7069-af8b-09301271a1fd",
@@ -35216,8 +35216,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 32
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "57941a38-70e1-7002-6661-a1e81acb997b",
@@ -35280,7 +35280,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 3
+      "total_stamp": 0
     },
     {
       "account_id": "57447ae8-30a1-708e-bb33-2db566eacea7",
@@ -35342,8 +35342,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 23
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "c724ba58-30d1-7067-24a1-a54db522e1a5",
@@ -35447,8 +35447,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 53
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "97549ac8-8021-709e-e8a5-69f18ea1f596",
@@ -35468,8 +35468,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 53
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "57e4ea58-a071-70ad-98d7-9d39fee771c2",
@@ -35552,8 +35552,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
-      "total_stamp": 30
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "d7644a68-70c1-70f9-8ea1-bc3a7017748f",
@@ -35573,8 +35573,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 21
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "17c41a78-0091-704d-277d-9af50991cdd4",
@@ -35615,8 +35615,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 11
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "87f40ab8-f071-70a5-f81e-8cf837a45e8e",
@@ -35637,7 +35637,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 21
+      "total_stamp": 0
     },
     {
       "account_id": "c7e47ab8-b0e1-70c4-4c34-543d2a9fc784",
@@ -35657,8 +35657,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "d724ca68-2011-7000-8e76-b20dea7bd466",
@@ -35679,7 +35679,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 16
+      "total_stamp": 0
     },
     {
       "account_id": "47a40a88-a031-70b5-2b75-550fefb494b2",
@@ -35699,7 +35699,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -35783,7 +35783,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -35825,7 +35825,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -35846,7 +35846,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -35909,7 +35909,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -35951,8 +35951,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 6,
-      "total_stamp": 12
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "17a4cab8-7071-705a-cc3b-9859e62d5745",
@@ -36056,7 +36056,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -36077,7 +36077,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -36098,7 +36098,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 3,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -36119,7 +36119,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -36140,7 +36140,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 4,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -36161,7 +36161,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -36182,7 +36182,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -36203,7 +36203,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -36245,7 +36245,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 4,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -36309,7 +36309,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "f734caf8-0051-70a5-a5d5-f47ec831a85a",
@@ -36329,8 +36329,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 19
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "17843aa8-b0b1-702a-5b8c-26e064520423",
@@ -36393,7 +36393,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 5
+      "total_stamp": 0
     },
     {
       "account_id": "57643a88-f081-7073-99fd-b9c96716c33f",
@@ -36414,7 +36414,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 3
+      "total_stamp": 0
     },
     {
       "account_id": "c744ea48-b0a1-704d-a3ae-56ee68dc9651",
@@ -36435,7 +36435,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 4
+      "total_stamp": 0
     },
     {
       "account_id": "b7d4aa08-4081-70be-bf56-05d7c7108588",
@@ -36456,7 +36456,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 4
+      "total_stamp": 0
     },
     {
       "account_id": "e734dad8-0011-70bd-fdd9-a79e3351d7e9",
@@ -36519,7 +36519,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 6
+      "total_stamp": 0
     },
     {
       "account_id": "c7445a48-8061-70f9-7549-6b57f8561d6b",
@@ -36539,8 +36539,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 9
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "97846a18-8041-7098-b38f-91a000373b81",
@@ -36561,7 +36561,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "37745ad8-f011-7000-38e3-8e001e458da2",
@@ -36582,7 +36582,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 11
+      "total_stamp": 0
     },
     {
       "account_id": "c7949ab8-5031-70e2-3970-f4a8368c8b53",
@@ -36623,8 +36623,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "c7d4ba98-70c1-7071-953b-86d2856848ef",
@@ -36645,7 +36645,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 20
+      "total_stamp": 0
     },
     {
       "account_id": "b7643ae8-90a1-7046-5c4e-273425f53d5e",
@@ -36687,7 +36687,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 2
+      "total_stamp": 0
     },
     {
       "account_id": "b714baa8-2061-7036-380a-6ebfb3a0f71b",
@@ -36749,7 +36749,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -36770,7 +36770,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -36791,7 +36791,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -37149,7 +37149,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 42
+      "total_stamp": 0
     },
     {
       "account_id": "27f49a98-f041-700e-9f85-9339ecf7f1ca",
@@ -37190,8 +37190,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 12,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "f7d4aa38-e0a1-7030-dffb-55adf3cb280a",
@@ -37211,7 +37211,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -37232,8 +37232,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 8
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "4764bac8-8051-7024-934b-f793c483cecb",
@@ -37254,7 +37254,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "7764eae8-00f1-7034-bca8-44c6c951641a",
@@ -37275,7 +37275,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 13
+      "total_stamp": 0
     },
     {
       "account_id": "37745a48-70b1-70af-1c0d-80ece0afbc4e",
@@ -37359,7 +37359,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 2
+      "total_stamp": 0
     },
     {
       "account_id": "37441ae8-9031-70da-cf7c-52bc5c6e6f22",
@@ -37463,7 +37463,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -37485,7 +37485,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 17
+      "total_stamp": 0
     },
     {
       "account_id": "17e49ad8-f0a1-706d-210b-e77d73d9f306",
@@ -37548,7 +37548,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 12
+      "total_stamp": 0
     },
     {
       "account_id": "0734ea48-e081-703d-4c85-77726daff37d",
@@ -38241,7 +38241,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "17b4da28-0041-70d2-1c91-7c2b00827423",
@@ -38367,7 +38367,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 11
+      "total_stamp": 0
     },
     {
       "account_id": "e7a40af8-6001-70ef-4e0b-48884a072945",
@@ -38388,7 +38388,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 30
+      "total_stamp": 0
     },
     {
       "account_id": "a7f47a38-b011-70e1-809f-2353bd3e593b",
@@ -38513,7 +38513,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -38534,7 +38534,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 41,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -38639,8 +38639,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
-      "total_stamp": 10
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "a724aa68-4051-7034-3a12-d8a7115aed68",
@@ -38660,7 +38660,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -38681,7 +38681,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -38745,7 +38745,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 4
+      "total_stamp": 0
     },
     {
       "account_id": "f704cac8-20d1-7007-1f8b-6f1f8e5e8a55",
@@ -38766,7 +38766,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 4
+      "total_stamp": 0
     },
     {
       "account_id": "47648a48-9011-70c7-232f-a137c4136c4b",
@@ -38787,7 +38787,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 7
+      "total_stamp": 0
     },
     {
       "account_id": "87b48a88-c081-709a-b63a-a408b4840e3a",
@@ -38808,7 +38808,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 5
+      "total_stamp": 0
     },
     {
       "account_id": "67444a58-6041-70d5-5983-7690180cebe2",
@@ -38850,7 +38850,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 11
+      "total_stamp": 0
     },
     {
       "account_id": "e7a4ca18-90e1-7055-4c85-dd40ae92c244",
@@ -38975,8 +38975,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 13,
-      "total_stamp": 43
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "d7d4ead8-c021-703c-2504-f98da2b217a9",
@@ -39018,7 +39018,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 1
+      "total_stamp": 0
     },
     {
       "account_id": "47346aa8-20c1-7058-8460-a7a75c3d47d6",
@@ -39081,7 +39081,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 5
+      "total_stamp": 0
     },
     {
       "account_id": "d7f47a88-f0f1-7036-e017-45444055e97c",
@@ -39144,7 +39144,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 15
+      "total_stamp": 0
     },
     {
       "account_id": "f734eae8-a091-70ae-2015-0cac0ba35661",
@@ -39374,7 +39374,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 1,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -39437,8 +39437,8 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 5,
-      "total_stamp": 7
+      "total_drop": 0,
+      "total_stamp": 0
     },
     {
       "account_id": "37a45ac8-c051-70d6-eb26-7e7d9ce1614c",
@@ -39480,7 +39480,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 20
+      "total_stamp": 0
     },
     {
       "account_id": "07948af8-d061-70e6-ad16-14b7d0fcb769",
@@ -39563,7 +39563,7 @@
       "questionnaire_q3": null,
       "questionnaire_q4": null,
       "questionnaire_q5": null,
-      "total_drop": 2,
+      "total_drop": 0,
       "total_stamp": 0
     },
     {
@@ -39690,7 +39690,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 31
+      "total_stamp": 0
     },
     {
       "account_id": "77141a18-c0d1-702d-4060-f24578710b11",
@@ -39753,7 +39753,7 @@
       "questionnaire_q4": null,
       "questionnaire_q5": null,
       "total_drop": 0,
-      "total_stamp": 37
+      "total_stamp": 0
     },
     {
       "account_id": "97944a58-3041-7051-2950-ba82603a3998",
