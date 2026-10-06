@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DROP 投稿一覧 × 投稿マップ（DROPS投稿賞 対象者）</title>
+  <title>DROP 投稿一覧 × 投稿マップ</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
@@ -61,6 +61,11 @@
     .post-card .pc-foot { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
     .post-card .pc-name { font-size: 11.5px; color: var(--muted); font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     .post-card .pc-time { font-size: 10.5px; color: var(--dim); font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .award-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; font-size: 12px; color: var(--muted); }
+    .award-bar .seg { display: inline-flex; border: 1px solid var(--stroke); }
+    .award-bar .seg button { border: none; border-right: 1px solid var(--stroke); background: #fff; color: var(--muted); font-family: var(--font); font-size: 12px; padding: 6px 14px; cursor: pointer; }
+    .award-bar .seg button:last-child { border-right: none; }
+    .award-bar .seg button.on { background: #6a3fb0; color: #fff; font-weight: 700; }
     .list-head-meta { font-size: 12px; color: var(--dim); font-variant-numeric: tabular-nums; }
     .more-wrap { text-align: center; margin-top: 22px; }
     .more-btn { border: 1px solid var(--stroke); background: #fff; color: var(--muted); font-family: var(--font); font-size: 13px; padding: 10px 28px; cursor: pointer; border-radius: 0; transition: .15s; }
@@ -104,7 +109,7 @@
     <div class="topbar">
       <div>
         <h1>DROP Posts</h1>
-        <p>DROPS投稿賞 対象者（応募者一覧（富山市送付用）F列＝1）の投稿画像・コメント・投稿者・投稿日時・投稿場所の一覧</p>
+        <p>投稿画像・コメント・投稿者・投稿日時・投稿場所の一覧</p>
       </div>
       <div class="status"><span class="pulse"></span> latest timestamp: <b>&nbsp;<span id="metaUpdated2">–</span></b></div>
     </div>
@@ -126,6 +131,14 @@
       <section id="list-section">
         <div class="section-label"><h2>Post List</h2><div class="meta list-head-meta" id="listMeta">–</div></div>
         <div class="panel" style="border-top:2px solid rgba(122,88,176,.55);">
+          <div class="award-bar">
+            <span>DROPS投稿賞 対象者：</span>
+            <div class="seg" id="awardSeg">
+              <button type="button" data-award="1" class="on">対象者のみ（1）</button>
+              <button type="button" data-award="0">対象外のみ（0）</button>
+              <button type="button" data-award="all">すべて（0・1）</button>
+            </div>
+          </div>
           <div class="post-grid" id="postGrid">
             <div class="empty-state" style="grid-column:1/-1"><b>読み込み中…</b>json/mart_action_drop_user_scored_spot_attach_edited.json を取得しています</div>
           </div>
@@ -135,7 +148,7 @@
     </div>
 
     <div class="footer-note">
-      データソース: <code id="srcName">json/mart_action_drop_user_scored_spot_attach_edited.json</code> ／ 対象者リスト: <code id="targetSrcName">–</code> ・ 一覧をクリック → 地図上の投稿場所を強調表示 ／ ピンをクリック → 一覧の該当投稿にフォーカス ／ 「拡大」ボタン → 拡大表示
+      データソース: <code id="srcName">json/mart_action_drop_user_scored_spot_attach_edited.json</code> ・ 一覧をクリック → 地図上の投稿場所を強調表示 ／ ピンをクリック → 一覧の該当投稿にフォーカス ／ 「拡大」ボタン → 拡大表示
     </div>
   </main>
 
@@ -168,40 +181,34 @@
   const CONFIG = {
     // 自動で読みに行くJSON（上から順に試す）。ファイル名が変わったらここだけ修正
     dataSources: ["json/mart_action_drop_user_scored_spot_attach_edited.json", "mart_action_drop_user_scored_spot_attach_edited.json"],
-    // 地図に使う緯度経度の列（元の details_drop.html / mart_action_drop_user_scored_spot_attach_edited.json と同じ列）
+    // DROPS投稿賞の対象フラグ列（1＝対象者 / 0＝対象外）。空白・括弧の全角半角の違いは吸収して探す
+    awardField: "応募者一覧 (富山市送付用)F",
+    awardDefault: "1",   // 初期表示："1"＝対象者のみ / "0"＝対象外のみ / "all"＝すべて
+    // 地図に使う緯度経度の列（元の details_drop.html / mart_action_drop.json と同じ列）
     latField: "latitude",
     lngField: "longitude",
     map: {
       center: [34.6905, 135.5023], zoom: 13, minZoom: 10, maxZoom: 18, focusZoom: 17,
       cartoApiKey: MAP_CFG.cartoApiKey, tile: MAP_CFG.tile, attribution: MAP_CFG.attribution
     },
-    pageSize: 24,
-
-    // ===== DROPS投稿賞 対象者リスト =====
-    // 「富山まつり_2026_登録者・応募者一覧」の「応募者一覧（富山市送付用）」タブを CSV 保存したもの
-    // （Excel の「CSV UTF-8」「CSV（コンマ区切り）＝Shift_JIS」どちらでも可）
-    targetList: {
-      sources: ["csv/drop_award_targets.csv", "drop_award_targets.csv"],  // 上から順に試す
-      flagColumn: "F",     // 対象フラグの列（列記号）
-      flagValue: "1",      // この値の行だけを対象者とする
-      // 対象者を特定する列（見出し名 → 投稿JSON側の列）。上から順に、CSVの見出しに存在する列を使う
-      keyColumns: [
-        { header: "account_id",   field: "account_id" },
-        { header: "アカウントID", field: "account_id" },
-        { header: "ユーザーID",   field: "account_id" },
-        { header: "user_id",      field: "account_id" },
-        { header: "account_name", field: "account_name" },
-        { header: "アカウント名", field: "account_name" },
-        { header: "ユーザー名",   field: "account_name" }
-      ]
-    }
+    pageSize: 24
   };
 
   const el = (id) => document.getElementById(id);
   const setText = (id, v) => { const e = el(id); if (e) e.textContent = v; };
   const esc = (t) => (t == null ? "" : String(t)).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
-  const state = { limit: CONFIG.pageSize, selId: null };
+  const state = { limit: CONFIG.pageSize, selId: null, award: CONFIG.awardDefault };
+  // 列名のゆらぎ（全角/半角括弧・空白）を吸収して対象フラグ列を特定
+  const normKey = (k) => String(k).normalize("NFKC").replace(/\s+/g, "");
+  let AWARD_KEY = null;
+  function findAwardKey(records) {
+    const want = normKey(CONFIG.awardField);
+    for (const r of records.slice(0, 50)) for (const k of Object.keys(r)) if (normKey(k) === want) return k;
+    return null;
+  }
+  // 1 / "1" / 1.0 / true → "1"、それ以外（0・空・null）→ "0"
+  const toFlag = (v) => (v === true || Number(v) === 1) ? "1" : "0";
   let POSTS = [], FILTERED = [], map, markerLayer, markerById = {};
 
   function normalize(records) {
@@ -213,9 +220,9 @@
       if (isNaN(lat) || isNaN(lng)) continue;
       out.push({
         id: String(r.artwork_id), s: r.sentence || "", n: r.account_name || "",
-        key: { account_id: String(r.account_id ?? "").trim(), account_name: String(r.account_name ?? "").trim() },  // 対象者判定用
         t: r.post_dated_at || "", date: r.post_date || (r.post_dated_at || "").slice(0, 10),
         lat, lng, img: r.image_file_path_thumbnail || "",
+        award: AWARD_KEY ? toFlag(r[AWARD_KEY]) : "0",
         place: `${lat.toFixed(5)}, ${lng.toFixed(5)}`   // 地図ポップアップ／拡大表示でのみ使用（一覧には出さない）
       });
     }
@@ -286,6 +293,12 @@
   }
   el("clearSelBtn").addEventListener("click", clearSelection);
   el("fitBtn").addEventListener("click", () => fitAll());
+  // 対象者フィルタの切替
+  el("awardSeg").querySelectorAll("button").forEach(b => b.addEventListener("click", () => {
+    state.award = b.dataset.award;
+    el("awardSeg").querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b));
+    state.limit = CONFIG.pageSize; render(); fitAll();
+  }));
 
   function highlightCard(id, scroll) {
     const idx = FILTERED.findIndex(x => x.id === id);
@@ -304,8 +317,7 @@
 
   // ---- 描画 ----
   function render() {
-    // 対象者（TARGET.keys）の投稿だけに絞る。対象者リストが読めていない場合は何も表示しない
-    FILTERED = POSTS.filter(p => TARGET.keys.has(p.key[TARGET.field])).sort((a, b) => new Date(b.t || b.date || 0) - new Date(a.t || a.date || 0));
+    FILTERED = POSTS.filter(p => state.award === "all" || p.award === state.award).sort((a, b) => new Date(b.t || b.date || 0) - new Date(a.t || a.date || 0));
     markerLayer.clearLayers(); markerById = {};
     FILTERED.forEach(p => {
       const m = L.marker([p.lat, p.lng], { icon: pinIcon() }).bindPopup(popupHtml(p));
@@ -319,10 +331,10 @@
 
   function renderList() {
     const shown = FILTERED.slice(0, state.limit);
-    const hitUsers = new Set(FILTERED.map(p => p.key[TARGET.field])).size;
-    setText("listMeta", `対象者 ${TARGET.keys.size} 名（うち投稿あり ${hitUsers} 名） ／ 全 ${FILTERED.length} 件中 ${shown.length} 件を表示`);
+    const users = new Set(FILTERED.map(p => p.n)).size;
+    setText("listMeta", `${users} 名 ／ 全 ${FILTERED.length} 件中 ${shown.length} 件を表示`);
     if (!FILTERED.length) {
-      el("postGrid").innerHTML = `<div class="empty-state" style="grid-column:1/-1"><b>対象者の投稿がありません</b>対象者リストの照合列（${esc(TARGET.header)} → ${esc(TARGET.field)}）と、投稿JSONの緯度経度の列を確認してください</div>`;
+      el("postGrid").innerHTML = `<div class="empty-state" style="grid-column:1/-1"><b>該当する投稿がありません</b>${AWARD_KEY ? "表示切替（対象者／対象外）と緯度経度の列を確認してください" : "JSONに「" + esc(CONFIG.awardField) + "」列が見つかりません"}</div>`;
       el("moreWrap").innerHTML = ""; return;
     }
     el("postGrid").innerHTML = shown.map(p => {
@@ -352,70 +364,10 @@
   function fitAll() { const pts = FILTERED.map(p => [p.lat, p.lng]); if (pts.length) map.fitBounds(L.latLngBounds(pts), { padding: [30, 30] }); }
 
   // ---- 起動 ----
-  // ---- 対象者リスト（CSV）読み込み ----
-  let TARGET = { keys: new Set(), field: "account_id", header: "", src: "" };
-  // Excel 保存の CSV は UTF-8 / Shift_JIS のどちらもあり得るので両対応
-  function decodeCsv(buf) {
-    const u = new TextDecoder("utf-8").decode(buf);
-    return u.includes("\uFFFD") ? new TextDecoder("shift_jis").decode(buf) : u;
-  }
-  function parseCsv(text) {
-    text = text.replace(/^\uFEFF/, "");
-    const rows = []; let row = [], f = "", q = false;
-    for (let i = 0; i < text.length; i++) {
-      const c = text[i];
-      if (q) {
-        if (c === '"') { if (text[i + 1] === '"') { f += '"'; i++; } else q = false; }
-        else f += c;
-      } else if (c === '"') q = true;
-      else if (c === ",") { row.push(f); f = ""; }
-      else if (c === "\n" || c === "\r") {
-        if (c === "\r" && text[i + 1] === "\n") i++;
-        row.push(f); rows.push(row); row = []; f = "";
-      } else f += c;
-    }
-    if (f !== "" || row.length) { row.push(f); rows.push(row); }
-    return rows;
-  }
-  const colIndex = (letter) => [...letter.toUpperCase()].reduce((n, ch) => n * 26 + (ch.charCodeAt(0) - 64), 0) - 1;
-  function buildTargets(rows) {
-    const cfg = CONFIG.targetList;
-    const norm = (v) => String(v ?? "").trim();
-    // 見出し行：先頭10行のうち、照合列の見出しを含む最初の行
-    let hRow = -1, key = null, kIdx = -1;
-    for (let r = 0; r < Math.min(rows.length, 10) && hRow < 0; r++) {
-      const cells = rows[r].map(norm);
-      for (const k of cfg.keyColumns) {
-        const i = cells.indexOf(k.header);
-        if (i >= 0) { hRow = r; key = k; kIdx = i; break; }
-      }
-    }
-    if (hRow < 0) throw new Error(`照合列の見出し（${cfg.keyColumns.map(k => k.header).join(" / ")}）が見つかりません`);
-    const fIdx = colIndex(cfg.flagColumn);
-    const keys = new Set();
-    for (const r of rows.slice(hRow + 1)) {
-      const flag = norm(r[fIdx]), id = norm(r[kIdx]);
-      if (id && (flag === cfg.flagValue || Number(flag) === Number(cfg.flagValue))) keys.add(id);
-    }
-    if (!keys.size) throw new Error(`${cfg.flagColumn}列が「${cfg.flagValue}」の行がありません`);
-    return { keys, field: key.field, header: key.header };
-  }
-  async function loadTargets() {
-    const tried = [];
-    for (const src of CONFIG.targetList.sources) {
-      const url = new URL(src, location.href).href;
-      try {
-        const r = await fetch(src, { cache: "no-store" });
-        if (!r.ok) { tried.push(`${url} → HTTP ${r.status}`); continue; }
-        const t = buildTargets(parseCsv(decodeCsv(await r.arrayBuffer())));
-        return { ...t, src };
-      } catch (e) { tried.push(`${url} → ${e.message}`); }
-    }
-    const err = new Error("対象者リストを読み込めません"); err.tried = tried; err.kind = "target"; throw err;
-  }
-
   function startWithJson(json, srcName) {
     const records = Array.isArray(json) ? json : (json.records || []);
+    AWARD_KEY = findAwardKey(records);
+    if (!AWARD_KEY) console.warn("対象フラグ列が見つかりません:", CONFIG.awardField);
     POSTS = normalize(records);
     state.limit = CONFIG.pageSize;
     setText("metaUpdated2", records.map(r => r.post_dated_at).filter(Boolean).sort().pop() || "–");
@@ -486,9 +438,7 @@
     const err = new Error("JSONが見つかりません"); err.tried = tried; throw err;
   }
 
-  // 対象者リスト → 投稿JSON の順に読み込み（対象者リストが読めない場合は投稿を一切表示しない）
-  loadTargets()
-    .then(t => { TARGET = t; setText("targetSrcName", t.src); return loadData(); })
+  loadData()
     .then(({ json, src }) => startWithJson(json, src))
     .catch(err => {
       console.error(err);
@@ -496,9 +446,7 @@
       el("postGrid").innerHTML = `<div class="empty-state" style="grid-column:1/-1;padding:20px;"><div>
         <b>データを読み込めませんでした</b>以下のURLを試しました：
         <ul style="margin:8px 0;padding-left:18px;">${list}</ul>
-        ${err.kind === "target"
-          ? "対象者リスト（応募者一覧（富山市送付用）タブのCSV）の置き場所・ファイル名・見出し・F列を確認してください（HTMLと同じ階層の <code>csv/</code> フォルダ内）。"
-          : "HTTP 404 の場合は、JSONの置き場所・ファイル名を確認してください（HTMLと同じ階層の <code>json/</code> フォルダ内）。"}
+        HTTP 404 の場合は、JSONの置き場所・ファイル名を確認してください（HTMLと同じ階層の <code>json/</code> フォルダ内）。
       </div></div>`;
     });
   </script>
